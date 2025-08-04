@@ -1,0 +1,189 @@
+---
+sidebar: sidebar 
+permalink: concepts/qos.html 
+keywords: PSL and QoS, service level quality of service 
+summary: Keystone使用存储 QoS 来确保应用程序获得一致且可预测的性能。 
+---
+= Keystone中的存储 QoS
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Keystone使用存储服务质量 (QoS) 来确保应用程序获得一致且可预测的性能。如果没有 QoS，某些工作负载（例如启动多个系统的工作负载）可能会在一段时间内消耗大部分或全部资源，并影响其他工作负载。
+
+有关 QoS 的信息，请参阅 https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html["通过QoS概述保证吞吐量"^]。
+
+
+
+== 自适应 QoS
+
+Keystone服务使用自适应 QoS (AQoS) 根据卷大小动态维持 IOPS/TiB 比率。有关 AQoS 策略的信息，请参阅 https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html#about-adaptive-qos["关于自适应 QoS"^]。
+
+Keystone为您提供了 AQoS 策略，您可以在集群投入生产后进行设置。您应该确保所有卷都与系统中已创建且可用的正确 AQoS 策略相关联。
+
+如果ONTAP卷未应用 AQoS 策略，则该卷不合规。没有 QoS 策略的卷是系统提供任何可用输入输出操作的优先级列表中的最后一个。但是，如果有任何输入输出操作可用，则卷可能会消耗所有可用的 IO。
+
+
+NOTE: 如果您尚未对您的卷应用 AQoS 策略，则这些卷将根据您的订阅以最高服务级别进行测量和收费。这可能会导致意外爆炸。
+
+
+
+== 自适应 QoS 设置
+
+自适应 QoS (AQoS) 设置随服务级别而变化。
+
+|===
+
+
+| *政策名称* | *极端* | *优质的* | *表现* | *标准* | *价值* 
+
+
+| *预期 IOPS/TiB* | 6,144 | 2,048 | 1,024 | 256 | 64 
+
+
+| 预期 IOPS 分配 5+| 分配的空间 
+
+
+| *峰值 IOPS/TiB* | 12,288 | 4,096 | 2,048 | 512 | 128 
+
+
+| 峰值 IOPS 分配 5+| 已用空间 
+
+
+| 块大小 5+| 32K 
+|===
+
+
+== 自适应QoS策略组的配置
+
+您可以配置自适应 QoS (AQoS) 策略来自动将吞吐量上限或下限缩放到卷大小。并非所有Keystone服务级别都与默认ONTAP QoS 策略保持一致。您可以为它们创建自定义 QoS 策略。要配置策略，您应该注意以下几点：
+
+* *策略组名称*：AQoS 策略组的名称。例如，  `Keystone_extreme` 。
+* *VServer*：VServer 或存储 VM（存储虚拟机）的名称。
+* *预期 IOPS/TiB*：当有足够的系统 IOPS 可用时，系统尝试提供的每个卷每个分配的 TiB 的最小 IOPS 数。
+* *峰值 IOPS/TiB*：系统允许卷在通过注入延迟限制 IOPS 之前达到的每个卷每使用 TiB 的最大 IOPS 数。
+* *预期 IOPS 分配*：此参数控制卷可用的预期 IOPS 是否基于卷的分配大小或使用大小。在Keystone中，这是基于分配的空间。
+* *峰值 IOPS 分配*：此参数控制卷可用的峰值 IOPS 是否基于卷的分配大小或已使用大小。在Keystone中，这是基于已用空间的。
+* *绝对最小 IOPS*：如果卷大小非常小，则应用于卷的最低预期 IOPS 数将导致不可接受的 IOPS 数。此值默认为 1,000 `Extreme` ，500 `Premium` ，以及 250 `Performance` ，以及 75 `Standard`和 `Value`服务水平。
++
+
+NOTE: 这不是 IOPS 密度（例如，75 IOPS/TiB），而是绝对最小 IOPS 数。
+
+
+
+有关 IO 密度的信息，请参阅link:../concepts/metrics.html["Keystone服务中使用的指标和定义"]。有关 AQoS 策略组的详细信息，请参阅 https://docs.netapp.com/us-en/ontap/performance-admin/adaptive-qos-policy-groups-task.html["使用自适应 QoS 策略组"^]。
+
+
+
+== 自适应QoS策略的设置
+
+以下章节介绍了每个服务级别的自适应 QoS (AQoS) 策略的设置。此处提供的每个服务级别的最小和最大卷大小允许卷实现最佳 IOP 和延迟值。在这些指导原则之外创建太多卷可能会对这些卷的性能产生负面影响。
+
+
+
+=== 极限服务级别设置
+
+Extreme 服务级别的设置和命令：
+
+* 示例命令：
+
+
+....
+qos adaptive-policy-group create -policy-group <Keystone_extreme> -vserver <SVM_name> -expected-iops 6144 -peak-iops 12288 -expected-iops-allocation allocated-space -peak-iops-allocation used-space -block-size 32K -absolute-min-iops 1000
+....
+* 建议的最小卷大小：100GiB、0.1TiB
+* 建议最大卷大小：10TiB
+
+
+
+
+=== 高级服务级别的设置
+
+高级服务级别的设置和命令：
+
+* 示例命令：
+
+
+....
+qos adaptive-policy-group create -policy-group <Keystone_premium> -vserver <SVM_name> -expected-iops 2048 -peak-iops 4096 -expected-iops-allocation allocated-space -peak-iops-allocation used-space -block-size 32K -absolute-min-iops 500
+....
+* 建议最小卷大小：500GiB、0.5TiB
+* 建议最大卷大小：50TiB
+
+
+
+
+=== 性能服务级别设置
+
+性能服务级别的设置和命令：
+
+* 示例命令：
+
+
+....
+qos adaptive-policy-group create -policy-group <Keystone_performance> -vserver <SVM_name> -expected-iops 1024 -peak-iops 2048 -expected-iops-allocation allocated-space -peak-iops-allocation used-space -block-size 32K -absolute-min-iops 250
+....
+* 建议最小卷大小：500GiB、0.5TiB
+* 建议最大卷大小：80TiB
+
+
+
+
+=== 标准服务级别的设置
+
+标准服务级别的设置和命令：
+
+* 示例命令：
+
+
+....
+qos adaptive-policy-group create -policy-group <Keystone_standard> -vserver <SVM_name> -expected-iops 256 -peak-iops 512 -expected-iops-allocation allocated-space -peak-iops-allocation used-space -block-size 32K -absolute-min-iops 75
+....
+* 建议的最小卷大小：1TiB
+* 建议最大卷大小：100TiB
+
+
+
+
+=== 价值服务级别的设置
+
+Value 服务级别的设置和命令：
+
+* 示例命令：
+
+
+....
+qos adaptive-policy-group create -policy-group <Keystone_value> -vserver <SVM_name> -expected-iops 64 -peak-iops 128 -expected-iops-allocation allocated-space -peak-iops-allocation used-space -block-size 32K -absolute-min-iops 75
+....
+* 建议的最小卷大小：1TiB
+* 建议最大卷大小：100TiB
+
+
+
+
+== 块大小计算
+
+在使用这些设置计算块大小之前，请注意以下几点：
+
+* IOPS/TiB = MBps/TiB 除以（块大小 * 1024）
+* 块大小以 KB/IO 为单位
+* TiB = 1024GiB； GiB = 1024MiB； MiB = 1024KiB； KiB = 1024 字节；根据基数 2
+* TB = 1000GB；GB = 1000MB；MB = 1000KB；KB = 1000Bytes；以 10 为基数
+
+
+.样本块大小计算
+例如，计算服务级别的吞吐量 `Extreme`服务水平：
+
+* 最大 IOPS：12,288
+* 每个 I/O 的块大小：32KB
+* 最大吞吐量 = (12288 * 32 * 1024) / (1024*1024) = 384MBps/TiB
+
+
+如果某个卷有 700GiB 的逻辑使用数据，则可用吞吐量将为：
+
+`Maximum throughput = 384 * 0.7 = 268.8MBps`

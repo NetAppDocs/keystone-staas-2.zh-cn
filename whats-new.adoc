@@ -1,0 +1,316 @@
+---
+sidebar: sidebar 
+permalink: whats-new.html 
+keywords: 'new features, release notes, enhancements, what"s new' 
+summary: NetApp在Keystone STaaS 服务的每个版本中都为您提供了新的和增强的功能。 
+---
+= Keystone STaaS 的新功能
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+了解Keystone STaaS 服务的最新功能和增强功能。
+
+
+
+== 2025年8月5日
+
+
+
+=== 查看实例级别消耗数据
+
+您可以通过BlueXP中的Keystone仪表板查看每个性能服务级别实例的当前消耗和历史数据。如果您拥有Keystone版本 3 (v3) 订阅，此功能适用于具有多个实例的性能服务级别。要了解更多信息，请参阅link:https://docs.netapp.com/us-en/keystone-staas/integrations/current-usage-tab.html["查看Keystone订阅的消耗情况"]。
+
+
+
+== 2025年6月30日
+
+
+
+=== Keystone版本 3 (v3) 发布
+
+您现在可以订阅Keystone版本 3 (v3)，这是NetApp Keystone STaaS 产品的最新版本。此版本引入了多项增强功能，包括简化的性能服务级别、额外的突发容量选项和灵活的计费频率。这些改进简化了存储解决方案的管理、优化和扩展。要了解更多信息，请参阅link:https://docs.netapp.com/us-en/keystone-staas/concepts/metrics.html["v3 的Keystone STaaS 服务"]。
+
+
+
+== 2025年6月19日
+
+
+
+=== BlueXP中的Keystone仪表板
+
+您现在可以直接从BlueXP访问Keystone仪表板。通过此集成，您可以从一个地方监控、管理和跟踪所有Keystone订阅以及其他NetApp服务。
+
+使用BlueXP中的Keystone仪表板，您可以：
+
+* 在一个地方查看所有订阅详细信息、容量使用情况和资产。
+* 轻松管理订阅并随着需求的变化请求更改。
+* 随时了解有关您的存储环境的最新信息。
+
+
+首先，转到BlueXP左侧导航菜单中的 *存储 > Keystone *。要了解更多信息，请参阅link:https://docs.netapp.com/us-en/keystone-staas/integrations/dashboard-overview.html["Keystone仪表板概述"]。
+
+
+
+== 2025年1月8日
+
+
+
+=== 增加每日累计数据使用量查看选项
+
+现在，您可以通过单击显示发票数据的栏，以图表或表格形式查看每月或每季度计费期间的每日累计突发数据使用情况。要了解更多信息，请参阅link:./integrations/consumption-tab.html#view-daily-accrued-burst-data-usage["查看每日累计突发数据使用量"]。
+
+
+
+== 2024年12月12日
+
+
+
+=== 重命名“逻辑使用”列
+
+*Volumes & Objects* 中的 *Volume Details* 选项卡中的 *Logical Used* 列现已重命名为 * Keystone Logical Used*。
+
+
+
+=== 增强资产选项卡
+
+* Keystone Subscriptions* 屏幕中的 *Assets* 选项卡现在有两个新的子选项卡：* ONTAP* 和 * StorageGRID*。这些子选项卡根据您的订阅提供ONTAP 的详细集群级别见解和StorageGRID的网格级别信息。要了解更多信息，请参阅link:./integrations/assets-tab.html["资产选项卡"^]。
+
+
+
+=== 新的隐藏/显示列选项
+
+*Volumes & Objects* 中的 *Volume Details* 选项卡现在包含 *Hide/Show Columns* 选项。此选项可让您选择或取消选择列，以根据您的喜好自定义卷的表格列表。要了解更多信息，请参阅link:./integrations/volumes-objects-tab.html["体积和对象选项卡"^]。
+
+
+
+== 2024年11月21日
+
+
+
+=== 增强型发票应计突发
+
+如果您选择了按季度计费，则现在可以通过“已开具发票的累计突发”选项按季度查看累计突发使用数据。要了解更多信息，请参阅link:./integrations/consumption-tab.html#view-accrued-burst["查看已开票的累计突发"^]。
+
+
+
+=== “卷详细信息”选项卡中的新列
+
+为了提高计算逻辑使用情况的清晰度，在“*卷和对象*”选项卡中的“*卷详细信息*”选项卡中添加了两个新列：
+
+* *逻辑 AFS*：显示卷的活动文件系统使用的逻辑容量。
+* *物理快照*：显示快照使用的物理空间。
+
+
+这些列更清楚地显示了“逻辑已用”列，该列显示了卷的活动文件系统使用的组合逻辑容量和快照使用的物理空间。
+
+
+
+== 2024年11月11日
+
+
+
+=== 增强报告生成
+
+现在，您可以使用Digital Advisor中的报告功能生成合并报告来查看Keystone数据的详细信息。要了解更多信息，请参阅link:./integrations/options.html#generate-consolidated-report-from-digital-advisor["生成合并报告"^]。
+
+
+
+== 2024年7月10日
+
+
+
+=== 标签修改
+
+标签 *Current Usage* 更改为 *Current Consumption*，*Capacity Trend* 更改为 *Consumption Trend*。
+
+
+
+=== 订阅的搜索栏
+
+* Keystone订阅* 屏幕内所有选项卡上的 *订阅* 下拉菜单现在都包含一个搜索栏。您可以搜索“*订阅*”下拉菜单中列出的特定订阅。
+
+
+
+== 2024年6月27日
+
+
+
+=== 订阅的一致显示
+
+* Keystone订阅* 屏幕已更新，以在所有选项卡上显示所选的订阅号码。
+
+* 当“* Keystone订阅*”屏幕中的任何选项卡刷新时，屏幕会自动导航到“*订阅*”选项卡，并将所有选项卡重置为“*订阅*”下拉列表中列出的第一个订阅。
+* 如果所选订阅未订阅性能指标，则“性能”选项卡将在导航时显示“订阅”下拉菜单中列出的第一个订阅。
+
+
+
+
+== 2024年5月29日
+
+
+
+=== 增强型突发指示器
+
+使用情况图表索引中的 *Burst* 指示器得到增强，可以显示突发限制百分比值。该值根据订阅的约定突发限制而变化。您还可以通过将鼠标悬停在“*订阅*”选项卡中的“*使用状态*”列中的“*突发使用情况*”指示器上来查看突发限制值。
+
+
+
+=== 增加服务级别
+
+服务级别 *CVO Primary* 和 *CVO Secondary* 包括在内，以支持具有零承诺容量的费率计划或配置了城域集群的订阅的Cloud Volumes ONTAP 。
+
+* 您可以从 * Keystone Subscriptions* 小部件的旧仪表板和 *Capacity Trend* 选项卡查看这些服务级别的容量使用情况图表，还可以从 *Current Usage* 选项卡查看详细的使用情况信息。
+* 在“订阅”选项卡中，这些服务级别显示为 `CVO (v2)`在*使用类型*列中，允许根据这些服务级别识别计费。
+
+
+
+
+=== 短期爆发的放大功能
+
+*容量趋势*选项卡现在包含放大功能，可以查看使用图表中短期爆发的详细信息。有关更多信息，请参阅link:./integrations/consumption-tab.html["容量趋势选项卡"^] 。
+
+
+
+=== 增强订阅显示
+
+订阅的默认显示已增强，可按跟踪 ID 排序。  *订阅*选项卡中的订阅（包括*订阅*下拉菜单和 CSV 报告中的订阅）现在将根据跟踪 ID 的字母顺序显示，按照 a、A、b、B 等顺序显示。
+
+
+
+=== 增强累计爆发显示
+
+当鼠标悬停在“容量趋势”选项卡中的容量使用情况条形图上时出现的工具提示现在会显示基于承诺容量的累积突发类型。它区分临时和已开票的累计突发，对于承诺容量费率计划为零的订阅显示*临时累计消耗*和*已开票累计消耗*，对于承诺容量非零的订阅显示*临时累计突发*和*已开票累计突发*。
+
+
+
+== 2024年5月9日
+
+
+
+=== CSV 报告中的新列
+
+*容量趋势*选项卡中的 CSV 报告现在包括*订阅编号*和*帐户名称*列，以提供更详细的信息。
+
+
+
+=== 增强使用类型列
+
+*订阅*选项卡中的*使用类型*列已得到增强，可以以逗号分隔的值显示涵盖文件和对象服务级别的订阅的逻辑和物理使用情况。
+
+
+
+=== 从“卷详细信息”选项卡访问对象存储详细信息
+
+*卷和对象*选项卡中的*卷详细信息*选项卡现在提供对象存储详细信息以及包含文件和对象服务级别的订阅的卷信息。您可以点击“卷详情”选项卡中的“对象存储详情”按钮查看详情。
+
+
+
+== 2024年3月28日
+
+
+
+=== 改进了“卷详细信息”选项卡中的 QoS 策略合规性显示
+
+*卷和对象*选项卡中的*卷详细信息*选项卡现在可以更好地查看服务质量 (QoS) 策略合规性。以前称为 *AQoS* 的列重命名为 *Compliant*，表示 QoS 策略是否符合要求。此外，还添加了一个新列*QoS 策略类型*，用于指定策略是固定的还是自适应的。如果两者都不适用，则该列显示“不可用”。有关更多信息，请参阅link:./integrations/volumes-objects-tab.html["体积和对象选项卡"^] 。
+
+
+
+=== 交易量摘要选项卡中的新列和简化的订阅显示
+
+* *Volumes & Objects* 选项卡中的 *Volume Summary* 选项卡现在包含一个名为 *Protected* 的新列。此列提供与您订阅的服务级别相关的受保护卷的数量。如果您单击受保护卷的数量，它将带您进入“卷详细信息”选项卡，您可以在其中查看受保护卷的筛选列表。
+* “*卷摘要*”选项卡已更新，仅显示基本订阅，不包括附加服务。有关更多信息，请参阅link:./integrations/volumes-objects-tab.html["体积和对象选项卡"^] 。
+
+
+
+
+=== 容量趋势选项卡中累计突发详细信息的显示发生变化
+
+将鼠标悬停在“容量趋势”选项卡中的容量使用情况条形图上时出现的工具提示将显示当前月份累计突发的详细信息。前几个月的详细信息将不会提供。
+
+
+
+=== 增强查看Keystone订阅历史数据的权限
+
+如果Keystone订阅被修改或续订，您现在可以查看历史数据。您可以将订阅的开始日期设置为之前的日期以查看：
+
+* 来自“容量趋势”选项卡的消耗和累计突发使用数据。
+* “性能”选项卡中的ONTAP卷的性能指标。
+
+
+数据根据所选的订阅开始日期显示。
+
+
+
+== 2024年2月29日
+
+
+
+=== 添加资产选项卡
+
+* Keystone Subscriptions* 屏幕现在包含 *Assets* 选项卡。此新选项卡根据您的订阅提供集群级别的信息。有关更多信息，请参阅link:./integrations/assets-tab.html["资产选项卡"^] 。
+
+
+
+=== 体积和对象选项卡的改进
+
+为了更清楚地了解您的ONTAP系统卷，已在 *Volumes* 选项卡中添加了两个新选项卡按钮 *Volume Summary* 和 *Volume Details*。  *Volume Summary* 选项卡提供与您订阅的服务级别相关的卷的总数，包括其 AQoS 合规状态和容量信息。 *卷详细信息*选项卡列出了所有卷及其具体信息。有关更多信息，请参阅link:./integrations/volumes-objects-tab.html["体积和对象选项卡"^] 。
+
+
+
+=== 增强Digital Advisor的搜索体验
+
+*Digital Advisor* 屏幕上的搜索参数现在包括Keystone订阅号和为Keystone订阅创建的关注列表。您可以输入订阅号或关注列表名称的前三个字符。有关更多信息，请参阅link:./integrations/keystone-aiq.html["在Active IQ Digital Advisor上查看Keystone仪表板"^] 。
+
+
+
+=== 查看消费数据的时间戳
+
+您可以在 * Keystone Subscriptions* 小部件的旧仪表板上查看消费数据的时间戳（以 UTC 为单位）。
+
+
+
+== 2024年2月13日
+
+
+
+=== 可以查看链接到主订阅的订阅
+
+您的一些主要订阅可以具有链接的次要订阅。如果是这种情况，主订阅号将继续显示在“*订阅号*”列中，而链接的订阅号将在“*订阅*”选项卡上的新列“*链接的订阅*”中列出。仅当您已链接订阅时，“*链接订阅*”列才可用，并且您可以看到有关通知您的信息消息。
+
+
+
+== 2024年1月11日
+
+
+
+=== 已返回累计突发的发票数据
+
+现在，*Capacity Trend* 选项卡中的 *Accrued Burst* 标签已修改为 *Invoiced Accrued Burst*。选择此选项，您可以查看已计费累计突发数据的月度图表。有关更多信息，请参阅link:./integrations/consumption-tab.html#view-accrued-burst["查看已开票的累计突发"^] 。
+
+
+
+=== 特定费率计划的累计消费详情
+
+如果您订阅的费率计划中承诺容量为_零_，您可以在“容量趋势”选项卡中查看累计消费详情。选择“已开票累计消费”选项后，您可以查看已开票累计消费数据的月度图表。
+
+
+
+== 2023年12月15日
+
+
+
+=== 能够按关注列表搜索
+
+Digital Advisor中对监视列表的支持已扩展到包括Keystone系统。您现在可以通过使用关注列表搜索来查看多个客户的订阅详细信息。有关Keystone STaaS 中监视列表使用的更多信息，请参阅link:./integrations/keystone-aiq.html#search-by-keystone-watchlists["按Keystone关注列表搜索"^]。
+
+
+
+=== 日期转换为 UTC 时区
+
+Digital Advisor的 * Keystone Subscriptions* 屏幕选项卡上返回的数据以 UTC 时间（服务器时区）显示。当您输入日期进行查询时，它会自动被视为 UTC 时间。有关更多信息，请参阅link:./integrations/keystone-aiq.html["Keystone订阅仪表板和报告"^] 。

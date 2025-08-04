@@ -1,0 +1,55 @@
+---
+sidebar: sidebar 
+permalink: concepts/data-flow.html 
+keywords: data flow 
+summary: Keystone STaaS 系统中的数据流经Keystone Collector 和 AIOPs 解决方案工具（相关的监控系统）。 
+---
+= Keystone数据流
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Keystone STaaS 系统中的数据流经Keystone Collector 和 ITOM 监控解决方案（即相关的监控系统）。
+
+
+
+== Keystone Collector 数据流
+
+Keystone Collector 向存储控制器发起 REST API 调用，并定期获取控制器的使用情况详细信息，如下流程图所示：
+
+image:data-collector-flow.png["显示收集器组件内的数据流"]
+
+.图例
+. NetApp Keystone Collector 启动与Keystone云的连接。
+. 客户操作的防火墙允许连接。
+. Keystone Collector 直接与存储控制器的管理连接建立 REST API 连接或通过Active IQ Unified Manager建立隧道来收集使用情况和性能数据。
+. 这些数据通过 HTTPS 安全地发送到Keystone云组件。
+
+
+
+
+== 监控数据流
+
+持续监控存储基础设施的健康状况是Keystone服务最重要的功能之一。对于监控和报告， Keystone使用 ITOM 监控解决方案。下图描述了 ITOM 监控解决方案如何保护对客户位置的远程访问。客户可以选择启用远程会话功能，这使得Keystone支持团队可以连接到受监控的设备进行故障排除。
+
+image:monitoring-flow-2.png["数据流"]
+
+.图例
+. ITOM 监控解决方案网关向云门户发起 TLS 会话。
+. 客户操作的防火墙允许连接。
+. 云端的ITOM监控解决方案服务器接受连接。
+. 云门户和本地网关之间建立 TLS 会话。
+. NetApp控制器使用 SNMP/Syslog 协议发送警报或响应对本地网关的 API 请求。
+. 本地网关使用之前建立的 TLS 会话将这些警报发送到其云门户。
+
+
+
+
+== 合规标准
+
+Keystone ITOM 监控解决方案符合欧盟通用数据保护条例 (GDPR) 和加州消费者隐私法案 (CCPA)。它还提供了一个link:https://www.logicmonitor.com/legal/data-processing-addendum["数据保护附录（DPA）"^]记录这些承诺。  ITOM 监控解决方案不收集或存储任何个人数据。

@@ -1,0 +1,60 @@
+---
+sidebar: sidebar 
+permalink: installation/install-itom-linux.html 
+keywords: Linux installation, ITOM Collector installation 
+summary: 在基于 Linux 的系统上安装 ITOM Collector 软件。 
+---
+= 在 Linux 系统上安装 ITOM Collector
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+完成几个步骤来安装 ITOM Collector，它会收集您的存储环境中的指标数据。根据您的要求，您可以在 Windows 或 Linux 系统上安装它。
+
+
+NOTE: Keystone支持团队提供了一个动态链接来下载 ITOM Collector 安装文件，该文件将在两小时后过期。
+
+要在 Windows 系统上安装 ITOM Collector，请参阅link:../installation/install-itom-windows.html["在 Windows 系统上安装 ITOM Collector"]。
+
+按照以下步骤在 Linux 服务器上安装软件：
+
+.开始之前
+* 验证 Bourne shell 是否可用于 Linux 安装脚本。
+* 安装 `vim-common`包以获取 ITOM Collector 安装文件所需的 *xxd* 二进制文件。
+* 确保 `sudo package`如果计划以非 root 用户身份运行 ITOM Collector，则安装。
+
+
+.步骤
+. 将 ITOM 收集器安装文件下载到您的 Linux 服务器。
+. 在服务器上打开终端并运行以下命令来更改权限并使二进制文件可执行：
+`# chmod +x <installer_file_name>.bin`
+. 运行命令启动ITOM收集器安装文件：
+`#./<installer_file_name>.bin`
+. 运行安装文件会提示您：
++
+.. 接受最终用户许可协议 (EULA)。
+.. 输入安装的用户详细信息。
+.. 指定安装父目录。
+.. 选择收集器尺寸。
+.. 如果适用，请提供代理详细信息。
++
+对于每个提示，都会显示一个默认选项。除非有特殊要求，建议选择默认选项。按 *Enter* 键选择默认选项。安装完成后，会出现一条消息确认 ITOM Collector 已成功安装。
+
+
+
+
+
+[NOTE]
+====
+* ITOM Collector 安装文件添加了 `/etc/sudoers`处理服务重启和内存转储。
+* 在 Linux 服务器上安装 ITOM Collector 会创建一个名为 *ITOM* 的默认用户，以在没有 root 权限的情况下运行 ITOM Collector。您可以选择其他用户或以root身份运行，但建议使用Linux安装脚本创建的ITOM用户。
+
+
+====
+.下一步是什么？
+安装成功后，请联系Keystone支持团队通过 ITOM 支持门户验证 ITOM Collector 是否安装成功。验证后， Keystone支持团队将远程配置 ITOM Collector，包括进一步的设备发现和监控设置，并在配置完成后发送确认。如有任何疑问或需要更多信息，请联系 keystone.services@netapp.com。

@@ -1,0 +1,97 @@
+---
+sidebar: sidebar 
+permalink: concepts/components.html 
+keywords: infrastructure component, deployment requirement, installation requirement 
+summary: 了解在您的环境中启用NetApp Keystone STaaS 服务所需的组件。 
+---
+= 部署所需的组件
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+在您的环境中启用NetApp Keystone STaaS 服务需要几个组件。在开始之前，您应该查看有关这些组件的详细信息。
+
+
+
+== 场地要求
+
+有一些特定于站点的要求，例如空间、机架、PDU、电源和冷却，以及这里讨论的额外网络和安全要求。
+
+
+
+=== 空间
+
+用于承载Keystone基础设施设备的占地面积（由客户提供）。  NetApp根据最终配置提供重量规格。
+
+
+
+=== 机架
+
+客户操作产品中的四个立柱架（由客户提供）。在NetApp运营的产品中， NetApp或客户都可以根据需求提供机架。  NetApp提供 42 个深度机架。
+
+
+
+=== PDU
+
+您应该提供连接到两个独立的、受保护的电路的配电单元 (PDU)，并配备足够的 C13 插座。在客户运营服务中，在某些情况下需要 C19 网点。在NetApp运营的产品中， NetApp或客户可以根据需求提供 PDU。
+
+
+
+=== 电源
+
+您应该提供所需的电源。 NetApp将根据最终配置提供基于 200V 额定值（典型 A、最大 A、典型 W、最大 W、电源线类型和数量）的电源要求规格。所有组件均有冗余电源。  NetApp将提供机柜内电源线。
+
+
+
+=== 冷却
+
+NetApp可以根据最终配置和要求提供冷却要求规格（典型 BTU、最大 BTU）。
+
+
+
+=== 虚拟机
+
+部署Keystone Collector 和 ITOM Collector 需要虚拟机。有关安装先决条件，请参阅link:../installation/installation-overview.html["Keystone Collector 安装指南"]和link:../installation/itom-prereqs.html["ITOM Collector 的安装要求"]。其他要求在部署期间共享。
+
+
+
+=== 部署选项
+
+Keystone Collector 可以通过以下方式部署：
+
+* VMware OVA 模板（需要 VMware vCenter Server 6.7 或更高版本）
+* 客户提供在以下操作系统之一上运行的 Linux 服务器：Debian 12、Red Hat Enterprise Linux 8.6 或更高版本 8.x，或 CentOS 7（仅适用于现有环境）。  Keystone软件的安装使用 `.deb`或者 `.rpm`包，取决于 Linux 发行版。
+
+
+ITOM Collector 可以通过以下方式部署：
+
+* 客户提供运行 Debian 12、Ubuntu 20.04 LTS、Red Hat Enterprise Linux (RHEL) 8.x、Amazon Linux 2023 或更新版本的 Linux 服务器。
+* 客户提供运行 Windows Server 2016 或更新版本的 Windows 服务器。
++
+
+TIP: 推荐的操作系统是 Debian 12、Windows Server 2016 或更新版本。
+
+
+
+
+
+=== 网络连接
+
+软件更新和使用数据上传需要对_keystone.netapp.com_进行出站访问，这对于Keystone Collector 和 AIOps 解决方案网关的运行和维护至关重要。
+
+根据客户要求和所使用的存储控制器， NetApp可以在客户站点提供 10 GB、40 GB 和 100 GB 的连接。
+
+NetApp仅为NetApp提供的基础设施设备提供所需的收发器。您应该提供客户设备所需的收发器以及与NetApp提供的Keystone基础设施设备相连的电缆。
+
+
+
+== 远程访问要求
+
+客户数据中心或客户拥有的共置服务中安装的存储基础设施与Keystone运营中心之间需要建立网络连接。客户负责提供计算和虚拟机以及互联网服务。客户还负责操作系统修补（非基于 OVA 的部署）和基于内部安全策略的安全强化。网络设计应基于安全协议，并且防火墙策略将得到NetApp和客户的批准。
+
+NetApp需要访问已安装的用于监控和管理的硬件和软件组件，以便为Keystone客户提供监控和计费等服务。最常见的方法是建立与客户网络的虚拟专用网络（VPN）连接并访问所需的数据。为了克服客户认为因向新服务开放防火墙端口而产生的任何操作复杂性，监控工具会启动外部连接。 NetApp云应用程序（例如 ITOM 监控解决方案和 Zuora）使用此连接来执行各自的服务。此方法满足了客户不打开防火墙端口但提供对此服务的一部分的监控组件的访问的要求。

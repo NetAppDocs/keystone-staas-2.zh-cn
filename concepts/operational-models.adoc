@@ -1,0 +1,82 @@
+---
+sidebar: sidebar 
+permalink: concepts/operational-models.html 
+keywords: Operational models, partner operations, customer operations, roles and responsibilities, r&r 
+summary: NetApp Keystone STaaS 提供两种服务交付运营模式。在开始使用Keystone之前，您应该了解这些选项。 
+---
+= Keystone中的运营模型
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp Keystone STaaS 提供两种服务交付运营模式：合作伙伴运营模式和客户运营模式。在开始使用Keystone之前，您应该了解这些选项。
+
+* *合作伙伴运营模式*：此模式提供两种选择：
++
+** *服务提供商*：服务提供商为其最终客户提供服务。作为与NetApp签约的一方，服务提供商管理着一个多租户环境，其中每个租户（服务提供商的客户）都有自己的订阅，并由服务提供商收费。服务提供商管理员负责为租户执行所有管理任务。
+** *经销商*：作为经销商，合作伙伴充当NetApp和客户之间的桥梁。合作伙伴向最终客户销售Keystone服务并管理发票。合作伙伴负责计费，而NetApp则为客户提供直接支持。  Keystone支持与客户互动并为租户处理所有管理任务。
+
+
+* *客户运营模式*：作为客户，您可以根据所选的性能服务级别和存储订阅Keystone服务。 NetApp定义架构和产品，并在您的场所部署Keystone 。您需要通过存储和 IT 资源来管理基础设施。根据您的合同，您可以提出服务请求，由NetApp或您的服务提供商处理。您组织的管理员可以在您的站点（环境）执行管理任务。这些任务与您环境中的用户相关。
+
+
+
+
+== 服务生命周期中的角色和职责
+
+* *合作伙伴运营模式*：角色和职责的分配取决于您与服务提供商或合作伙伴之间的协议。请与您的服务提供商联系以获取信息。
+* *客户运营模式*：下表总结了整体服务生命周期模型以及客户运营环境中与之相关的角色和职责。
+
+
+|===
+| 任务 | NetApp | 客户 
+
+
+ a| 
+安装和相关任务
+
+* 安装
+* 配置
+* 部署
+* 船上
+
+| image:check.png["复选标记"] | 无 
+
+
+ a| 
+管理和监控
+
+* 监控
+* 报告
+* 执行管理任务
+* 警报
+
+| 无 | image:check.png["复选标记"] 
+
+
+ a| 
+运营与优化
+
+* 管理容量
+* 管理绩效
+* 管理 SLA
+
+| 无 | image:check.png["复选标记"] 
+
+
+ a| 
+支持
+
+* 支持客户
+* 硬件故障修复
+* 软件支持
+* 升级和补丁
+
+| image:check.png["复选标记"] | 无 
+|===
+有关部署的更多信息，请参阅link:../concepts/infra.html["Keystone基础设施"]和link:..//concepts/components.html["部署组件"]。

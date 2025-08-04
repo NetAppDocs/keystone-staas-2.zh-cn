@@ -1,0 +1,154 @@
+---
+sidebar: sidebar 
+permalink: integrations/assets-tab.html 
+keywords: keystone-aiq, digital advisor keystone, keystone reports, alerts, keystone dashboard, keystone assets tab, ONTAP, StorageGRID, bluexp, volumes in clusters 
+summary: 使用“资产”选项卡查看ONTAP集群和节点以及由Keystone订阅管理的StorageGRID网格、站点和节点的详细信息。 
+---
+= 查看与Keystone订阅相关的资产
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以查看有关ONTAP集群和节点以及由单个Keystone订阅管理的StorageGRID网格、站点和节点的详细信息。您可以在BlueXP和Digital Advisor的Keystone仪表板视图中查看您的订阅资产视图。
+
+
+
+== 从BlueXP查看Keystone订阅资产
+
+BlueXP中 *Subscriptions* 选项卡内的 *Assets* 选项卡提供有关与订阅相关的集群、 StorageGRID节点和ONTAP节点中的卷的详细信息，包括各种详细信息和容量状态。
+
+
+NOTE: 此视图每次仅限一个Keystone订阅。您还可以通过从*跟踪 ID* 下拉列表中选择来查看其他订阅的资产。 BlueXP中的Keystone仪表板允许您查看跨多个Keystone订阅的资产。要了解更多信息，请参阅link:../integrations/assets.html["查看Keystone订阅中的资产"]。
+
+您可以按照以下步骤查看此信息：
+
+[role="tabbed-block"]
+====
+.集群中的卷
+--
+.步骤
+. 从BlueXP左侧导航菜单中，选择 *存储 > Keystone > 订阅*。
+. 在表格的*订阅号*列中选择订阅号。
++
+您将被重定向到“*当前消耗*”选项卡。
+
+. 选择“*资产*”选项卡。
+. 从“*查看*”下拉菜单中选择“*集群中的卷*”。
++
+image:bxp-volumes-clusters-single-subscription.png["订阅集群中的卷的屏幕截图"]
+
++
+您可以看到有关集群中卷的详细信息，包括卷名称、节点序列号、QoS 策略的遵守情况、集群名称、主机名和性能服务级别。您还可以监控已配置的容量、逻辑和物理利用率以及冷数据。
+
++
+
+TIP: 您可以使用列选择器自定义表格image:column-selector.png["列选择器图标"]图标并使用顶部的搜索栏根据列参数搜索和过滤表格数据。
+
+
+
+--
+.集群中的节点
+--
+.步骤
+. 从BlueXP左侧导航菜单中，选择 *存储 > Keystone > 订阅*。
++
+默认情况下，“*订阅*”选项卡显示“*订阅*”子选项卡。
+
+. 在表格的*订阅号*列中选择订阅号。
++
+您将被重定向到“*当前消耗*”选项卡。
+
+. 选择“*资产*”选项卡。
+. 从“*查看*”下拉菜单中选择“*集群中的节点*”。
++
+image:bxp-nodes-cluster-single-subscription.png["订阅集群中的节点的屏幕截图"]
+
++
+您可以看到ONTAP集群详细信息，按存储效率设置、平台类型和容量详细信息细分。
+
++
+
+TIP: 您可以使用列选择器自定义表格image:column-selector.png["列选择器图标"]图标并使用顶部的搜索栏根据列参数搜索和过滤表格数据。
+
+
+
+--
+.网格中的节点
+--
+.步骤
+. 从BlueXP左侧导航菜单中，选择 *存储 > Keystone > 订阅*。
++
+默认情况下，“*订阅*”选项卡显示“*订阅*”子选项卡。
+
+. 在表格的*订阅号*列中选择订阅号。
++
+您将被重定向到“*当前消耗*”选项卡。
+
+. 选择“*资产*”选项卡。
+. 从*视图*下拉菜单中选择*网格中的节点*。
++
+image:bxp-nodes-grids-single-subscription.png["订阅网格中的节点的屏幕截图"]
+
++
+您可以查看网格中节点的详细信息，包括节点名称、节点状态、网格名称、节点类型和客户。您还可以监控已消耗和可用的数据容量、CPU 使用率以及可用数据容量。
+
++
+
+TIP: 您可以使用列选择器自定义表格image:column-selector.png["列选择器图标"]图标并使用顶部的搜索栏根据列参数搜索和过滤表格数据。
+
+
+
+--
+====
+
+
+== 从Digital Advisor查看Keystone订阅资产
+
+Digital Advisor中Keystone仪表板的 *Assets* 选项卡包含两个子选项卡：* ONTAP* 和 * StorageGRID*。此选项卡根据您的订阅累积ONTAP的集群级信息和StorageGRID的网格级信息，以准确的详细信息进行分离和呈现数据。您可以通过单击相应的子选项卡来查看此信息。
+
+[role="tabbed-block"]
+====
+.ONTAP
+--
+.步骤
+. 单击“*常规> Keystone订阅>资产> ONTAP*”。
+. 选择要查看集群的订阅号。
++
+您可以看到集群详细信息，按存储效率设置、平台类型和容量详细信息细分。单击其中一个集群将带您进入Digital Advisor屏幕上的“集群”小部件，您可以在其中获取该集群的其他信息。Digital Advisor提供有关您部署的全面库存级别信息。
+
++
+image:assets-tab-3.png["显示ONTAP集群级别信息的屏幕截图"]
+
+
+
+--
+.StorageGRID
+--
+.步骤
+. 单击“*常规> Keystone订阅>资产> StorageGRID*”。
+. 选择订阅号码。
++
+您可以看到按网格和节点标识符、站点信息、硬件规格和容量详细信息分类的网格详细信息，这有助于监控和管理StorageGRID基础架构中的节点。
+
++
+image:assets-tab-storagegrid.png["显示StorageGRID网格级信息的屏幕截图"]
+
+
+
+--
+====
+*相关信息*
+
+* link:../integrations/dashboard-overview.html["了解Keystone仪表板"]
+* link:../integrations/subscriptions-tab.html["查看您的订阅详情"]
+* link:../integrations/current-usage-tab.html["查看您当前的消费详情"]
+* link:../integrations/consumption-tab.html["查看消费趋势"]
+* link:../integrations/subscription-timeline.html["查看您的订阅时间表"]
+* link:../integrations/assets.html["查看Keystone订阅中的资产"]
+* link:../integrations/volumes-objects-tab.html["查看卷和对象的详细信息"]
+

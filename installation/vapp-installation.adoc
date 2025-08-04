@@ -1,0 +1,89 @@
+---
+sidebar: sidebar 
+permalink: installation/vapp-installation.html 
+keywords: install, VMware 
+summary: 通过下载 OVA 模板、部署模板等在 VMware vSphere 系统上部署Keystone Collector。 
+---
+= 在 VMware vSphere 系统上部署Keystone Collector
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+在 VMware vSphere 系统上部署Keystone Collector 包括下载 OVA 模板、使用 *部署 OVF 模板* 向导部署模板、验证证书的完整性以及验证 VM 的准备情况。
+
+
+
+== 部署 OVA 模板
+
+按照下面的步骤进行操作：
+
+.步骤
+. 从以下位置下载 OVA 文件 https://keystone.netapp.com/downloads/KeystoneCollector-latest.ova["此链接"^]并将其存储在您的 VMware vSphere 系统上。
+. 在 VMware vSphere 系统上，导航到 *VMs and Templates* 视图。
+. 右键单击虚拟机 (VM)（或数据中心，如果不使用 VM 文件夹）所需的文件夹，然后选择 *部署 OVF 模板*。
+. 在“部署 OVF 模板”向导的“步骤 1”中，单击“选择 OVF 模板”以选择已下载的 `KeystoneCollector-latest.ova`文件。
+. 在_步骤 2_中，指定 VM 名称并选择 VM 文件夹。
+. 在_步骤 3_中，指定运行虚拟机所需的计算资源。
+. 在“步骤 4：查看详细信息”中，验证 OVA 文件的正确性和真实性。vCentre 7.0u2 之前的版本无法自动验证代码签名证书的真实性。vCentre 7.0u2 及更高版本可以执行此验证，但是，为此，需要将签名证书颁发机构添加到 vCentre。请根据您的 vCenter 版本遵循以下说明：
++
+.vCenter 7.0u1 及更早版本：了解更多
+[%collapsible]
+====
+vCenter 验证 OVA 文件内容的完整性，并为 OVA 文件中包含的文件提供有效的代码签名摘要。但是，它不能验证代码签名证书的真实性。为了验证完整性，您应该下载完整的签名摘要证书，并根据Keystone发布的公共证书进行验证。
+
+.. 单击“*发布者*”链接下载完整的签名摘要证书。
+.. 从以下位置下载_Keystone Billing_公共证书 https://keystone.netapp.com/downloads/OVA-SSL-NetApp-Keystone-20221101.pem["此链接"^]。
+.. 使用 OpenSSL 验证 OVA 签名证书与公共证书的真实性：
+`openssl verify -CAfile OVA-SSL-NetApp-Keystone-20221101.pem keystone-collector.cert`
+
+
+====
++
+.vCenter 7.0u2 及更高版本：了解更多
+[%collapsible]
+====
+当提供有效的代码签名摘要时，vCenter 7.0u2 及更高版本能够验证 OVA 文件内容的完整性和代码签名证书的真实性。  vCenter 根信任库仅包含 VMware 证书。  NetApp使用 Entrust 作为认证机构，这些证书需要添加到 vCenter 信任库中。
+
+.. 从 Entrust 下载代码签名 CA 证书 https://web.entrust.com/subca-certificates/OVCS2-CSBR1-crosscert.cer["此处"^]。
+.. 按照 `Resolution`此知识库 (KB) 文章的部分内容： https://kb.vmware.com/s/article/84240[] 。
+
+
+====
++
+当Keystone Collector OVA 的完整性和真实性得到验证后，您将看到文本 `(Trusted certificate)`与出版商。image:ova-deploy.png["OVA UI 显示已验证的证书"]
+
+. 在部署 OVF 模板向导的第 5 步中，指定存储虚拟机的位置。
+. 在步骤 6 中，选择虚拟机要使用的目标网络。
+. 在_步骤 7 自定义模板_中，指定管理员用户帐户的初始网络地址和密码。
++
+
+NOTE: 管理员密码以可逆格式存储在 vCenter 中，应用作引导凭据来获取对 VMware vSphere 系统的初始访问权限。在初始软件配置期间，应更改此管理员密码。 IPv4 地址的子网掩码应以 CIDR 表示法提供。例如，子网掩码 255.255.255.0 使用值 24。
+
+. 在部署 OVF 模板*向导的_步骤 8 准备完成_中，检查配置并验证您是否正确设置了 OVA 部署的参数。
+
+
+从模板部署虚拟机并启动后，打开到虚拟机的 SSH 会话并使用临时管理员凭据登录以验证虚拟机是否已准备好进行配置。
+
+
+
+== 初始系统配置
+
+在 VMware vSphere 系统上执行以下步骤，对通过 OVA 部署的Keystone Collector 服务器进行初始配置：
+
+
+NOTE: 完成部署后，您可以使用Keystone Collector 管理终端用户界面 (TUI) 实用程序执行配置和监控活动。您可以使用各种键盘控制（例如 Enter 和箭头键）来选择选项并浏览此 TUI。
+
+. 打开与Keystone Collector 服务器的 SSH 会话。当您连接时，系统将提示您更新管理员密码。按要求完成管理员密码更新。
+. 使用新密码登录以访问 TUI。登录后，TUI 就会出现。
++
+或者，您可以通过运行 `keystone-collector-tui`CLI 命令。
+
+. 如果需要，请在 TUI 上的 *配置 > 网络部分* 中配置代理详细信息。
+. 在*配置 > 系统*部分配置系统主机名、位置和 NTP 服务器。
+. 使用“维护”>“更新收集器”选项更新Keystone收集器。更新后，重新启动Keystone Collector 管理 TUI 实用程序以应用更改。
+

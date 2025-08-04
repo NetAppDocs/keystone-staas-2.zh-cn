@@ -1,0 +1,172 @@
+---
+sidebar: sidebar 
+permalink: rest-api/get-customer-consumption.html 
+keywords: api, consumption, subscriptions, customerID, keystone, Digital Advisor 
+summary: Digital Advisor REST API 检索与给定 customerID 关联的所有订阅的当前消费详情。 
+---
+= 使用Digital Advisor REST API 获取客户消费详情
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+此 API 检索与给定 customerID 关联的所有订阅的当前消费详情。
+
+*要求：*
+
+[cols="24%,76%"]
+|===
+
+
+| *方法* | GET 
+
+
+| *终点* | `https://api.activeiq.netapp.com/v1/keystone/customer/consumption-details` 
+
+
+| *参数*  a| 
+* 类型：“客户”
+* id：<客户id>
+
+
+
+
+| *标题*  a| 
+* 接受：应用程序/json
+* 授权令牌：<access_key>
+
+
+|===
+*响应：*API 将以 JSON 对象进行响应，其中包含针对给定客户的所有订阅以及当前服务使用情况指标的列表。以下是一个示例响应：
+
+[listing]
+----
+{
+"result":  {
+"returned_records": "string",
+"records": [
+{
+"subscription":  {
+"account_name": "string",
+"number": "string",
+"start_date": "string",
+"end_date": "string"
+},
+"service_levels": [
+{
+"name": "string",
+"committed_tib": "string",
+"consumed_tib": "string",
+"consumed_timestamp_utc": "string",
+"burst_tib": "string",
+"accrued_burst_tib": "string"
+}
+]
+}
+],
+"request_id": "string",
+"response_time": "string"
+}
+}
+----
+*状态代码*：200 – 请求成功
+
+*Curl 示例*：
+
+[source, curl]
+----
+curl -X 'GET' \ 'https://api.activeiq.netapp.com/v1/keystone/customer/consumption-details?type=customer&id=<customerID>' \ -H 'accept: application/json' \ -H 'authorizationToken: <access-key>'
+----
+
+
+== 获取客户历史消费详情
+
+此 API 根据指定的时间范围检索与给定 customerID 关联的所有订阅的历史消费详情。
+
+*要求：*
+
+[cols="24%,76%"]
+|===
+
+
+| *方法* | GET 
+
+
+| *终点* | `https://api.activeiq.netapp.com/v1/keystone/customer/historical-consumption-details` 
+
+
+| *参数*  a| 
+* 类型：“客户”
+* id：<客户id>
+* from_date_utc: <开始日期（RFC3339 格式）>
+* to_date_utc: <结束日期（RFC3339 格式）>
+
+
+
+
+| *标题*  a| 
+* 接受：应用程序/json
+* 授权令牌：<access_key>
+
+
+|===
+*回复：*
+
+API 将以 JSON 对象进行响应，其中包含选定时间范围内给定客户的所有订阅以及历史服务使用情况指标的列表。以下是一个示例响应：
+
+[listing]
+----
+{
+"results":  {
+"returned_records": 0,
+"records": [
+{
+"subscription":  {
+"account_name": "string",
+"number": "string",
+"start_date": "2023-08-24T14:15:22Z",
+"end_date": "2023-08-24T14:15:22Z"
+},
+"service_levels": [
+{
+"name": "string",
+"historical_consumption": [
+{
+"committed_tib": 0,
+"consumed_tib": 0,
+"timestamp_utc": "2023-08-24T14:15:22Z",
+"burst_tib": 0,
+"accrued_burst_tib": 0,
+"is_invoiced": true
+}
+]
+}
+]
+}
+],
+"request_parameters":  {
+"from_date_utc": "2023-08-24",
+"to_date_utc": "2023-08-24",
+"customer_id": "string"
+},
+"request_id": "string",
+"response_time": "string",
+"customer":  {
+"name": "string",
+"id": "string"
+}
+}
+}
+----
+*状态代码*：200 – 请求成功
+
+*Curl 示例*：
+
+[source, curl]
+----
+curl -X 'GET' \ 'https://api.activeiq-stg.netapp.com/v1/keystone/customer/historical-consumption-details? type=customer&id=<customerID>&from_date_utc=2023-08-24T14%3A15%3A22Z&t _date_utc=2023-08-24T14%3A15%3A22Z' \ -H 'accept: application/json' \ -H 'authorizationToken: <access-key>'
+----

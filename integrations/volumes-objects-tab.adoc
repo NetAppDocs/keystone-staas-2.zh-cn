@@ -1,0 +1,94 @@
+---
+sidebar: sidebar 
+permalink: integrations/volumes-objects-tab.html 
+keywords: keystone-aiq, digital advisor keystone, volumes-objects-tab, StorageGRID objects details, ONTAP volumes 
+summary: 查看卷或对象存储级别的容量详细信息。 
+---
+= 查看有关ONTAP卷和对象存储的详细信息
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果您想查看卷或对象存储级别的容量详细信息，您可以导航到Digital Advisor中的“卷和对象”选项卡。对于StorageGRID，您可以使用此选项卡读取对象存储环境中各个节点的使用情况。
+
+您可以参考BlueXP中的 *Assets* 选项卡来查看这些详细信息。要查看特定Keystone STaaS 订阅的详细信息，请参阅link:../integrations/assets-tab.html["查看与Keystone订阅相关的资产"]。如果您想查看多个Keystone订阅的详细信息，请参阅link:../integrations/assets.html["查看Keystone订阅中的资产"]。
+
+
+NOTE: 此选项卡的标题根据站点部署的性质而变化。如果您同时拥有ONTAP和对象存储，则选项卡的标题将显示为 *卷和对象*。仅对于ONTAP，名称显示为 *Volumes*。对于StorageGRID对象存储，您可以看到 *对象* 选项卡。
+
+
+
+== 查看ONTAP卷和对象存储详细信息
+
+*卷和对象*选项卡提供了不同详细程度的ONTAP系统卷和对象存储的见解。对于ONTAP卷，有两个子选项卡：*卷摘要*，提供映射到订阅性能服务级别的卷的总数；*卷详细信息*，再次列出这些卷及其具体细节。  *对象*子选项卡提供有关订阅的对象存储的详细信息，其中包括文件和对象存储的性能服务级别。
+
+[role="tabbed-block"]
+====
+.卷摘要
+--
+. 从Digital Advisor左侧导航窗格中，转到 *常规 > Keystone订阅 > 卷和对象 > 卷摘要*。
+. 选择订阅号码。
++
+对于选定的Keystone STaaS 订阅，您可以查看卷的总数、其 QoS 合规状态、受保护卷的数量以及所有这些卷中的总已提交容量、已消耗容量和可用容量。如果您单击不合规或受保护卷的数量，它将带您进入“卷详细信息”选项卡，您可以在其中查看根据您的选择显示不合规卷或受保护卷的过滤列表。
+
++
+image:volume-summary-2.png["卷摘要选项卡"]
+
+
+
+--
+.卷详细信息
+--
+. 从Digital Advisor左侧导航窗格中，转到 *常规 > Keystone订阅 > 卷 > 卷详细信息*。
+. 选择订阅号码。
++
+您可以看到卷的表格列表，例如容量使用情况、卷类型、集群、聚合和分配的Keystone性能服务级别。您可以将鼠标悬停在列标题旁边的信息图标上，滚动查看各列并了解更多信息。您可以按列排序并过滤列表以查看特定信息。
+
++
+
+NOTE: QoS 策略不适用于Keystone版本 3。
+
++
+您可以使用*隐藏/显示列*来添加或删除表中显示的列。默认情况下，除“*Department*”列之外的所有列均被选中。您可以选择或取消选择任何列，包括*部门*列，并且您的偏好设置将被保存以供日后使用。下载 CSV 报告时，如果选择“*部门*”列，则会包含该列的详细信息，而其他列无论在表中的选择状态如何都会出现。
+
++
+
+NOTE: 对于高级数据保护附加服务，会出现一个附加列来指示该卷是MetroCluster配置中的主卷还是镜像卷。您可以通过单击“复制节点序列号”按钮来复制单个节点序列号。
+
++
+image:volume-details-3.png["卷详细信息选项卡"]
+
+
+
+--
+.对象
+--
+. 从Digital Advisor左侧导航窗格中，转到 *常规 > Keystone订阅 > 对象*。
+. 选择订阅号码。默认情况下，如果先前选择的订阅不包含文件和对象存储的性能服务级别，则选择第一个可用的订阅号。
++
+
+NOTE: 对于StorageGRID，此选项卡显示对象存储节点的物理使用情况。
+
++
+image:objects-details.png["“对象”选项卡"]
+
+
+
+--
+====
+*相关信息*
+
+* link:../integrations/dashboard-overview.html["了解Keystone仪表板"]
+* link:../integrations/subscriptions-tab.html["查看您的订阅详情"]
+* link:../integrations/current-usage-tab.html["查看您当前的消费详情"]
+* link:../integrations/consumption-tab.html["查看消费趋势"]
+* link:../integrations/subscription-timeline.html["查看您的订阅时间表"]
+* link:../integrations/assets-tab.html["查看您的Keystone订阅资产"]
+* link:../integrations/assets.html["查看Keystone订阅中的资产"]
+* link:../integrations/performance-tab.html["查看绩效指标"]
+

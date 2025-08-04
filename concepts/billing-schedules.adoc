@@ -1,0 +1,29 @@
+---
+sidebar: sidebar 
+permalink: concepts/billing-schedules.html 
+keywords: billing schedules, schedule for payment 
+summary: Keystone STaaS 订阅按月或按年计费。 
+---
+= 计费时间表
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Keystone STaaS 订阅按月或按年计费。
+
+
+
+== 每月账单
+
+发票每月发送一次。对于使用服务的月份，发票将在下个月发送。例如，您在一月份使用的服务的发票在二月初交付。该发票包括承诺容量的费用以及（如果适用）任何突发使用的费用。
+
+
+
+== 年度计费
+
+每个订阅年度开始时都会生成一张发票，用于支付承诺容量的最低付款。它是在订阅开始日期生成的。每个订阅季度末都会发送另一张发票，汇总该季度累积的任何突发使用所产生的适用费用。如果在订阅期间承诺容量发生变化，则会在同一天发送发票，其中包含该订阅年度剩余时间的按比例分配的最低付款。计费从承诺容量变更生效之日起计算。

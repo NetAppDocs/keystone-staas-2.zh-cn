@@ -1,0 +1,60 @@
+---
+sidebar: sidebar 
+permalink: integrations/options.html 
+keywords: Keystone, BlueXP, Keystone dashboard, search and filter, Keystone data, generate reports, view alerts, digital advisor 
+summary: 作为NetApp Keystone STaaS 订阅者，您可以搜索和过滤数据、生成订阅和使用情况报告、检查时间戳以及查看警报。 
+---
+= 搜索Keystone数据、生成报告并查看警报
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以搜索和过滤数据、生成订阅和使用情况报告以及查看警报以随时了解存储环境。
+
+
+
+== 从BlueXP搜索和过滤数据
+
+在BlueXP中，您可以根据选项卡中表格中可用的列参数搜索和过滤Keystone数据。例如，在 *Subscriptions* 选项卡下的 *Subscriptions* 子选项卡中，您可以通过在搜索框中输入Keystone版本来过滤数据。同样，在“*Assets*”选项卡下的“*Volumes in clusters*”选项卡中，您可以通过在搜索框中输入卷名称来过滤卷。
+
+您可以使用可用的高级过滤选项来优化搜索。例如，在“*订阅*”子选项卡中，您可以按Keystone版本、计费周期、最高容量和订阅到期天数过滤数据；在“集群中的卷*”选项卡中，您可以按卷名称、集群名称、QoS 合规性、卷类型等进行过滤。可以同时应用多个过滤器来精确缩小搜索结果。image:bxp-filter-search.png["高级过滤选项"]
+
+
+
+== 从BlueXP或Digital Advisor生成报告
+
+您可以使用下载按钮生成并查看Keystone数据报告image:bluexp-download-report-2.png["BlueXP中的报告下载图标 2"]可在BlueXP或Digital Advisor内的选项卡中使用。这些选项卡允许您为订阅、历史使用情况、突发使用情况、性能、资产、卷和对象生成报告。
+
+详细信息以 CSV 格式生成，您可以保存以供将来使用和比较。
+
+
+
+== 从Digital Advisor生成综合报告
+
+在Digital Advisor中，您可以生成并查看您的订阅、历史使用情况、突发使用情况、性能、资产以及卷和对象的综合报告。为此，请从Digital Advisor中的报告功能中选择 * Keystone Subscriptions* 作为报告类型。您可以在客户、集群、监视列表或订阅级别生成这些报告。
+
+image:report-generation.png["创建报告"]
+
+该报告以 Excel 格式生成，每种类型的信息（例如订阅详细信息或使用历史记录）都显示在单独的工作表上。这些工作表根据 * Keystone订阅* 页面上的选项卡命名，以方便查看。您可以保存该报告以供将来使用。
+
+要了解有关生成报告的更多信息，请参阅link:https://docs.netapp.com/us-en/active-iq/task_generate_reports.html["生成自定义报告"^]。
+
+
+
+== 查看来自Digital Advisor的警报
+
+在Digital Advisor中， Keystone仪表板提供警报通知，使您能够了解存储环境中发生的问题。这些通知可能会以信息警报或警告的形式出现。例如，如果您管理的集群中有一些卷没有附加自适应 QoS (AQoS) 策略，您会看到一条警告消息。选择警告消息以查看“*卷和对象*”选项卡中的不合规卷列表。
+
+
+NOTE: 如果您订阅了单一性能服务级别或费率计划，您将无法看到不合规卷的警报。
+
+image:alert-aiq-3.png["警报"]
+
+有关 AQoS 策略的信息，请参阅link:../concepts/qos.html["自适应 QoS"]。
+
+有关这些消息的更多信息，请联系NetApp Keystone支持。有关提出服务请求的信息，请参阅link:../concepts/gssc.html#generating-service-requests["生成服务请求"]。

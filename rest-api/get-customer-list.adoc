@@ -1,0 +1,69 @@
+---
+sidebar: sidebar 
+permalink: rest-api/get-customer-list.html 
+keywords: customer, keystone, api, IDs,  Digital Advisor 
+summary: Digital Advisor REST API 检索与用户关联的所有 customerID 的列表。 
+---
+= 使用Digital Advisor REST API 获取所有客户列表
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+此 API 检索与用户关联的所有 customerID 的列表。
+
+*要求：*
+
+[cols="24%,76%"]
+|===
+
+
+| *方法* | GET 
+
+
+| *端点* | `https://api.activeiq.netapp.com/v1/keystone/customers` 
+
+
+| *标题*  a| 
+* 接受：应用程序/json
+* 授权令牌：<access_key>
+
+
+|===
+*回复：*
+
+API 将以包含客户姓名和相应 ID 列表的 JSON 对象进行响应。以下是一个示例响应：
+
+[listing]
+----
+{
+"results":  {
+"returned_records": 0,
+"records": [
+{
+"Customers": [
+{
+"customer_id": "string",
+"customer_name": "string"
+}
+]
+}
+],
+"request_id": "string",
+"response_time": "string"
+}
+}
+
+----
+*状态代码*：200 – 请求成功
+
+*Curl 示例*：
+
+[source, curl]
+----
+curl -X 'GET' \ 'https://api.activeiq.netapp.com/v1/keystone/customers' \ -H 'accept: application/json' -H 'authorizationToken: <access-key>'
+----

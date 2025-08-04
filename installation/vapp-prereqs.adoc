@@ -1,0 +1,223 @@
+---
+sidebar: sidebar 
+permalink: installation/vapp-prereqs.html 
+keywords: prerequisites, VMware vSphere, vApp 
+summary: 在安装Keystone Collector 之前，您的 VMware vSphere 系统必须满足几个要求。 
+---
+= 虚拟基础架构要求
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+在安装Keystone Collector 之前，您的 VMware vSphere 系统必须满足几个要求。
+
+.Keystone Collector 服务器虚拟机的先决条件：
+* 操作系统：VMware vCenter 服务器和 ESXi 6.7 或更高版本
+* 核心：1 个 CPU
+* 内存：2 GB
+* 磁盘空间：20 GB vDisk
+
+
+
+
+== 其他要求
+
+确保满足以下通用要求：
+
+
+
+=== 组网需求
+
+Keystone Collector 的组网要求如下表所示。
+
+
+NOTE: Keystone Collector 需要互联网连接。您可以通过默认网关（通过 NAT）直接路由或通过 HTTP 代理提供互联网连接。这里描述了这两种变体。
+
+|===
+
+
+| 源 | 目标 | 服务 | 协议和端口 | 类别 | 目的 
+
+
+ a| 
+Keystone Collector（适用于Keystone ONTAP）
+ a| 
+Active IQ Unified Manager（统一管理器）
+ a| 
+HTTPS
+ a| 
+TCP 443
+ a| 
+强制（如果使用Keystone ONTAP）
+ a| 
+ONTAP的Keystone Collector 使用情况指标收集
+
+
+
+ a| 
+Keystone Collector（用于Keystone StorageGRID）
+ a| 
+StorageGRID管理节点
+ a| 
+HTTPS
+ a| 
+TCP 443
+ a| 
+强制（如果使用Keystone StorageGRID）
+ a| 
+StorageGRID的Keystone Collector 使用情况指标收集
+
+
+
+ a| 
+Keystone收集器（通用）
+ a| 
+互联网（根据稍后给出的 URL 要求）
+ a| 
+HTTPS
+ a| 
+TCP 443
+ a| 
+强制性（互联网连接）
+ a| 
+Keystone Collector 软件、操作系统更新和指标上传
+
+
+
+ a| 
+Keystone收集器（通用）
+ a| 
+客户 HTTP 代理
+ a| 
+HTTP 代理
+ a| 
+客户代理端口
+ a| 
+强制性（互联网连接）
+ a| 
+Keystone Collector 软件、操作系统更新和指标上传
+
+
+
+ a| 
+Keystone收集器（通用）
+ a| 
+客户 DNS 服务器
+ a| 
+DNS
+ a| 
+TCP/UDP 53
+ a| 
+强制的
+ a| 
+DNS解析
+
+
+
+ a| 
+Keystone收集器（通用）
+ a| 
+客户 NTP 服务器
+ a| 
+NTP
+ a| 
+UDP 123
+ a| 
+强制的
+ a| 
+时间同步
+
+
+
+ a| 
+Keystone Collector（适用于Keystone ONTAP）
+ a| 
+Unified Manager
+ a| 
+MYSQL
+ a| 
+TCP 3306
+ a| 
+可选功能
+ a| 
+Keystone Collector 的性能指标收集
+
+
+
+ a| 
+Keystone收集器（通用）
+ a| 
+客户监控系统
+ a| 
+HTTPS
+ a| 
+TCP 7777
+ a| 
+可选功能
+ a| 
+Keystone Collector 健康报告
+
+
+
+ a| 
+客户的操作工作站
+ a| 
+Keystone收集器
+ a| 
+SSH
+ a| 
+TCP 22
+ a| 
+管理
+ a| 
+访问Keystone Collector Management
+
+
+
+ a| 
+NetApp ONTAP集群和节点管理地址
+ a| 
+Keystone收集器
+ a| 
+HTTP_8000，PING
+ a| 
+TCP 8000，ICMP 回显请求/答复
+ a| 
+可选功能
+ a| 
+用于ONTAP固件更新的 Web 服务器
+
+|===
+
+NOTE: 在全新安装 Unified Manager 期间，MySQL 的默认端口 3306 仅限于本地主机，这会阻止收集Keystone Collector 的性能指标。有关更多信息，请参阅link:addl-req.html["ONTAP要求"] 。
+
+
+
+=== URL 访问
+
+Keystone Collector 需要访问以下互联网主机：
+
+|===
+
+
+| 地址 | 原因 
+
+
+ a| 
+https://keystone.netapp.com[]
+ a| 
+Keystone Collector 软件更新和使用情况报告
+
+
+
+ a| 
+https://support.netapp.com[]
+ a| 
+NetApp HQ 用于账单信息和AutoSupport交付
+
+|===

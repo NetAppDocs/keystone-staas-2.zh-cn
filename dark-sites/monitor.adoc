@@ -1,0 +1,56 @@
+---
+sidebar: sidebar 
+permalink: dark-sites/monitor.html 
+keywords: monitoring system health 
+summary: 为了确保数据可用，您可以使用任何支持 HTTP 请求的监控系统来监控Keystone Collector 的健康状况。 
+---
+= 以私人模式监控Keystone Collector 的健康状况
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用任何支持 HTTP 请求的监控系统来监控Keystone Collector 的健康状况。
+
+默认情况下， Keystone健康服务不接受来自 localhost 以外的任何 IP 的连接。 Keystone健康端点是 `/uber/health`，并在端口上监听Keystone Collector 服务器的所有接口 `7777`。查询时，端点将返回一个带有 JSON 输出的 HTTP 请求状态代码作为响应，描述Keystone Collector 系统的状态。 JSON 主体提供了 `is_healthy`属性，它是一个布尔值；以及每个组件的详细状态列表 `component_details`属性。以下是一个例子：
+
+[listing]
+----
+$ curl http://127.0.0.1:7777/uber/health
+{"is_healthy": true, "component_details": {"vicmet": "Running", "ks-collector": "Running", "ks-billing": "Running", "chronyd": "Running"}}
+----
+返回以下状态代码：
+
+* *200*：表示所有被监控的组件都是健康的
+* *503*：表示一个或多个组件不健康
+* *403*：表示查询健康状态的 HTTP 客户端不在_允许_列表中，该列表是允许的网络 CIDR 列表。对于此状态，不会返回任何健康信息。
++
+_allow_ 列表使用网络 CIDR 方法来控制哪些网络设备被允许查询Keystone健康系统。如果您收到 403 错误，请从 * Keystone Collector 管理 TUI > 配置 > 健康监控* 将您的监控系统添加到_允许_列表中。
+
++
+image:cidr-list.png["允许的网络cidrs"]
+
+
+
+
+
+== 生成并收集支持包
+
+要解决Keystone Collector 的问题，您可以与NetApp支持人员合作，他们可能会要求提供 _.tar_ 文件。您可以通过Keystone Collector 管理 TUI 实用程序生成此文件。
+
+按照以下步骤生成 _.tar_ 文件：
+
+. 转到*故障排除>生成支持包*。
+. 选择保存包的位置，然后单击“生成支持包”。
++
+image:dark-site-generate-support-bundle-1.png["生成支持包"]
+
++
+这个过程创造了 `tar`位于上述位置的软件包可以与NetApp共享，以便解决问题。
+
+. 下载文件后，您可以将其附加到Keystone ServiceNow 支持票证。有关提出票证的信息，请参阅link:../concepts/gssc.html["生成服务请求"]。
+

@@ -1,0 +1,118 @@
+---
+sidebar: sidebar 
+permalink: integrations/subscriptions-tab.html 
+keywords: keystone-aiq, digital advisor keystone, subscriptions-tab, performance levels, keystone-bluexp 
+summary: 要了解有关Keystone订阅的更多信息，您可以从“订阅”选项卡中查看所有订阅的列表。 
+---
+= 查看您的Keystone订阅的详细信息
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以从BlueXP和Digital Advisor中的“*订阅*”选项卡查看所有订阅的列表。此选项卡根据您的订阅状态和使用情况提供易于理解的见解，帮助您随时了解情况并在需要时采取行动。
+
+[role="tabbed-block"]
+====
+.BlueXP
+--
+BlueXP中的 *订阅* 选项卡分为两部分：*订阅* 和 *性能服务级别*。每个部分都提供具体的见解来帮助您管理和监控您的Keystone订阅。要查看订阅的详细信息，请按照以下步骤操作：
+
+.步骤
+. 从BlueXP左侧导航菜单中，转到 *存储 > Keystone > 订阅*。
++
+image:bxp-subscription-list-1.png["查看订阅标签详情"]
+
++
+您可以看到容量状态、订阅到期状态和跨订阅的Keystone版本等关键指标。要了解更多信息，请参阅link:../integrations/keystone-bluexp.html["BlueXP中的Keystone仪表板"]。
+
++
+您可以从表中看到以下详细信息：
+
++
+** *订阅编号*： NetApp分配的Keystone订阅的订阅编号。
+** *跟踪 ID*：订阅激活时分配的跟踪 ID。这是每个订阅和站点的唯一 ID，用于跟踪订阅。
+** *客户名称*：与Keystone订阅相关的客户的名称。
+** *链接订阅*：如果您有任何与主订阅链接的次要订阅，则此列会列出主订阅的链接订阅编号。此订阅号可以是您的主要订阅号，也可以是次要（链接）订阅号。
+** * Keystone版本*：用于订阅的Keystone服务的版本。不同订阅版本的性能服务级别的费率计划规则可能有所不同。要了解有关版本 v1 的更多信息，请参阅 https://docs.netapp.com/us-en/keystone/index.html["Keystone订阅服务 | 版本 1 文档"^]。
+** *计费周期*：订阅的发票周期。
+** *性能服务级别*：与订阅相关的费率计划数量，每个费率计划对应特定的性能服务级别和承诺容量。
+** *最高容量*：订阅内消耗的最大容量。
+** *订阅到期天数*：订阅到期前剩余的天数。
++
+
+TIP: 您可以使用列选择器自定义表中显示的列image:column-selector.png["列选择器图标"]图标。对于某些字段和列，您可能会看到信息或警告图标和工具提示，为您提供有关数据的其他信息。
+
+
+
+. 您可以选择“性能服务级别”子选项卡来查看所有订阅的性能服务级别。
++
+image:bxp-performance-levels.png["查看所有订阅的性能服务级别"]
+
++
+** *跨订阅的性能服务级别*：显示跨订阅的性能服务级别的数量。
+** *跨订阅的配置一致性*：显示过度配置和配置不足的性能服务级别的计数。
++
+您可以看到性能服务级别的列表，包括客户姓名、订阅号、性能服务级别类型、卷总数及其 QoS 合规状态等关键详细信息。该表还显示受保护卷的数量、总已提交容量、已消耗容量、已配置容量、可用容量（有和无突发容量）以及累计突发容量。
+
+
+
+
+
+--
+.Digital Advisor
+--
+要在Digital Advisor中查看您的订阅，请按照以下步骤操作：
+
+.步骤
+. 从Digital Advisor左侧导航窗格中，转到 *常规 > Keystone订阅 > 订阅*。
++
+您可以在此处查看所有订阅，并获得每个订阅的详细见解。
+
++
+image:all-subs-4.png["订阅选项卡的图片"]
+
++
+对于某些字段和列，您可能会看到信息或警告图标和工具提示，为您提供有关数据的其他信息。
+
++
+** *订阅编号*： NetApp分配的Keystone订阅的订阅编号。
+** *链接订阅*：此列可供您选择使用。如果您有任何与主订阅相链接的次要订阅，则此列会列出主订阅的链接订阅号。此订阅号可以是您的主要订阅号，也可以是次要（链接）订阅号。
+** *跟踪 ID*：订阅激活时分配的跟踪 ID。这是每个订阅和站点的唯一 ID。
++
+
+TIP: 如果您已订阅高级数据保护附加服务，则可以单击订阅号对应的工具提示，以查看MetroCluster设置中合作伙伴订阅的跟踪 ID。要查看MetroCluster配置中合作伙伴订阅的详细消耗情况，请参阅link:../integrations/consumption-tab.html#reference-charts-for-advanced-data-protection-for-metrocluster["高级数据保护参考图表"]。
+
+** *使用类型*：您可能订阅了多个Keystone版本。不同订阅版本的性能服务级别的费率计划规则可能有所不同。通过查看此列中的值，您可以知道使用类型是按照预配置、物理还是逻辑使用来计费。要了解有关版本 1 的更多信息，请参阅 https://docs.netapp.com/us-en/keystone/index.html["Keystone订阅服务 | 版本 1 文档"^]。
+** *计费周期*：订阅的发票周期。
+** *开始日期*：订阅的开始日期。
+** *结束日期*：订阅的结束日期。如果您有按月自动续订的订阅，您会看到 `Month-on-month`而不是结束日期。根据此日期，您可能会看到即将结束或附有自动续订政策的订阅通知。
+** *使用状态*：显示使用情况指标，以指示消耗量是否在订阅限制之内或之外。如果您想查看最高消费记录，可以按此列对列表进行排序。
+** image:subs-dtls-icon.png["图标"]：单击此订阅图标将打开“当前消耗”选项卡，其中包含该订阅的使用详情。
+** image:aiq-ks-time-icon.png["图标"]：单击此图标将打开“消费趋势”选项卡，您可以在其中查看此订阅中包含的每个性能服务级别的历史使用情况数据。
++
+您可以参考使用情况指标来查看每个订阅的使用情况：
+
++
+image:icon-grey.png["灰点图标"]*无消耗*：没有记录性能服务级别的承诺容量的容量使用情况。image:icon-green.png["绿点图标"] *正常*：消耗正常。image:icon-amber.png["琥珀点图标"] *高*：最大消耗，即使用量即将达到承诺容量的 100％ 或更多。image:icon-red.png["红点图标"] *爆发*：消耗量在爆发限制范围内。突发消耗是指超过性能服务级别 100% 承诺容量的消耗，并且在商定的突发使用限制之内。image:icon-purple.png["紫色圆点图标"] *超过突发限制*：表示消耗量超过约定的突发限制。
+
+
+
+
+
+--
+====
+*相关信息*
+
+* link:../integrations/dashboard-overview.html["了解Keystone仪表板"]
+* link:../integrations/current-usage-tab.html["查看您当前的消费详情"]
+* link:../integrations/consumption-tab.html["查看消费趋势"]
+* link:../integrations/subscription-timeline.html["查看您的订阅时间表"]
+* link:../integrations/assets-tab.html["查看您的Keystone订阅资产"]
+* link:../integrations/assets.html["查看Keystone订阅中的资产"]
+* link:../integrations/volumes-objects-tab.html["查看卷和对象的详细信息"]
+

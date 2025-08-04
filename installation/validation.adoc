@@ -1,0 +1,19 @@
+---
+sidebar: sidebar 
+permalink: installation/validation.html 
+keywords: validate, validation 
+summary: Keystone存储库配置为自动验证Keystone软件的完整性。 
+---
+= Keystone软件的自动验证
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Keystone存储库配置为自动验证Keystone软件的完整性，以便您的站点只安装有效且真实的软件。
+
+Keystone YUM 存储库客户端配置 `keystonerepo.rpm`使用强制 GPG 检查(`gpgcheck=1`) 适用于通过此存储库下载的所有软件。通过Keystone存储库下载的任何未通过签名验证的 RPM 都将被阻止安装。此功能用于Keystone Collector 的预定自动更新功能，以确保在您的站点上仅安装有效且真实的软件。

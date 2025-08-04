@@ -1,0 +1,49 @@
+---
+sidebar: sidebar 
+permalink: installation/security.html 
+keywords: VMware, security, hardening, Keystone Collector 
+summary: Keystone Collector 包含监控Keystone系统性能和使用情况指标的安全功能，并且配置为使用安全强化的配置。 
+---
+= Keystone Collector 安全性
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Keystone Collector 包含安全功能，可监控Keystone系统的性能和使用情况指标，而不会危及客户数据的安全。
+
+Keystone Collector 的运行基于以下安全原则：
+
+* *设计隐私*- Keystone Collector 收集最少数据来执行使用情况计量和性能监控。有关更多信息，请参阅link:data-collection.html["为计费而收集的数据"^] 。这link:configuration.html#limit-collection-of-private-data["删除私人数据"]默认情况下启用该选项，它可以屏蔽和保护敏感信息。
+* *最小特权访问*- Keystone Collector 需要最小权限来监控存储系统，从而最大限度地降低安全风险并防止对数据进行任何意外的修改。这种方法符合最小特权原则，增强了受监控环境的整体安全态势。
+* *安全的软件开发框架*- Keystone在整个开发周期中使用安全的软件开发框架，从而降低风险、减少漏洞并保护系统免受潜在威胁。
+
+
+
+
+== 安全强化
+
+默认情况下， Keystone Collector 配置为使用安全强化的配置。以下是推荐的安全配置：
+
+* Keystone Collector 虚拟机的操作系统：
++
+** 符合 CIS Debian Linux 12 Benchmark 标准。在Keystone Collector 管理软件之外对操作系统配置进行任何更改都可能会降低系统安全性。有关更多信息，请参阅link:https://learn.cisecurity.org/benchmarks["CIS 基准指南"^] 。
+** 通过自动更新功能自动接收并安装由Keystone Collector 验证的安全补丁。禁用此功能可能会导致未修补的易受攻击的软件。
+** 对从Keystone Collector 收到的更新进行验证。禁用 APT 存储库验证可能会导致自动安装未经授权的补丁，从而可能引入漏洞。
+
+
+* Keystone Collector 自动验证 HTTPS 证书以确保连接安全。禁用此功能可能会导致模拟外部端点和使用数据泄露。
+* Keystone Collector 支持link:configuration.html#trust-a-custom-root-ca["自定义受信任的 CA"]认证。默认情况下，它信任由公共根 CA 签发的证书，这些证书由link:https://wiki.mozilla.org/CA["Mozilla CA 证书计划"^]。通过启用额外的受信任 CA， Keystone Collector 可以对出示这些证书的端点的连接启用 HTTPS 证书验证。
+* Keystone收集器默认启用“*删除私人数据*”选项，该选项可以屏蔽和保护敏感信息。有关更多信息，请参阅link:configuration.html#limit-collection-of-private-data["限制收集私人数据"^] 。禁用此选项会导致额外的数据被传送到Keystone系统。例如，它可以包含用户输入的信息（如卷名），这些信息可能被视为敏感信息。
+
+
+*相关信息*
+
+* link:installation-overview.html["Keystone Collector 概述"]
+* link:vapp-prereqs.html["虚拟基础架构要求"]
+* link:configuration.html["配置Keystone收集器"]
+

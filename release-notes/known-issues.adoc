@@ -1,0 +1,51 @@
+---
+sidebar: sidebar 
+permalink: release-notes/known-issues.html 
+keywords: netapp, keystone, release notes, known issues 
+summary: 已知问题标识了可能妨碍您有效使用Keystone订阅服务的问题。 
+---
+= Keystone STaaS 中的已知问题
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+已知问题标识了可能妨碍您有效使用Keystone订阅服务的问题。
+
+NetApp Keystone STaaS 中报告了以下已知问题：
+
+[cols="3*"]
+|===
+| 已知问题 | 描述 | 临时解决策 
+
+
+ a| 
+由于数据不匹配导致发票错误
+ a| 
+AutoSupport订阅的消费数据不匹配会导致生成错误的发票，从而造成账单不准确。
+ a| 
+无
+
+
+
+ a| 
+QoS 策略类型显示不正确
+ a| 
+在“*卷详细信息*”选项卡中，当未应用 QoS 策略时，“*QoS 策略类型*”列显示“_QoS_”，而“符合”列显示“未设置”，导致显示的 QoS 策略状态不一致。
+ a| 
+无
+
+
+
+ a| 
+主订阅和关联订阅的卷详细信息不可用
+ a| 
+“卷摘要”选项卡显示卷的总数、QoS 合规状态、受保护卷的数量以及主订阅和链接的次订阅的总消耗容量均为零。
+ a| 
+无
+
+|===

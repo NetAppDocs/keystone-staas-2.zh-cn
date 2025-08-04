@@ -1,0 +1,47 @@
+---
+sidebar: sidebar 
+permalink: installation/asup-config.html 
+keywords: ASUP, AutoSupport configuration 
+summary: 配置AutoSupport以将Keystone数据纳入ONTAP集群发送的每日支持包中。 
+---
+= 为Keystone配置AutoSupport
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+使用AutoSupport遥测机制时， Keystone会根据AutoSupport遥测数据计算使用情况。为了达到必要的粒度级别，您应该配置AutoSupport以将Keystone数据纳入ONTAP集群发送的每日支持包中。
+
+.关于此任务
+在配置AutoSupport以包含Keystone数据之前，您应该注意以下事项。
+
+* 您可以使用ONTAP CLI 编辑AutoSupport遥测选项。有关管理AutoSupport服务和系统（集群）管理员角色的信息，请参阅 https://docs.netapp.com/us-en/ontap/system-admin/manage-autosupport-concept.html["管理AutoSupport概览"^]和 https://docs.netapp.com/us-en/ontap/system-admin/cluster-svm-administrators-concept.html["集群和 SVM 管理员"^]。
+* 您将子系统包含在每日和每周的AutoSupport包中，以确保为Keystone精确收集数据。有关AutoSupport子系统的信息，请参阅 https://docs.netapp.com/us-en/ontap/system-admin/autosupport-subsystem-collection-reference.html["AutoSupport子系统是什么"^]。
+
+
+.步骤
+. 以系统管理员用户身份，使用 SSH 登录Keystone ONTAP集群。有关信息，请参阅 https://docs.netapp.com/us-en/ontap/system-admin/access-cluster-ssh-task.html["使用 SSH 访问集群"^]。
+. 修改日志内容。
++
+** 运行此命令修改每日日志内容：
++
+[source]
+----
+autosupport trigger modify -node * -autosupport-message management.log -basic-additional wafl,performance,snapshot,platform,object_store_server,san,raid,snapmirror -troubleshooting-additional wafl
+----
+** 运行此命令来修改每周日志内容：
++
+[source]
+----
+autosupport trigger modify -autosupport-message weekly -troubleshooting-additional wafl -node *
+----
++
+有关此命令的更多信息，请参见 https://docs.netapp.com/us-en/ontap-cli-9131/system-node-autosupport-trigger-modify.html["system node autosupport trigger modify"^]。
+
+
+
+

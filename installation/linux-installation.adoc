@@ -1,0 +1,64 @@
+---
+sidebar: sidebar 
+permalink: installation/linux-installation.html 
+keywords: Linux installation Keystone, Linux Collector installation 
+summary: 从 YUM 软件存储库安装Keystone Collector 软件。 
+---
+= 在 Linux 系统上安装Keystone Collector
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 RPM 或 Debian 包在 Linux 服务器上安装Keystone Collector 软件。根据您的 Linux 发行版执行安装步骤。
+
+[role="tabbed-block"]
+====
+.使用 RPM
+--
+. 通过 SSH 连接到Keystone Collector 服务器并提升至 `root`特权。
+. 导入Keystone公钥签名：
+`# rpm --import https://keystone.netapp.com/repo/RPM-GPG-NetApp-Keystone-20221101`
+. 通过检查 RPM 数据库中Keystone Billing Platform 的指纹，确保已导入正确的公共证书：
+`# rpm -qa gpg-pubkey --qf '%{Description}'|gpg --show-keys --fingerprint`正确的指纹如下所示：
+`90B3 83AF E07B 658A 6058 5B4E 76C2 45E4 33B6 C17D`
+. 下载 `keystonerepo.rpm`文件：
+`curl -O https://keystone.netapp.com/repo/keystonerepo.rpm`
+. 验证文件的真实性：
+`rpm --checksig -v keystonerepo.rpm`真实文件的签名如下所示：
+`Header V4 RSA/SHA512 Signature, key ID 33b6c17d: OK`
+. 安装 YUM 软件存储库文件：
+`# yum install keystonerepo.rpm`
+. 安装Keystone repo 后，通过 YUM 包管理器安装 keystone-collector 包：
++
+`# yum install keystone-collector`
+
++
+对于 Red Hat Enterprise Linux 9，运行以下命令安装 keystone-collector 包：
+`# yum install keystone-collector-rhel9`
+
+
+
+--
+.使用 Debian
+--
+. 通过 SSH 连接到Keystone Collector 服务器并提升至 `root`特权。
+`sudo su`
+. 下载 `keystone-sw-repo.deb`文件：
+`curl -O https://keystone.netapp.com/downloads/keystone-sw-repo.deb`
+. 安装Keystone软件存储库文件：
+`# dpkg -i keystone-sw-repo.deb`
+. 更新软件包列表：
+`# apt-get update`
+. 安装Keystone repo 后，安装 keystone-collector 包：
+`# apt-get install keystone-collector`
+
+
+--
+====
+
+NOTE: 完成安装后，您可以使用Keystone Collector 管理终端用户界面 (TUI) 实用程序执行配置和监控活动。您可以使用各种键盘控制（例如 Enter 和箭头键）来选择选项并浏览此 TUI。看link:../installation/configuration.html["配置Keystone收集器"]和link:../installation/monitor-health.html["监控系统健康状况"]了解详情。

@@ -1,0 +1,76 @@
+---
+sidebar: sidebar 
+permalink: concepts/supported-storage-capacity.html 
+keywords: storage capacity, capacity definition, keystone STaaS storage capacity, 
+summary: 了解NetApp Keystone STaaS 服务版本 2 支持的存储容量类型。 
+---
+= Keystone支持的存储容量
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp Keystone STaaS 服务支持多种类型的存储容量。了解这些不同的容量术语可以帮助您使用Keystone。
+
+
+
+== 逻辑容量
+
+这是客户放置在Keystone基础设施上的数据。所有Keystone容量均指逻辑容量。例如，如果Keystone基础架构上存储了 1 TiB 的文件，则至少应购买 1 TiB 的容量。
+
+
+
+== (按已提交容量划分)
+
+订阅期间每月计费的最小逻辑容量：
+
+* 容量分配给每个服务级别。
+* 承诺容量和额外的服务级别可以在期限内添加。
+
+
+
+
+=== 承诺产能的变化
+
+在订阅期限内，您可以更改承诺的容量。但是，有一定的前提条件：
+
+* 根据特定条件，承诺容量可能会减少。有关信息，请参阅link:../concepts/capacity-requirements.html["产能削减"]。
+* 承诺容量不能在您的订阅到期前 90 天增加，除非订阅期限额外续订 12 个月。
+* 您可以通过BlueXP界面或Keystone Success Manager (KSM) 请求更改承诺容量。有关请求更改的信息，请参阅link:../concepts/gssc.html["NetApp Keystone支持"]。
+
+
+
+
+== 已消耗容量
+
+已消耗容量是指服务当前正在消耗的容量（以 TiB 存储为单位）。它是以下各项的总和：
+
+* 用于存储所有实例和用户数据类型（如副本、镜像副本和版本）的逻辑容量。
+* 用于存储大于原始卷大小 10% 的克隆卷的逻辑容量。
+* 用于存储 Snapshot 副本的差异数据的物理容量。
+* 分配的物理容量。
+
+
+
+
+== 突发容量
+
+NetApp Keystone服务使您能够在服务级别承诺容量的基础上使用额外容量。这被称为突发容量使用。
+
+请注意以下几点：
+
+* 突发容量是在Keystone协议中约定的。它通常设置为高于承诺容量的 20%，并按照与承诺容量相同的费率收费。
+* 突发容量可以弹性消耗，并按日平均消耗量收费。
+
+
+
+
+== 计费容量
+
+月度费用 = (承诺容量 [TiB] * 承诺费率 [$/TiB]) + (每日平均预置突发容量 [TiB] * 突发费率 [$/TiB])。每月账单包含基于承诺容量的最低费用。
+
+根据每日平均突发容量消耗，每月账单会超出最低费用。

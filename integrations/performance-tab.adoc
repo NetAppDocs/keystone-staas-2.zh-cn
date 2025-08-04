@@ -1,0 +1,91 @@
+---
+sidebar: sidebar 
+permalink: integrations/performance-tab.html 
+keywords: keystone-aiq, digital advisor keystone, performance tab 
+summary: 要监控系统的性能，您可以查看由Keystone订阅管理的ONTAP卷的性能指标。 
+---
+= 查看绩效指标
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+要监控系统的性能，您可以查看由Keystone订阅管理的ONTAP卷的性能指标。
+
+
+TIP: 您可以选择在Digital Advisor中使用此选项卡。联系支持人员查看此选项卡。它在BlueXP中不可用。
+
+要在Digital Advisor中查看此选项卡，请按照以下步骤操作：
+
+.步骤
+. 单击“*常规> Keystone订阅>性能*”。
+. 选择订阅号码。默认选择第一个订阅号。
+. 从列表中选择所需的卷名。
++
+或者，您可以点击image:aiq-ks-time-icon.png["图形图标"]单击“*卷*”选项卡中ONTAP卷对应的图标即可导航到此选项卡。
+
+. 选择查询的日期范围。日期范围可以是月初或订阅开始日期到当前日期或订阅结束日期。您不能选择未来的日期。
+
+
+检索到的详细信息基于每个性能服务级别的性能服务级别目标。例如，峰值 IOPS、最大吞吐量、目标延迟和其他指标由性能服务级别的单独设置决定。有关设置的更多信息，请参阅link:../concepts/service-levels.html["Keystone中的性能服务级别"]。
+
+
+NOTE: 如果选中“*SLO 参考线*”复选框，则会根据性能服务级别的性能服务级别目标呈现 IOPS、吞吐量和延迟图表。否则，它们将以实际数字显示。
+
+水平图上显示的性能数据是每五分钟间隔的平均值，并按照查询的日期范围排列。您可以滚动图表并将鼠标悬停在特定数据点上以进一步深入了解收集的数据。
+
+您可以根据订阅号、卷名称和所选日期范围的组合，查看并比较以下部分中的性能指标。详细信息按照分配给卷的性能服务级别显示。可以看到集群名称和卷类型，也就是分配给该卷的读写权限。还会显示与该卷相关的任何警告消息。
+
+
+
+== IOPS
+
+此部分根据查询的日期范围显示卷中工作负载的输入输出图。显示性能服务级别的峰值 IOPS 和当前 IOPS（过去五分钟内，不基于查询的日期范围），以及时间范围内的最小、最大和平均 IOPS（以 IOPS/Tib 为单位）。
+
+image:perf-iops.png["图表的 IOPS 部分"]
+
+
+
+== 吞吐量
+
+此部分根据查询的日期范围显示卷中工作负载的吞吐量图表。显示性能服务级别的最大吞吐量（SLO Max）和当前吞吐量（过去五分钟内，不基于查询的日期范围），以及时间范围内的最小、最大和平均吞吐量（以 MBps/TiB 为单位）。
+
+image:perf-thr.png["吞吐量图表"]
+
+
+
+== 延迟（毫秒）
+
+此部分根据查询的日期范围显示卷中工作负载的延迟图。显示性能服务级别（SLO 目标）的最大延迟和当前延迟（在过去五分钟内，不基于查询的日期范围），以及时间范围内的最小、最大和平均延迟（以毫秒为单位）。
+
+该图具有以下颜色：
+
+* 浅蓝色：_延迟_。这是实际延迟，其中包括除Keystone服务之外的任何延迟。这可能包括额外的延迟，例如网络和客户端之间发生的延迟。
+* 深蓝色：_有效延迟_。有效延迟是仅适用于您的Keystone服务的、与您的 SLA 相关的延迟。
+
+
+image:perf-lat.png["性能图表"]
+
+
+
+== 逻辑已用量 (TiB)
+
+此部分显示卷的已配置容量和逻辑已用容量。当前逻辑使用容量（过去五分钟内，不基于查询的日期范围）以及时间范围内的最小、最大和平均使用量以 TiB 为单位显示。在此图表上，灰色区域表示已承诺的容量，黄色图表表示逻辑使用情况。
+
+image:perf-log-usd.png["逻辑已用容量图"]
+
+*相关信息*
+
+* link:../integrations/dashboard-overview.html["了解Keystone仪表板"]
+* link:../integrations/subscriptions-tab.html["查看您的订阅详情"]
+* link:../integrations/current-usage-tab.html["查看您当前的消费详情"]
+* link:../integrations/consumption-tab.html["查看消费趋势"]
+* link:../integrations/subscription-timeline.html["查看您的订阅时间表"]
+* link:../integrations/assets-tab.html["查看您的Keystone订阅资产"]
+* link:../integrations/assets.html["查看Keystone订阅中的资产"]
+* link:../integrations/volumes-objects-tab.html["查看卷和对象的详细信息"]
+

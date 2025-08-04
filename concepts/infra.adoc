@@ -1,0 +1,53 @@
+---
+sidebar: sidebar 
+permalink: concepts/infra.html 
+keywords: keystone infrastructure, infra 
+summary: Keystone基础设施、设计、技术选择和组件产品均完全由NetApp负责。 
+---
+= Keystone基础设施
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp全权负责Keystone的基础设施、设计、技术选择和组件，适用于NetApp和客户运营的环境。
+
+NetApp保留采取以下措施的权利：
+
+* 选择、替换或重新利用产品。
+* 在适当的时候使用新技术更新产品。
+* 增加或减少产品容量以满足服务要求。
+* 修改架构、技术和/或产品以满足服务要求。
+
+
+Keystone基础设施包括多个组件，例如：
+
+* Keystone基础设施，包括NetApp存储系统。
+* 管理和操作服务的工具，例如 ITOM 监控解决方案、 BlueXP、 Active IQ和Active IQ Unified Manager。
+
+
+
+
+== 存储平台
+
+企业应用程序需要存储平台来支持快速配置工作流程、保持持续可用性、以低延迟维持高工作负载、提供更高的性能并支持与主要云提供商的集成。 NetApp有多种产品和技术可以支持这些要求。对于Keystone服务， NetApp使用AFF、 ASA、 FAS和StorageGRID系统。
+
+
+
+== 监控工具
+
+在Keystone客户运营的服务中，存储基础设施和监控工具将安装在您的站点。存储基础设施包括支持您初始订单所需的存储硬件，并提供以后订购更多存储的功能。
+
+除了存储设备外，还提供了两种监控工具用于存储和消耗监控。
+
+* Keystone IT 运营管理 (ITOM) 监控解决方案：基于云的 SaaS 应用程序，用于监控您的Keystone环境。它与NetApp存储平台内置集成，可收集环境数据并监控Keystone基础架构的计算、网络和存储组件。此监控功能可扩展到内部设置、数据中心、云环境或这些环境的任意组合。该服务是通过使用安装在您的站点并与云门户通信的本地 ITOM 收集器来启用的。
+* Keystone数据收集器： Keystone数据收集器收集数据并将其提供给Keystone计费平台进行进一步处理。此应用程序与Active IQ Unified Manager捆绑在一起。它每隔五分钟从ONTAP和StorageGRID控制器收集数据。数据经过处理，并通过AutoSupport机制将元数据发送到集中式Active IQ数据湖，用于生成计费数据。  Active IQ数据湖处理计费数据并将其发送给Zuora进行计费。
+
+
+image:data-collector-flow.png["收集器数据流"]
+
+您可以通过BlueXP或Digital Advisor查看Keystone订阅的订阅和消费详情。要了解有关Keystone报告的更多信息，请参阅link:../integrations/dashboard-overview.html["Keystone仪表板概述"]。

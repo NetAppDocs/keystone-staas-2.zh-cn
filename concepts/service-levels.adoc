@@ -1,0 +1,150 @@
+---
+sidebar: sidebar 
+permalink: concepts/service-levels.html 
+keywords: service levels, service level, rate plan or service level 
+summary: Keystone STaaS 提供预定义服务级别的存储容量。  Keystone管理的每个卷都与一个服务级别相关联。 
+---
+= Keystone中的性能服务级别
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Keystone STaaS 以预定义的性能服务级别提供数据存储容量。  Keystone服务管理的每个卷都与一个性能服务级别相关联。
+
+一个订阅可以有多个费率计划，每个费率计划对应一个性能服务级别。每个费率计划都对每个性能服务级别有一个承诺的容量。
+
+每个性能服务级别由其 I/O 密度定义，即 IOPS/TiB/volume。这是性能（每秒输入/输出操作数 [IOPS]）与已用存储容量（TiB）的比率，即每卷平均延迟时的 IOPS/TiB。
+
+您可以根据您的存储环境以及存储和消费需求选择性能服务级别。默认情况下，您可以使用基本性能服务级别。如果您选择了附加服务，还可以获得特定的性能服务级别。例如，对于高级数据保护附加服务，_Advanced Data-Protect_ 性能服务级别被分配给您的订阅。
+
+
+TIP: NetApp Keystone STaaS 性能服务级别的详细服务说明可供查阅 https://www.netapp.com/services/keystone/terms-and-conditions/["此处"^]。
+
+以下部分介绍了受支持的存储类型、文件、块、对象和云服务的基本性能服务级别：
+
+
+
+== 文件和块存储的性能服务级别
+
+*支持的协议*：NFS、CIFS、iSCSI 和 FC
+
+|===
+
+
+| *绩效服务水平* | *极端* | *优质的* | *表现* | *标准* | *价值* 
+
+
+| *示例工作负载类型* | 分析、数据库、关键任务应用程序 | VDI、VSI、软件开发 | OLTP、OLAP、容器、软件开发 | 文件共享、Web 服务器 | 备份 
+
+
+| *每个卷存储的最大 IOPS/逻辑 TiB* | 12,288 | 4,096 | 2,048 | 512 | 128 
+
+
+| *每个卷分配的最大 IOPS/逻辑 TiB* | 6,144 | 2,048 | 1,024 | 256 | 64 
+
+
+| *每卷存储的最大 MBps/逻辑 TiB @ 32K B/S* | 384 | 128 | 64 | 16 | 4 
+
+
+| *目标 90% 百分位延迟* | <1毫秒 | <2毫秒 | <4毫秒 | <4毫秒 | <17毫秒 
+
+
+| 块大小 5+| 32K 
+
+
+| *承诺和计量容量类型* 5+| 逻辑 
+|===
+
+
+=== 有关文件和块存储的性能服务级别的更多信息
+
+基本性能服务级别指标取决于以下条件：
+
+* 文件和块存储的性能服务级别支持ONTAP 9.7 及更高版本。
+* 性能服务级别的 IOPS/TiB/卷、MBps/TiB/卷和延迟值基于卷中存储的数据量、32KB 块大小以及 70% 读取和 30% 写入 IO 操作的随机组合。
+* 实际 IOPS/TiB/volume 和 MBps/TiB/volume 可能会根据实际或假定的块大小、系统工作负载并发性或输入输出操作而有所不同。
+* 延迟不包括以下内容：
++
+** 应用程序或主机延迟
+** 客户网络到控制器端口的延迟
+** 在FabricPool的情况下，与数据传输到对象存储相关的开销
+** QoS 自动应用延迟，使 IO 保持在性能服务级别最大值范围内
+
+
+* 延迟值不适用于MetroCluster写入操作。这些写入操作取决于远程系统的距离。
+* 如果存储系统上的一个或多个卷未分配 AQoS 策略，则这些卷将被视为不合规卷，并且这些系统不适用任何目标性能服务级别。
+* 仅当分层策略设置为“无”且云中没有块时，_预期 IOPS_ 才会针对FabricPool 。  _预期 IOPS_ 针对的是未处于SnapMirror同步关系中的卷。
+* 工作负载 IO 操作需要在所有部署的控制器之间进行平衡，具体由Keystone顺序决定。
+
+
+
+
+== 对象存储
+
+*支持的协议*：S3
+
+|===
+
+
+| *性能服务水平* | 对象 
+
+
+| *工作负载类型* | 媒体存储库、归档 
+
+
+| *每个卷存储的最大 IOPS/逻辑 TiB* | 不适用 
+
+
+| *每个卷存储的最大 MBps/逻辑 TiB* | 不适用 
+
+
+| *平均延迟* | 不适用 
+
+
+| *承诺和计量容量类型* | 身体的 
+|===
+
+NOTE: 对于FabricPool存储，延迟不包括与数据传输到对象存储相关的开销。
+
+
+
+== 云存储
+
+*支持的协议*：NFS、CIFS、iSCSI 和 S3（仅限 AWS 和 Azure）
+
+|===
+
+
+| *性能服务水平* | Cloud Volumes ONTAP 
+
+
+| *工作负载类型* | 灾难恢复、软件开发/测试、商业应用程序 
+
+
+| *每个卷存储的最大 IOPS/逻辑 TiB* | 不适用 
+
+
+| *每个卷存储的最大 MBps/逻辑 TiB* | 不适用 
+
+
+| *平均延迟* | 不适用 
+|===
+[NOTE]
+====
+* 云原生服务（例如计算、存储、网络）由云提供商开具发票。
+* 这些服务依赖于云存储和计算特性。
+
+
+====
+*相关信息*
+
+* link:../concepts/supported-storage-capacity.html["支持的存储容量"]
+* link:..//concepts/metrics.html["Keystone服务中使用的指标和定义"]
+* link:../concepts/qos.html["Keystone中的服务质量 (QoS)"]
+* link:../concepts/pricing.html["Keystone定价"]
+

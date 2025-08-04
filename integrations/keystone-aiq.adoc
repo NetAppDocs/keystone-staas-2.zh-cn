@@ -1,0 +1,73 @@
+---
+sidebar: sidebar 
+permalink: integrations/keystone-aiq.html 
+keywords: Keystone, Digital Advisor, keystone-aiq, aiq, dashboard overview, manage subscriptions, monitor 
+summary: 作为NetApp Keystone STaaS 订阅者，您可以从Digital Advisor仪表板获取订阅概览。 
+---
+= Digital Advisor中的Keystone仪表板
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+作为NetApp Keystone STaaS 订阅者，您可以在Digital Advisor仪表板的 * Keystone订阅 * 小部件上查看您的订阅概览。
+
+您可以通过输入客户或关注列表名称的前三个字符或Keystone订阅号来搜索特定的Keystone订阅。有关如何按关注列表搜索Keystone STaaS 订阅的信息，请参阅link:../integrations/keystone-aiq.html#search-by-keystone-watchlists["使用Keystone关注列表进行搜索"]。
+
+Digital Advisor提供统一的仪表板，通过“切换到旧/新仪表板”按钮可以深入了解您各个级别的订阅数据和使用信息。
+
+.默认（旧）仪表板
+您可以查看您的客户名称和订阅号、帐户名称、订阅的开始和结束日期以及按照您订阅的性能服务级别的容量使用情况图表。可以看到消费数据的采集时间戳，以UTC时间表示。
+
+image:old-db-3.png["旧仪表板"]
+
+.替代（新）仪表板
+您可以根据订阅查看容量使用情况的明细，以及需要立即关注或采取行动的警告和警报。信息会根据您的订阅和使用状态有选择地显示。您可以查看此信息：
+
+* *容量使用情况*：无使用、消耗量超过承诺容量的 80%、突发使用量、超出突发容量的消耗量等消耗数据。
+* *警报*：如果各种场景适用于您，您会看到警报。
++
+** *即将到期*：如果您的订阅在 90 天内到期。
+** *QoS 警告*：您有未分配 AQoS 策略的卷。
++
+
+TIP: 单击“*订阅*”链接可在“*订阅*”选项卡中查看已过滤订阅的列表。
+
+
+
+
+
+image:new-db-4.png["新仪表板"]
+
+您可以单击“查看所有订阅”以在“Keystone订阅”页面上查看卷的使用详情和警报。
+
+订阅的详细信息、每个性能服务级别的使用情况图表以及卷详细信息显示在 * Keystone订阅 * 屏幕上的不同选项卡中。
+
+
+NOTE: Keystone订阅中的容量消耗以 TiB 为单位显示在仪表板和报告中，并四舍五入到小数点后两位。如果使用量少于 0.01 TiB，则值显示为 0 或无使用量。这些屏幕上的数据以 UTC 时间（服务器时区）显示。当您输入日期进行查询时，它会自动被视为 UTC 时间。要了解有关使用情况指标的更多信息，请参阅link:../concepts/metrics.html#metrics-measurement["指标测量"]。有关Keystone中使用的不同容量的信息，请参阅link:../concepts/supported-storage-capacity.html["支持的存储容量"]。
+
+
+
+== 按Keystone关注列表搜索
+
+关注列表是Digital Advisor中的一项功能。有关信息，请参阅 https://docs.netapp.com/us-en/active-iq/concept_overview_dashboard.html["了解监视列表"^]。有关创建监视列表的信息，请参阅 https://docs.netapp.com/us-en/active-iq/task_add_watchlist.html["创建监视列表"^]。
+
+您可以为客户或订阅号创建关注列表，并在Digital Advisor屏幕上使用订阅号或关注列表名称的前三个字符搜索Keystone订阅。当您按关注列表名称搜索时，您可以在 * Keystone Subscriptions* 小部件上的 *Subscription* 下拉列表中查看客户及其订阅。
+
+
+NOTE: 通过关注列表搜索可以检索旧仪表板上的订阅列表。如果关注列表包含订阅号码，则Digital Advisor仪表板上只会显示 * Keystone Subscriptions* 小部件。
+
+image:watchlist.png["监视列表屏幕"]
+
+*相关信息*
+
+* link:../integrations/dashboard-access.html["开始使用Keystone仪表板"]
+* link:../integrations/keystone-bluexp.html["BlueXP中的Keystone仪表板"]
+* link:../integrations/subscriptions-tab.html["查看您的订阅详情"]
+* link:../integrations/current-usage-tab.html["查看您当前的消费详情"]
+* link:../integrations/consumption-tab.html["查看消费趋势"]
+
