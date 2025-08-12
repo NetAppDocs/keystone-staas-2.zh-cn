@@ -25,7 +25,13 @@ Keystone高级数据保护服务可以将数据同步镜像到辅助站点。如
 
 有关如何查看MetroCluster配置中的消耗的信息，请参阅link:../integrations/consumption-tab.html#reference-charts-for-advanced-data-protection-for-metrocluster["高级数据保护参考图表"]。
 
-附加费用适用于您的订阅中的所有容量，包括源数据、镜像副本和非镜像数据。
+
+
+== 了解定价
+
+高级数据保护附加服务的定价基于每个站点的承诺容量。这有助于确定高级数据保护服务的实际成本（以 $/TiB 为单位）。附加费用适用于您的订阅中的所有容量，包括源数据、镜像副本和非镜像数据。
+
+对于MetroCluster配置，每个站点都需要自己的订阅，并且您需要为每个站点的承诺容量单独付费。要了解账单信息，请参阅link:../concepts/misc-volume-billing.html#billing-for-advanced-data-protection["高级数据保护计费"]。
 
 请注意以下事项：
 
