@@ -27,7 +27,13 @@ summary: 配置AutoSupport以将Keystone数据纳入ONTAP集群发送的每日�
 . 以系统管理员用户身份，使用 SSH 登录Keystone ONTAP集群。有关信息，请参阅 https://docs.netapp.com/us-en/ontap/system-admin/access-cluster-ssh-task.html["使用 SSH 访问集群"^]。
 . 修改日志内容。
 +
-** 运行此命令修改每日日志内容：
+** 对于ONTAP 9.16.1 及更高版本，运行以下命令修改每日日志内容：
++
+[source]
+----
+autosupport trigger modify -node * -autosupport-message management.log -basic-additional wafl,performance,snapshot,object_store_server,san,raid,snapmirror -troubleshooting-additional wafl
+----
+** 对于早期版本的ONTAP ，运行以下命令来修改每日日志内容：
 +
 [source]
 ----
