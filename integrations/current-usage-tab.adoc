@@ -71,5 +71,6 @@ image:aiq-ks-dtls-4.png["当前消耗选项卡"]
 * link:../integrations/subscription-timeline.html["查看您的订阅时间表"]
 * link:../integrations/assets-tab.html["查看您的Keystone订阅资产"]
 * link:../integrations/assets.html["查看Keystone订阅中的资产"]
+* link:../integrations/monitoring-alerts.html["查看和管理警报和监视器"]
 * link:../integrations/volumes-objects-tab.html["查看卷和对象的详细信息"]
 
