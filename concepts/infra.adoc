@@ -27,7 +27,7 @@ NetApp保留采取以下措施的权利：
 Keystone基础设施包括多个组件，例如：
 
 * Keystone基础设施，包括NetApp存储系统。
-* 管理和操作服务的工具，例如 ITOM 监控解决方案、 BlueXP、 Active IQ和Active IQ Unified Manager。
+* 用于管理和操作服务的工具，例如 ITOM 监控解决方案、 NetApp Console、 Active IQ和Active IQ Unified Manager。
 
 
 
@@ -50,4 +50,4 @@ Keystone基础设施包括多个组件，例如：
 
 image:data-collector-flow.png["收集器数据流"]
 
-您可以通过BlueXP或Digital Advisor查看Keystone订阅的订阅和消费详情。要了解有关Keystone报告的更多信息，请参阅link:../integrations/dashboard-overview.html["Keystone仪表板概述"]。
+您可以通过NetApp控制台或Digital Advisor查看Keystone订阅的订阅和消费详情。要了解有关Keystone报告的更多信息，请参阅link:../integrations/dashboard-overview.html["Keystone仪表板概述"]。

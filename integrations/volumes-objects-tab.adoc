@@ -16,7 +16,7 @@ summary: 查看卷或对象存储级别的容量详细信息。
 [role="lead"]
 如果您想查看卷或对象存储级别的容量详细信息，您可以导航到Digital Advisor中的“卷和对象”选项卡。对于StorageGRID，您可以使用此选项卡读取对象存储环境中各个节点的使用情况。
 
-您可以参考BlueXP中的 *Assets* 选项卡来查看这些详细信息。要查看特定Keystone STaaS 订阅的详细信息，请参阅link:../integrations/assets-tab.html["查看与Keystone订阅相关的资产"]。如果您想查看多个Keystone订阅的详细信息，请参阅link:../integrations/assets.html["查看Keystone订阅中的资产"]。
+您可以参考NetApp控制台中的“*资产*”页面来查看这些详细信息。要查看特定Keystone STaaS 订阅的详细信息，请参阅link:../integrations/assets-tab.html["查看与Keystone订阅相关的资产"]。如果您想查看多个Keystone订阅的详细信息，请参阅link:../integrations/assets.html["查看Keystone订阅中的资产"]。
 
 
 NOTE: 此选项卡的标题根据站点部署的性质而变化。如果您同时拥有ONTAP和对象存储，则选项卡的标题将显示为 *卷和对象*。仅对于ONTAP，名称显示为 *Volumes*。对于StorageGRID对象存储，您可以看到 *对象* 选项卡。
@@ -37,7 +37,7 @@ NOTE: 此选项卡的标题根据站点部署的性质而变化。如果您同�
 对于选定的Keystone STaaS 订阅，您可以查看卷的总数、其 QoS 合规状态、受保护卷的数量以及所有这些卷中的总已提交容量、已消耗容量和可用容量。如果您单击不合规或受保护卷的数量，它将带您进入“卷详细信息”选项卡，您可以在其中查看根据您的选择显示不合规卷或受保护卷的过滤列表。
 
 +
-image:volume-summary-2.png["卷摘要选项卡"]
+image:volume-summary-3.png["卷摘要选项卡"]
 
 
 
@@ -61,7 +61,7 @@ NOTE: QoS 策略不适用于Keystone版本 3。
 NOTE: 对于高级数据保护附加服务，会出现一个附加列来指示该卷是MetroCluster配置中的主卷还是镜像卷。您可以通过单击“复制节点序列号”按钮来复制单个节点序列号。
 
 +
-image:volume-details-3.png["卷详细信息选项卡"]
+image:volume-details-4.png["卷详细信息选项卡"]
 
 
 
