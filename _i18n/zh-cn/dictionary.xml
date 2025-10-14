@@ -1597,7 +1597,6 @@
   <block id="3610c4351229db10744b51bac557a915" category="list-text">选择“*资产*”选项卡。</block>
   <block id="0c854999a653f9d56014836883e5217d" category="list-text">从“*查看*”下拉菜单中选择“*集群中的卷*”。</block>
   <block id="b93b903719b1580864ac4e8956c555c8" category="inline-image-macro">订阅集群中的卷的屏幕截图</block>
-  <block id="0654b3dd588d55e33d9029198f8f2f63" category="paragraph"><block ref="0654b3dd588d55e33d9029198f8f2f63" category="inline-image-macro-rx" type="image"></block></block>
   <block id="40306668f7baae095ccfe6f816e8159e" category="paragraph">您可以看到有关集群中卷的详细信息，包括卷名称、节点序列号、QoS 策略的遵守情况、集群名称、主机名和性能服务级别。您还可以监控已配置的容量、逻辑和物理利用率以及冷数据。</block>
   <block id="081ceda2f79c0faf6fe05d511f52c3be" category="inline-image-macro">列选择器图标</block>
   <block id="363a64ab1176a4ec2912bb476eaca7c4" category="admonition">您可以使用列选择器自定义表格<block ref="99d8fedf6955beccd7c8c7d45fa452d9" category="inline-image-macro-rx" type="image"></block>图标并使用顶部的搜索栏根据列参数搜索和过滤表格数据。</block>
@@ -1741,11 +1740,8 @@
   <block id="ef06226e0a70f0b27bda10913e0d2622" category="paragraph">您可以通过查看承诺容量、已消耗容量和可用容量等详细信息来深入了解订阅使用情况，并显示当前消耗状态并按性能服务级别分类。</block>
   <block id="d74dcd27166505385c38faabf0aa85e8" category="list-text">在表格的*订阅号*列中选择订阅号，查看当前消费情况。</block>
   <block id="53a763ce4287b06d38f889380a89f60e" category="inline-image-macro">图形格式的电流消耗详情</block>
-  <block id="2a2c95b649190c3cc1f06120d092d6d4" category="paragraph"><block ref="2a2c95b649190c3cc1f06120d092d6d4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f2f90873373e8bda06d2b4b7f736c646" category="paragraph">对于选定的订阅，您可以使用“*查看方式*”下拉菜单中的“*表格*”或“*图形*”选项，以表格或图形格式查看消费详情。在图形视图中，您可以看到每个性能服务级别的当前消耗，包括已用容量、已配置容量、承诺容量限制和突发容量限制。</block>
-  <block id="c4fcbd586e1246d8dc64a993418dc4e6" category="paragraph">在表格视图中，您可以看到诸如消耗的最大容量和剩余到期天数等详细信息。作为监控订阅使用情况的一部分，您可以查看性能服务级别名称、消费状态、已提交和已使用容量、已配置和突发容量、可用容量和卷。您可以使用列选择器自定义表格<block ref="99d8fedf6955beccd7c8c7d45fa452d9" category="inline-image-macro-rx" type="image"></block>图标。</block>
   <block id="34a7549847d69b5f6a7bc80883249b7c" category="inline-image-macro">表格形式的电流消耗详情</block>
-  <block id="e23891f2b176efe9895c82b9379985c7" category="paragraph"><block ref="e23891f2b176efe9895c82b9379985c7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="358fad495e1a2eb2366e40c04887ab64" category="list-text">从Digital Advisor左侧导航窗格中，转到 *常规 &gt; Keystone订阅 &gt; 当前消耗*。</block>
   <block id="f4dd6979877f030ad7dafa413c0d90c7" category="list-text">从*订阅*下拉列表中选择或搜索所需的订阅号。</block>
   <block id="113a7f7a3800ecc0ca2650ec55f2fc4d" category="inline-image-macro">当前消耗选项卡</block>
@@ -2380,9 +2376,7 @@
   <block id="b2aa832e4d8d1fd7361158475afea146" category="paragraph"><block ref="b2aa832e4d8d1fd7361158475afea146" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8b4c98c2b68ae3596fde0807f39bf8eb" category="list-text">选择*容量使用情况*或*订阅到期*来定义监控类型。根据您的选择，请提供以下详细信息：</block>
   <block id="36f26e169972f962b25a6506460ae66c" category="list-text">*一般详情*：提供警报名称并选择严重性级别。</block>
-  <block id="01d4a6c47010cf55459d034438cd8558" category="list-text">*资源选择*：选择为特定订阅创建监视器。根据您选择的监控类型，填写出现的必填字段，例如容量使用情况监控器的订阅号和性能服务级别，或者订阅到期监控器的订阅号。</block>
   <block id="77c6e2eed99c9f2a9d3128048679495b" category="inline-image-macro">容量使用情况监视器的资源选择屏幕截图</block>
-  <block id="6d50a26803a6349c2cc6cb785a778441" category="paragraph"><block ref="6d50a26803a6349c2cc6cb785a778441" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fdbe9792be04e34a378a291acc9fd58e" category="list-text">*条件*：设置触发警报的阈值条件。例如，当容量使用率超过指定百分比时触发警报。</block>
   <block id="081b779044826c7402e8be12f60e47fc" category="list-text">*通知*：选择接收警报通知的用户。</block>
   <block id="f2a42a68e067e481d094b018459ef895" category="list-text">单击“*创建*”。</block>
@@ -2461,7 +2455,6 @@
   <block id="5280fdba34096a28b0a045aa4d088574" category="list-text">从控制台左侧导航菜单中，选择*存储&gt; Keystone &gt;资产*。</block>
   <block id="168a7f531362f0071a0d1ecd8963c4fa" category="paragraph">*资产*页面显示*集群中的节点*选项卡。</block>
   <block id="8942b04e12a7cd6446730a97caf54479" category="paragraph"><block ref="8942b04e12a7cd6446730a97caf54479" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="26b4005051a18ffb2e580913d3f58f45" category="paragraph"><block ref="26b4005051a18ffb2e580913d3f58f45" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4fef845c9e01e08990307334e4eea678" category="paragraph"><block ref="4fef845c9e01e08990307334e4eea678" category="inline-image-macro-rx" type="image"></block></block>
   <block id="86065a45dab20475bb9368ffbd10fe62" category="paragraph">您可以通过NetApp控制台或Digital Advisor查看Keystone订阅的历史数据：</block>
   <block id="3c031b939f6ec312ee601d021e7a6644" category="open-title">NetApp控制台</block>
@@ -2486,22 +2479,18 @@
   <block id="e955295a860e893d00951c8233972d56" category="paragraph">详细了解<block ref="2f3134b8970d60226f00e362a8c05c8c" category="inline-link-macro-rx"></block>。</block>
   <block id="e1a2098926fff2b44e76595b2fab04b4" category="list-text">虽然控制台和Digital Advisor提供了一些独有的功能，但控制台为Keystone提供了管理功能，允许您管理订阅并进行必要的调整。</block>
   <block id="5ed613d5969e54b01e0691f040afb027" category="inline-link-macro">了解NetApp控制台访问角色</block>
-  <block id="ff366c40543fbef7804957d52fabf2a0" category="list-text">您必须被分配 * Keystone admin* 角色才能修改订阅。要了解更多信息，请参阅<block ref="22d60f99a4ac0841de53b7fa8c3f1253" category="inline-link-macro-rx"></block>。</block>
   <block id="7d0366e10bff9b03e7d1ebe083232ad0" category="inline-link-macro">Digital Advisor与NetApp Console 集成</block>
   <block id="19f702ba317875d05972d4dc2df1d379" category="list-text">Digital Advisor与控制台集成，允许您直接从控制台访问所有Digital Advisor功能，包括Keystone仪表板。要了解更多信息，请参阅<block ref="5983da9102c6398c455221dbbeef93c0" category="inline-link-macro-rx"></block>。</block>
   <block id="754a3a5b6d930270b1fbfb641c89b440" category="section-title">NetApp Console 和Digital Advisor中的Keystone功能</block>
   <block id="fbe45a39864c469e12feb1cb9128ed44" category="paragraph">下表显示了NetApp控制台和Digital Advisor中可用的功能，帮助您快速确定适合您需求的平台：</block>
   <block id="14b33e994477a76e918b15271e482d20" category="cell">* NetApp控制台*</block>
-  <block id="e35a8b08a1eced21ae0e1445810e0ff0" category="paragraph"><block ref="e35a8b08a1eced21ae0e1445810e0ff0" category="inline-link-macro-rx"></block></block>
   <block id="2e8b12135324e72007b3768ea8e3b475" category="summary">作为NetApp Keystone STaaS 订阅者，您可以从NetApp Console 获取订阅概览。</block>
   <block id="a8b926e7f40ce1b8a36a0d50c4412766" category="paragraph">您可以使用“概览”页面快速确定存在风险的工作负载、查看订阅的容量和到期状态、识别未解决的警报以及查看容量利用率最高的订阅。您还可以查看不同版本Keystone的订阅状态，突出显示需要您注意的任何问题。</block>
   <block id="859167398832678cbae2e0062c6a5136" category="paragraph">要查看*概览*页面，请从控制台左侧导航菜单转到*存储&gt; Keystone &gt; 概览*。</block>
-  <block id="47904a65f5174a42f8031d46a6f75a9e" category="paragraph"><block ref="47904a65f5174a42f8031d46a6f75a9e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e8325080ad6eca6e402bccdbbcccd2b3" category="paragraph">*概述*页面提供以下见解：</block>
   <block id="b6a17a16f2925f240966aa803c2d67ff" category="summary">通过NetApp控制台修改您的Keystone订阅以更改相关性能服务级别的承诺容量。</block>
   <block id="2227728e15b4a8b218a3533e278cf342" category="doc">从NetApp控制台修改您的Keystone订阅</block>
   <block id="84b1a13bc7964ae4f7768e4f9c3c8756" category="paragraph">您可以通过NetApp控制台修改Keystone订阅的相关性能服务级别的承诺容量。</block>
-  <block id="9313fbe04542c1ff2b3e92ade6375732" category="list-text">您必须被分配至 * Keystone admin* 角色才能修改已提交的容量。要了解更多信息，请参阅<block ref="22d60f99a4ac0841de53b7fa8c3f1253" category="inline-link-macro-rx"></block>。</block>
   <block id="7a91109a620e891743c65eea451a0cf2" category="paragraph"><block ref="7a91109a620e891743c65eea451a0cf2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="cb873e65402011d905122364da690822" category="paragraph">您可以从NetApp控制台中的Keystone仪表板查看和创建Keystone订阅的警报监视器。仪表板显示系统生成和用户定义的容量使用情况和订阅到期监视器。您可以创建监视器来设置阈值、选择警报严重性以及添加通知的电子邮件收件人。Digital Advisor不提供此功能。</block>
   <block id="b5c32e6c2b4476154d229af70df8cf7a" category="list-text">从控制台左侧导航菜单中，选择*存储&gt; Keystone &gt;监控&gt;警报监控器*。</block>
@@ -2535,4 +2524,57 @@
   <block id="827607b42918efbeec5d1431418ad729" category="paragraph">虽然两款产品的导航功能在<block ref="07f7314e0fdd92e843ce6bfcd1f08066" category="inline-link-macro-rx"></block>， Keystone订阅服务与Keystone STaaS 在组成性能服务级别、服务提供和计费原则方面有所不同。截至 2024 年 4 月， NetApp仅维护和发布Keystone STaaS 的文档。如果您仍在使用Keystone订阅服务，请联系您的 KSM 以获得迁移到Keystone STaaS 的支持。如果需要，您可以在此处访问Keystone订阅服务文档的 PDF 版本：</block>
   <block id="a41dd7aa7d921f9f0881a705d3679e6c" category="section-title">2025年10月6日</block>
   <block id="03e4603e7e1d94d1d2afa097ed77bcc4" category="sidebar">NetApp控制台和Digital Advisor中的Keystone仪表板</block>
+  <block id="13f711a55db449e74aa63517fe680750" category="doc">资产选项卡中的 QoS 策略覆盖列</block>
+  <block id="d272e1753b82039c96c37cf7d7f1dcce" category="paragraph">NetApp Console中Keystone仪表板的新增强功能：</block>
+  <block id="c6276ebcdb23205ceaed5fbf4249ea31" category="paragraph">*Assets* 选项卡中的 *Volumes in clusters* 选项卡现在包含一个 *QoS policy override* 列，指示是否绕过备份和镜像卷的 QoS 规则，显示 *true*（忽略规则）、*false*（强制执行规则）或 *N/A*（对于镜像卷）。</block>
+  <block id="11a43b8d2f9eca6ac1fbd015814f99f3" category="admonition">对于Keystone v3 订阅，此列显示 *N/A*，因为 QoS 策略不适用于 v3 产品。</block>
+  <block id="b953e2efb9e42549a0a1a0948af92e84" category="section-title">增强了概览页面中的警报可见性</block>
+  <block id="2236517eb263ad0757df75dbb425c588" category="paragraph">*概览*页面现在包括两个新的警报部分，名为*按严重程度排列的未解决警报*和*最早未解决的Keystone警报*。要了解更多信息，请参阅<block ref="a7e79568e4aab3fed7388da5f153bdec" category="inline-link-macro-rx"></block>。</block>
+  <block id="aa7a1a40be5427d20e444e625b1e8690" category="list-text">物理使用</block>
+  <block id="0811dbd951e43bbe1fc86f756210d7e1" category="list-text">可用大小</block>
+  <block id="c2b555f514e74c99fe1ee6eaa6770e35" category="list-text">使用尺寸</block>
+  <block id="6c3a6944a808a7c0bbb6788dbec54a9f" category="list-text">节点</block>
+  <block id="bfa10f7c5e846fdab9228aa316c04549" category="list-text">LIF</block>
+  <block id="9e1894c70a5220dfab0925ac115d2ed6" category="list-text">配置复制</block>
+  <block id="98a2bc79c11d0cbb19f99b2b8c70e6e3" category="list-text">连接</block>
+  <block id="cf8683a46a9fce46da2b0e7bac364b41" category="list-text">MetroCluster节点</block>
+  <block id="b1bcb082b9f4bfb2e9950b72c46ff1e1" category="list-text">DR镜像状态</block>
+  <block id="54f7d853bcd07992f133218c21a038be" category="list-text">集群间 LIF</block>
+  <block id="b3d4d99e2963cdc1ba5444b9c4f62295" category="list-text">节点可达性</block>
+  <block id="db4e7a23ada0f093c517d41efe049779" category="list-text">灾难恢复伙伴节点</block>
+  <block id="668d9d7500fec64fc64a67d1a756077c" category="list-text">DR辅助合作伙伴节点</block>
+  <block id="b68fb88346774a3d1c33270e3be52557" category="list-text">DR、DR Aux 和 HA 节点对称关系</block>
+  <block id="5f40a0155cfe0bbbd8b2764836ebb3e9" category="list-text">自动计划外切换</block>
+  <block id="f5643211f88659eaf49718a1434d4efe" category="list-text">MetroCluster配置复制</block>
+  <block id="7edd41b738e0d4f4661cf8ce53b95719" category="list-text">远程心跳</block>
+  <block id="c53dc32b833a96f36213da88e4d519d2" category="list-text">上次发送的心跳</block>
+  <block id="ffc7e818f459dd40b0602c5559ba0956" category="list-text">收到的最后一个心跳</block>
+  <block id="e7f09ca73d207d376215a76fcb9f6ac5" category="list-text">虚拟服务器流</block>
+  <block id="f9c03fed2172cc949108bc9deba594ea" category="list-text">集群流</block>
+  <block id="5d6e7ea0747340efe96e6ee216c70f32" category="list-text">正在使用的存储量</block>
+  <block id="fa5d802c1e0b472446381304bcc2ff35" category="list-text">MetroCluster调解器</block>
+  <block id="6cd5a922d59678d886207fc62464e56a" category="list-text">调解员地址</block>
+  <block id="dd74069b22733e2b03a0958eb9f230a3" category="list-text">中介端口</block>
+  <block id="144307032147887917be25ed225bafb6" category="list-text">中介器已配置</block>
+  <block id="12a348ac24415229fee936cd66e2e92d" category="list-text">中介者可达</block>
+  <block id="b421cdbed621e0e15c8acb8194a4fdb6" category="list-text">系统级数据</block>
+  <block id="a32872d4ee3d3cc5fb982a73c188de0c" category="list-text">写入/读取/其他/总 IOPS</block>
+  <block id="2c627ab62d04412aa9cab71e9e33c9cb" category="list-text">写入/读取/其他/总吞吐量</block>
+  <block id="fabeb58b0dad9f899d8b88416117bc79" category="list-text">写入/读取/其他/总延迟</block>
+  <block id="c5bf928fa690e77e77b3e5dc9c570773" category="paragraph">以下列表是<block ref="05916e807214b60fdcd842fb212b7897" prefix=" " category="inline-code"></block>为StorageGRID收集：</block>
+  <block id="2961ad92d313263d5c9701f5aa8126a9" category="list-text">SLA 正常运行时间百分比</block>
+  <block id="2dfe1e4bd705394ed47b37168da7e39d" category="paragraph"><block ref="2dfe1e4bd705394ed47b37168da7e39d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="719c47814165f69f8f647843f2de132d" category="paragraph"><block ref="719c47814165f69f8f647843f2de132d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c0029d3ed944e8ef4f598481e14db28c" category="paragraph"><block ref="c0029d3ed944e8ef4f598481e14db28c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f9aa673728fdf49de5fd7f4392426fc4" category="paragraph">在表格视图中，您可以看到诸如消耗的最大容量和剩余到期天数等详细信息。作为监控订阅使用情况的一部分，您可以查看性能服务级别名称、容量使用情况、已提交和已使用容量、预配置和突发容量、可用容量和卷。您可以使用列选择器自定义表格<block ref="99d8fedf6955beccd7c8c7d45fa452d9" category="inline-image-macro-rx" type="image"></block>图标。</block>
+  <block id="c8e3290600a931a2c7f5ea26d1268469" category="paragraph"><block ref="c8e3290600a931a2c7f5ea26d1268469" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="65c72fc91b63262452cae6ffc68b5fe8" category="list-text">您必须被分配 * Keystone admin* 角色才能修改订阅。要了解更多信息，请参阅<block ref="d47ae35a0d63c1eadf9e54d8e5017d63" category="inline-link-macro-rx"></block>。</block>
+  <block id="3073adc4a7680cc828c55134467305ae" category="paragraph"><block ref="3073adc4a7680cc828c55134467305ae" category="inline-link-macro-rx"></block></block>
+  <block id="34c59df5dc1391d127f6446fad3bcb79" category="paragraph"><block ref="34c59df5dc1391d127f6446fad3bcb79" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3564bb0e09fc76eb6075b25b3c3643e0" category="list-text">*按严重程度列出的未解决警报*：根据严重程度列出未解决的警报总数——严重、警告和信息。每个类别都包含一个“查看”按钮，用于查看详细信息并采取进一步的措施。</block>
+  <block id="fbdd0ec7256573dce976dc52a2cdad0e" category="list-text">*最早的未解决的Keystone警报*：显示跨订阅的最旧未解决的关键警报表。</block>
+  <block id="9fcb29f9ba41ea80f15f38f0907ab2f0" category="list-text">您必须被分配至 * Keystone admin* 角色才能修改已提交的容量。要了解更多信息，请参阅<block ref="d47ae35a0d63c1eadf9e54d8e5017d63" category="inline-link-macro-rx"></block>。</block>
+  <block id="012cc690ee0f390b86e69b7ef941643e" category="list-text">*资源选择*：选择为特定订阅或所有订阅创建监视器。根据您选择的监控类型，填写出现的必填字段，例如容量使用情况监控器的订阅号和性能服务级别，或者订阅到期监控器的订阅号。</block>
+  <block id="17eb308ea945cce061c4020365ec2ddf" category="paragraph"><block ref="17eb308ea945cce061c4020365ec2ddf" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="44758d2951f923446ffff8310f8ac382" category="section-title">2025年10月13日</block>
 </blocks>
