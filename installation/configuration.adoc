@@ -104,6 +104,9 @@ NOTE: 支持的文件扩展名是 `.pem`， `.crt` ， `.cert` 。确保证书�
 . 选择*保存*。配置已应用。
 
 
+
+NOTE: CA证书被复制到 `/opt/netapp/ks-collector/ca.pem` 在Keystone Collector 服务器上。
+
 image:kc-custom-ca.png["用于 CA 定制的 TUI 屏幕"]
 
 
