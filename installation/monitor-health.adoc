@@ -103,5 +103,5 @@ Keystone Collector TUI 使您能够生成支持包并将其添加到服务请求
 `$ keystone-collector-tui`
 . 转到*故障排除>生成支持包*。image:tui-sup-bundl.png["tui屏幕"]
 . 生成后，会显示该包的保存位置。使用 FTP、SFTP 或 SCP 连接到该位置并将日志文件下载到本地系统。image:tui-sup-bundl-2.png["tui屏幕"]
-. 下载文件后，您可以将其附加到Keystone ServiceNow 支持票证。有关提出票证的信息，请参阅link:../concepts/gssc.html["生成服务请求"]。
+. 下载文件后，您可以将其附加到Keystone ServiceNow 支持票证。有关提高票数的信息，请参阅 link:../concepts/support-services.html["生成服务请求"]。
 
