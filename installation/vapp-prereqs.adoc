@@ -17,7 +17,7 @@ summary: 在安装Keystone Collector 之前，您的 VMware vSphere 系统必须
 在安装Keystone Collector 之前，您的 VMware vSphere 系统必须满足几个要求。
 
 .Keystone Collector 服务器虚拟机的先决条件：
-* 操作系统：VMware vCenter 服务器和 ESXi 6.7 或更高版本
+* 操作系统：VMware vCenter 服务器和 ESXi 8.0 或更高版本
 * 核心：1 个 CPU
 * 内存：2 GB
 * 磁盘空间：20 GB vDisk
