@@ -4,7 +4,7 @@ permalink: concepts/adp.html
 keywords: data protection advanced 
 summary: 使用高级数据保护附加服务，确保对关键任务工作负载进行有效的数据保护。 
 ---
-= 了解高级数据保护
+= Keystone的高级数据保护插件
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

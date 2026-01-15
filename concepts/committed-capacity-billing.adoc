@@ -4,7 +4,7 @@ permalink: concepts/committed-capacity-billing.html
 keywords: Billing based on committed capacity, committed capacity billing 
 summary: 承诺容量是购买订阅时为特定服务级别承诺的容量。 
 ---
-= 根据承诺容量计费
+= 了解Keystone承诺容量计费方式
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

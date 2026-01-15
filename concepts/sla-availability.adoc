@@ -4,7 +4,7 @@ permalink: concepts/sla-availability.html
 keywords: availability, sla, service level agreement, slo, service level objectives 
 summary: '可用性 SLO 的目标是，对于为交付Keystone订单而部署的所有NetApp ONTAP闪存存储阵列，在计费期间内正常运行时间达到 99.999%。' 
 ---
-= 可用性 SLO
+= Keystone的可用性 SLO
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

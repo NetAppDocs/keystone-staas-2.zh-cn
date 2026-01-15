@@ -4,7 +4,7 @@ permalink: concepts/misc-volume-billing.html
 keywords: Billing and miscellaneous scenarios 
 summary: 了解特定配置的Keystone计费，包括克隆卷、高级数据保护等。 
 ---
-= Keystone计费的其他场景
+= 了解Keystone针对特定容量配置的计费方式
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
