@@ -34,7 +34,7 @@ image:bxp-subscription-list-4.png["查看订阅标签详情"]
 您可以从表中看到以下详细信息：
 
 +
-** *订阅编号*： NetApp分配的Keystone订阅的订阅编号。
+** *订阅号*：由 NetApp 分配的 Keystone 订阅的订阅号。带有 image:metrocluster-icon.png["MetroCluster 订阅符号"] 图标的订阅是 MetroCluster 订阅。要了解有关 MetroCluster 订阅的更多信息，请参阅 link:../integrations/adp-tab.html["查看 Keystone MetroCluster 订阅的消耗量和运行状况"]。
 ** *跟踪 ID*：订阅激活时分配的跟踪 ID。这是每个订阅和站点的唯一 ID，用于跟踪订阅。
 ** *客户名称*：与Keystone订阅相关的客户的名称。
 ** *链接订阅*：如果您有任何与主订阅链接的次要订阅，则此列会列出主订阅的链接订阅编号。此订阅号可以是您的主要订阅号，也可以是次要（链接）订阅号。
@@ -78,7 +78,7 @@ image:all-subs-4.png["订阅选项卡的图片"]
 ** *跟踪 ID*：订阅激活时分配的跟踪 ID。这是每个订阅和站点的唯一 ID。
 +
 
-TIP: 如果您已订阅高级数据保护附加服务，则可以单击订阅号对应的工具提示，以查看MetroCluster设置中合作伙伴订阅的跟踪 ID。要查看MetroCluster配置中合作伙伴订阅的详细消耗情况，请参阅link:../integrations/consumption-tab.html#reference-charts-for-advanced-data-protection-for-metrocluster["高级数据保护参考图表"]。
+TIP: 如果您已订阅高级数据保护附加服务，则可以单击订阅号下的工具提示，以在 MetroCluster 设置中查看合作伙伴订阅的跟踪 ID。要查看 MetroCluster 配置中合作伙伴订阅的详细使用情况，请参阅link:../integrations/adp-tab.html["查看 MetroCluster 订阅消费和运行状况"]。
 
 ** *使用类型*：您可能订阅了多个Keystone版本。不同订阅版本的性能服务级别的费率计划规则可能有所不同。通过查看此列中的值，您可以知道使用类型是按照预配置、物理还是逻辑使用来计费。要了解有关版本 1 的更多信息，请参阅 https://docs.netapp.com/us-en/keystone/index.html["Keystone订阅服务 | 版本 1 文档"^]。
 ** *计费周期*：订阅的发票周期。
