@@ -18,11 +18,13 @@ NetAppData Infrastructure Insights(DII，以前称为Cloud Insights) 是Keystone
 
 要了解有关Data Infrastructure Insights的更多信息，请参阅link:https://docs.netapp.com/us-en/data-infrastructure-insights/["Data Infrastructure Insights文档"^]。
 
-DII 适用于新订阅和现有订阅。它可以作为承诺容量的附加组件集成到Keystone订阅中。当 DII 集成到Keystone订阅中时，它将为订阅中的每个基本性能服务级别提供相应的性能服务级别。例如，Extreme 映射到 DII Extreme，Premium 映射到 DII Premium，Performance 映射到 DII Performance。这些映射确保 DII 性能服务级别与您的Keystone订阅的基本性能服务级别保持一致。
 
-Digital Advisor仪表板上的 * Keystone Subscriptions* 小部件内 DII 性能服务级别视图：
 
-image:keystone-widget-dii.png["显示 DII 服务级别的Keystone Subscriptions 小部件的屏幕截图"]
+== 关于 Keystone 订阅的 DII
+
+DII 适用于新订阅和现有订阅。它可以集成到 Keystone 订阅中，作为承诺容量的附加组件。
+
+当 DII 集成到 Keystone 订阅中时，它将为订阅中的每个基本性能服务级别提供相应的性能服务级别。例如，Extreme 映射到 DII Extreme，Premium 映射到 DII Premium，以及 Performance 映射到 DII Performance。这些映射可确保 DII 性能服务级别与 Keystone 订阅的基本性能服务级别保持一致。
 
 
 
@@ -60,14 +62,31 @@ NOTE: 虽然 DII 为已部署的硬件提供了广泛的监控功能，但它不
 
 
 
+== 查看 DII 消耗量
+
+您可以通过 NetApp Console 或 Digital Advisor 查看 DII 附加服务的消耗情况。DII 性能服务级别（例如 DII Extreme、DII Premium 和 DII Performance）的消耗数据与您的基本性能服务级别一起显示在当前消耗和消耗趋势视图中。
+
+以下示例显示了 Console 中 *Current consumption* 选项卡中的 DII 性能服务级别：
+
+image:console-current-consumption-dii.png["显示 DII 服务级别的当前消耗选项卡的屏幕截图"]
+
+以下示例显示了 Digital Advisor 中 *Keystone Subscriptions* 小组件内的 DII 性能服务级别：
+
+image:keystone-widget-dii.png["显示 DII 服务级别的 Keystone 订阅小部件的屏幕截图"]
+
+有关查看消费的详细信息，请参见：
+
+* link:../integrations/current-usage-tab.html["查看Keystone订阅的当前消耗情况"]
+* link:../integrations/consumption-tab.html["查看Keystone订阅的消费趋势"]
+
+
+
+
 == 计费和计量
 
 以下概述了 DII 附加服务的计费和计量细节：
 
 * 此服务的衡量方式与您的主要订阅相同。例如，如果您的主要订阅包括 100 TiB 的 Extreme 服务和 100 TiB 的 Premium 服务，两者均按逻辑使用量进行衡量，则附加服务 DII Extreme 100 TiB 和 DII Premium 100 TiB 也是按逻辑使用量进行衡量。如果您的主要订阅是按配置来衡量的，那么附加服务也会以相同的方式按相同的容量进行衡量。附加服务将遵循与您的主订阅相同的测量方法。
-+
-image:current-consumption-dii.png["显示服务级别计量的当前消耗选项卡的屏幕截图"]
-
 * 该服务与您的Keystone订阅一起计量并开具同一张发票。如果您在激活Keystone订阅之前为Keystone配置 DII，则计费仍从Keystone订阅激活日期或现有订阅的修改日期开始。
 * 除标准Keystone发票外，此服务还根据 DII 性能服务级别的承诺容量和突发使用情况进行计量和开具发票。此附加服务的计量遵循与底层Keystone订阅性能服务级别相同的方法，可以是逻辑的、配置的或物理的。
 * 该服务随与其链接的Keystone订阅而结束。续费时，您可以选择是否续费附加服务。如果您不续订Keystone订阅，受监控的硬件将退役，并且附加服务将自动终止。
