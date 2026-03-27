@@ -1608,7 +1608,6 @@
   <block id="a49bb8de1f373a2c0821dd3715e2473c" category="list-text">选择您想要查看其详细信息的所需订阅。默认选择您帐户名中的第一个订阅。</block>
   <block id="cf9f1bd8f983088dfce001e6e73d8b32" category="list-text">如果您想查看历史数据并分析容量使用趋势，请选择*消耗趋势*。</block>
   <block id="033251cc6647cf14147fe08683c5db5c" category="admonition">如果您想查看已生成发票的历史突发使用数据，您可以选择*已开具发票的应计突发*。您可以使用此数据来分析发票中反映的计费使用情况。要了解更多信息，请参阅<block ref="7f44df2b1aebfeb61dadb6bb658158eb" category="inline-link-macro-rx"></block>。</block>
-  <block id="f4c8dae91522d3ec93e26aff56248527" category="list-text">从*起始日期*和*结束日期*字段中的日历图标中选择时间范围。选择查询的日期范围。日期范围可以是月初或订阅开始日期到当前日期或订阅结束日期。您不能选择未来的日期。</block>
   <block id="7be5abac822defa8ec27d754113b604f" category="admonition">为了获得最佳性能和用户体验，请将查询的日期范围限制为三个月。</block>
   <block id="f5f016cc229596fc9a18ad3fe70b66dd" category="list-text">单击“查看详细信息”。根据选择的时间范围，展示该订阅各个性能服务等级的历史消费数据。</block>
   <block id="c194747f3a506641453fdf3030d612f8" category="paragraph">条形图显示性能服务级别名称以及该日期范围内该性能服务级别所消耗的容量。收集的日期和时间显示在图表的底部。根据查询的日期范围，使用情况图表显示在 30 个数据收集点的范围内。您可以将鼠标光标悬停在图表上，以查看该数据收集点的已提交、已消耗、突发和超出突发限制数据的使用情况明细。</block>
@@ -2704,4 +2703,6 @@
   <block id="f069bdb9199fd723b309497a4681eaa7" category="list-text">*Add note*：打开弹出窗口以向警报添加备注。</block>
   <block id="70d995c2419f7d9aa988641d4312954f" category="list-text">*View*：打开与选择警报 ID 相同的详细视图。</block>
   <block id="8b06cde2817c964f7431fdcb3ffcf3f2" category="section-title">2026 年 3 月 2 日</block>
+  <block id="c4a7223f29b332fc54d3573ee04a51a1" category="list-text">从 *From Date* 和 *To Date* 字段中的日历图标选择时间范围。默认情况下，日期范围是从今天开始的最近 30 天。您可以更改此范围，但不能选择未来日期。</block>
+  <block id="9b6f9894a20aba8f70839ec910a9bee6" category="admonition">如果选择的日期范围小于 30 天，则图表仅显示所选日期每天的一个数据收集点。例如，4 天的范围显示 4 个数据收集点，而不是 30 个。对于任何选定的范围，只有日期显示在图表的底部。只有当您使用下面描述的放大功能放大图表时，才能看到时间戳。</block>
 </blocks>
