@@ -5,15 +5,13 @@ keywords: pricing, billing introduction, Keystone billing
 summary: Keystone提供按需付费模式，满足您灵活且可扩展的消费需求。 
 ---
 = 了解 Keystone 账单功能
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
 
-
-'''
-sidebar: sidebar permalink: concepts/pricing.html keywords: pricing, Keystone billing, committed capacity, consumed capacity, burst consumption, billing schedules summary: 使用 NetApp Keystone STaaS，您只需为承诺的内容付费，超出部分仅为实际使用量付费。此页面解释了按增长付费模式的工作原理——从存储承诺的定价方式，到容量的计量和计费方式，再到生成发票的时间。---
-
-
-
-= 了解 Keystone 账单功能
 
 [role="lead"]
 使用 NetApp Keystone STaaS，您只需为承诺的容量付费，超出部分按实际使用量额外付费。此页面介绍了现收现付模式的工作原理，包括存储承诺的定价方式、容量的计量和计费方式以及生成发票的时间。
