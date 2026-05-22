@@ -175,20 +175,12 @@ sidebar:
         url: "/concepts/sla-sustainability.html"
       - title: 勒索软件恢复保证
         url: "/concepts/sla-ransomware.html"
-    - title: 了解计费方式
+    - title: 了解 Keystone 账单
       entries:
-      - title: Keystone定价
+      - title: 了解 Keystone 账单功能
         url: "/concepts/pricing.html"
-      - title: 根据承诺容量计费
-        url: "/concepts/committed-capacity-billing.html"
-      - title: 根据消耗容量进行计量
-        url: "/concepts/consumed-capacity-billing.html"
-      - title: 根据突发消费计费
-        url: "/concepts/burst-consumption-billing.html"
-      - title: 针对特定容量配置的计费
+      - title: 针对特定卷类型的 Keystone 计费
         url: "/concepts/misc-volume-billing.html"
-      - title: 计费时间表
-        url: "/concepts/billing-schedules.html"
   - title: 通过Digital Advisor REST API 访问Keystone
     entries:
     - title: 开始使用Digital Advisor REST API 检索Keystone数据

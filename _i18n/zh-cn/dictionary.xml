@@ -84,23 +84,9 @@
   <block id="07a4905cb08550d85832c59c39e6d61c" category="list-text">该服务使用关联存储上 100% 的承诺容量作为承诺容量。</block>
   <block id="35837aec92cf4ad38b86eaea542a0d30" category="list-text">费用适用于主站点和辅助站点，涵盖源集群和目标集群。</block>
   <block id="02ebdf7c9de6e8483fc7db75a00034e7" category="list-text">费用仅适用于您的文件和块存储服务。</block>
-  <block id="e18765eb2b8dddd29b66918ffb976fcc" category="summary">Keystone STaaS 订阅按月或按年计费。</block>
   <block id="dfd0252d57910ac70c5c31013436bba6" category="doc">计费时间表</block>
-  <block id="ff6fc0e4f583c0e2e97b816c5f3e5a36" category="paragraph">Keystone STaaS 订阅按月或按年计费。</block>
-  <block id="7f5043ec0394d759e4ce437fc8c9cd52" category="section-title">每月账单</block>
-  <block id="4984e08f464a2069cf4e4d2bc61ffe7e" category="paragraph">发票每月发送一次。对于使用服务的月份，发票将在下个月发送。例如，您在一月份使用的服务的发票在二月初交付。该发票包括承诺容量的费用以及（如果适用）任何突发使用的费用。</block>
-  <block id="51ebf10290dc90afa947ed3f3696db87" category="section-title">年度计费</block>
-  <block id="e3cdbc99a0d31e7434525d73238dcc2c" category="paragraph">每个订阅年度开始时都会生成一张发票，用于支付承诺容量的最低付款。它是在订阅开始日期生成的。每个订阅季度末都会发送另一张发票，汇总该季度累积的任何突发使用所产生的适用费用。如果在订阅期间承诺容量发生变化，则会在同一天发送发票，其中包含该订阅年度剩余时间的按比例分配的最低付款。计费从承诺容量变更生效之日起计算。</block>
-  <block id="c9830eb427c91a86a2ded324ba8b803d" category="summary">Keystone STaaS 计费基于突发容量，即您在订阅的承诺容量之上消耗的容量。</block>
-  <block id="8a73a45becb1972a998dc8490856f730" category="doc">根据突发消费计费</block>
-  <block id="b1c4c6aab8cd7c824717fc1621d76273" category="paragraph">Keystone STaaS 计费基于_突发容量_，即您在订阅的承诺容量之上消耗的容量。</block>
-  <block id="358aee06f2e0039d175ba9710fbe95a8" category="paragraph">您的突发限制在您的Keystone协议中确定和指定。这比承诺产能高出20%。</block>
-  <block id="9b83bd6bb9b0235168f39a4c45d8529f" category="paragraph">承诺容量是购买订阅时承诺给您的容量。承诺容量和突发容量是按照性能服务级别来衡量的。已消耗容量是您的工作负载实际使用的容量。</block>
-  <block id="f82d400f954e1fba0aed8949df21cf29" category="paragraph">当消耗的容量大于某一性能服务级别的承诺容量时，将记录突发消耗并相应收费。通常，它比承诺容量高出 20%。超出突发容量的使用情况表示为“超出突发限制”。</block>
   <block id="c63c700d510218e3fd6113514c7cadf9" category="inline-link-macro">查看Keystone订阅的消费趋势</block>
-  <block id="60b79d3b7a1433cb62d9ea5b5a5dac01" category="paragraph">每条消费记录生成后都会发生此过程。因此，突发消耗反映了您在已承诺容量之外的过度消耗容量的数量和期限。要了解更多信息，请参阅<block ref="d40818e721dbdfb8ef017a3c524d1def" category="inline-link-macro-rx"></block>。</block>
   <block id="b3f5d2a190d6e7bd7689ffbabbb1e2f2" category="inline-link-macro">Keystone支持的存储容量</block>
-  <block id="6dd7fd4aac069a06bec3ae24a6b1b39b" category="paragraph">有关Keystone支持的不同容量的信息，请参阅<block ref="85c4e06da3b978d5cb2b8ba9dc870124" category="inline-link-macro-rx"></block>。</block>
   <block id="44356560df15caffd928422c99dc9948" category="summary">服务级别的容量要求因Keystone STaaS 订阅支持的文件、块、对象或云存储而异。</block>
   <block id="6095900a0be4c21e582c9ce633f3eb3f" category="doc">性能服务级别的容量要求</block>
   <block id="2dbc37040c346751f80f916ad9f4f33e" category="paragraph">Keystone STaaS 性能服务级别的容量要求在Keystone STaaS 订阅支持的文件、块、对象和云存储产品之间有所不同。</block>
@@ -162,10 +148,6 @@
   <block id="162489d19966a7f95c7accf74f9c3c5c" category="cell">5,000</block>
   <block id="42c6fcaab380d23adc4355ae6bb2df0b" category="paragraph">为极限性能服务级别分配的容量减少了 (125-108) = 17 TiB。在支出重新分配时，分配的混合云存储不是 17 TiB，而是 5000 美元可以购买的等效容量。在此示例中，花费 5000 美元，您可以获得 Extreme 性能服务级别的 17 TiB 内部存储容量和Cloud Volumes ONTAP性能服务级别的 47 TiB 混合云容量。因此，重新分配是针对支出，而不是容量。</block>
   <block id="035c7a855d56e0de01432f63faef9422" category="paragraph">如果您想将费用从本地服务重新分配到云服务，请联系您的Keystone成功经理 (KSM)。</block>
-  <block id="d19b993b24e968320c9cf842a96fd2e4" category="summary">承诺容量是购买订阅时为特定服务级别承诺的容量。</block>
-  <block id="da0abce09003b51065ed5b06d06021f1" category="doc">根据承诺容量计费</block>
-  <block id="5f238d7b669564c4a06db9820b17a9c3" category="paragraph">承诺容量是购买订阅时为特定性能服务级别承诺的容量。</block>
-  <block id="a5e80c8c714cefa82d0f175e2ea8eae1" category="paragraph">承诺容量可以是您和NetApp或合作伙伴所接受的单个订阅中各种性能服务级别的总容量。每个Keystone订单上都会注明此容量，并且会计费，无论实际容量消耗是多少。</block>
   <block id="7053560fccb48096070dc008e686cf8d" category="summary">了解在您的环境中启用NetApp Keystone STaaS 服务所需的组件。</block>
   <block id="c9da0796f309773995aa86a3901c5e00" category="section-title">场地要求</block>
   <block id="6eb9dd90c2cfc7011acbce7dca93857a" category="paragraph">有一些特定于站点的要求，例如空间、机架、PDU、电源和冷却，以及这里讨论的额外网络和安全要求。</block>
@@ -196,10 +178,6 @@
   <block id="d701dcea67fd884a29f39c9adfdeb8bf" category="section-title">远程访问要求</block>
   <block id="43eefb573a809ff61e1c8d3d07813ee3" category="paragraph">客户数据中心或客户拥有的共置服务中安装的存储基础设施与Keystone运营中心之间需要建立网络连接。客户负责提供计算和虚拟机以及互联网服务。客户还负责操作系统修补（非基于 OVA 的部署）和基于内部安全策略的安全强化。网络设计应基于安全协议，并且防火墙策略将得到NetApp和客户的批准。</block>
   <block id="3bd97f0b75ad0b75e89607ca3389444d" category="paragraph">NetApp需要访问已安装的用于监控和管理的硬件和软件组件，以便为Keystone客户提供监控和计费等服务。最常见的方法是建立与客户网络的虚拟专用网络（VPN）连接并访问所需的数据。为了克服客户认为因向新服务开放防火墙端口而产生的任何操作复杂性，监控工具会启动外部连接。 NetApp云应用程序（例如 ITOM 监控解决方案和 Zuora）使用此连接来执行各自的服务。此方法满足了客户不打开防火墙端口但提供对此服务的一部分的监控组件的访问的要求。</block>
-  <block id="3332bc574644f77a870b242a631af1e3" category="summary">已消耗容量是您的工作负载在使用服务期间实际使用的容量。</block>
-  <block id="4f0b4700902f5cec62b2b3a60c2d65b9" category="doc">根据消耗容量进行计量</block>
-  <block id="7a6709ab5e3b396814fccf37c263ad1f" category="paragraph">Keystone STaaS 根据您在使用服务期间消耗的容量进行计量。已消耗容量是您的工作负载实际使用的容量。</block>
-  <block id="35ff061e0e3d6c0c79e597b4d638231e" category="paragraph">作为Keystone服务部署的一部分， NetApp持续监控和衡量服务的消耗。系统至少每五分钟生成一次消费记录，详细列出您订阅的当前消耗容量。这些记录在计费期内汇总以生成发票和使用情况报告。</block>
   <block id="a0bf4fc3f702627df39c1daec928bb04" category="summary">Keystone STaaS 系统中的数据流经Keystone Collector 和 AIOPs 解决方案工具（相关的监控系统）。</block>
   <block id="8b9ebc949c2bd3b7f585608d2fec312f" category="doc">Keystone数据流</block>
   <block id="daaeac371cb5600a69ff928296058e7c" category="paragraph">Keystone STaaS 系统中的数据流经Keystone Collector 和 ITOM 监控解决方案（即相关的监控系统）。</block>
@@ -432,18 +410,9 @@
   <block id="d7e5ccf918d68bf60a6b52690444d5ea" category="list-text"><block ref="d7e5ccf918d68bf60a6b52690444d5ea" category="inline-link-macro-rx"></block></block>
   <block id="df7d31258a77cf6838aec404025cc8f0" category="list-text"><block ref="df7d31258a77cf6838aec404025cc8f0" category="inline-link-macro-rx"></block></block>
   <block id="f29d51ebfc7a851025b60dc1bcc5560e" category="summary">Keystone提供按需付费模式，满足您灵活且可扩展的消费需求。</block>
-  <block id="b7d43ae1979d8e64c664de0e3d94f3c9" category="paragraph">NetApp Keystone STaaS 按使用量付费订阅服务提供灵活且可扩展的消费，并为您的存储需求提供可预测的预付定价。</block>
   <block id="ef379c37057d9a196c5c79f68a141fe6" category="paragraph">Keystone为您提供以下计费功能：</block>
   <block id="5866f5199f36da24870932aa9db6ab49" category="list-text">它为承诺的容量提供可预测的计费，并为可变（突发）容量使用提供按使用付费。</block>
-  <block id="a40d52252bf8cd6939e9352eeffb837b" category="list-text">您可以为硬件、核心操作系统和支持选择一个捆绑价格，价格为 1 美元/TiB。对于每种存储类型、文件、块、对象或云存储服务，您都有一张发票。</block>
-  <block id="ab44647f83eec4ac9adbf2b290b27f7c" category="list-text">您可以选择灵活的服务期限和付款方式，例如按月、按季度或按年。</block>
   <block id="1506e8c7e13ed05e538e60e10a3477b1" category="paragraph">Keystone计费基于承诺容量和可变突发消耗。</block>
-  <block id="fe53175072711abfe4bc0ec0a1c8feda" category="list-text"><block ref="fe53175072711abfe4bc0ec0a1c8feda" category="inline-link-macro-rx"></block></block>
-  <block id="666607765db8e2a230407163fc7ea704" category="list-text"><block ref="666607765db8e2a230407163fc7ea704" category="inline-link-macro-rx"></block></block>
-  <block id="da7adc48e3ef5d5cba8270d6542a88e9" category="list-text"><block ref="da7adc48e3ef5d5cba8270d6542a88e9" category="inline-link-macro-rx"></block></block>
-  <block id="83cd48b4617f1e69361a1ecec3f5b3a3" category="inline-link-macro">根据杂项卷类型计费</block>
-  <block id="e9fba53fca09f539e7c7027e5b60c861" category="list-text"><block ref="e9fba53fca09f539e7c7027e5b60c861" category="inline-link-macro-rx"></block></block>
-  <block id="98bee96ae0c26b26f72606ccdc5c56ce" category="list-text"><block ref="98bee96ae0c26b26f72606ccdc5c56ce" category="inline-link-macro-rx"></block></block>
   <block id="86744497c7d6e3b8d3acc8300243fcaf" category="summary">Keystone使用存储 QoS 来确保应用程序获得一致且可预测的性能。</block>
   <block id="bdd1291ab47fc22cd98d4fda125abb50" category="doc">Keystone中的存储 QoS</block>
   <block id="4317435dc55e6c41a5febef83510271a" category="paragraph">Keystone使用存储服务质量 (QoS) 来确保应用程序获得一致且可预测的性能。如果没有 QoS，某些工作负载（例如启动多个系统的工作负载）可能会在一段时间内消耗大部分或全部资源，并影响其他工作负载。</block>
@@ -2153,8 +2122,6 @@
   <block id="15b8bdededfed453d4aa35a4585d9e2c" category="sidebar">我可以将我的支出从本地重新分配到云端吗？</block>
   <block id="e95f37597101815c1d465e37eb31cab2" category="sidebar">Keystone定价和计费</block>
   <block id="d86cc1250d7492d626c32cc9fb65dfab" category="sidebar">了解Keystone定价</block>
-  <block id="7fb6ecbfc2c7172d977f1ac481edef36" category="sidebar">我的账单明细</block>
-  <block id="e6bdb181d03ed18f61204d6fa6f9e26d" category="sidebar">如果我消耗的容量超过了承诺的容量，会发生什么情况？</block>
   <block id="196d7c712c7c6a9911f2d9bbb5f61bf7" category="sidebar">使用Keystone服务做更多事情</block>
   <block id="f4933584c28adc3bd3ea423ed96920ec" category="sidebar">了解您的支持团队</block>
   <block id="c977c72cd7678128aadf339e54fc0498" category="sidebar">我该如何处理冷数据或较少使用的数据？</block>
@@ -2295,7 +2262,6 @@
   <block id="2ef72cc8a56fc5999e258b450b9fca24" category="paragraph">有关更改的详细信息，请参阅<block ref="06d876b9fcdfcba8772d93beac1ca38b" category="inline-link-macro-rx"></block>。</block>
   <block id="468705a461bd39c3c6cc91cf30d78d23" category="list-text">用于管理和操作服务的工具，例如 ITOM 监控解决方案、 NetApp Console、 Active IQ和Active IQ Unified Manager。</block>
   <block id="8a982cf9d4fce545e4c4210341623864" category="paragraph">您可以通过NetApp控制台或Digital Advisor查看Keystone订阅的订阅和消费详情。要了解有关Keystone报告的更多信息，请参阅<block ref="5a609c392d8730053e3d7fc9f1d0ffab" category="inline-link-macro-rx"></block>。</block>
-  <block id="f2f2cd18152ba0cf90dc0a9137846037" category="list-text">您可以根据 IOPS 和延迟承诺容量付费，以满足各种工作负载需求。不同的性能服务层级 - Extreme、Premium、Performance、Standard、Value 和 Object 使您能够根据购买的性能服务级别管理存储。</block>
   <block id="ba17302e854fad784b3a0f21ef030b25" category="list-text">容量致力于每个性能服务级别。</block>
   <block id="876a76983fba3da801a1f6d2d41a5db3" category="paragraph">您可以使用Keystone Collector 管理 TUI 实用程序创建性能服务级别 (PSL)。通过 TUI 创建 PSL 会自动选择为每个性能服务级别设置的默认值，从而减少通过Active IQ Unified Manager创建 PSL 时手动设置这些值时可能发生的错误的可能性。</block>
   <block id="084a50394b54545f96247d840d02d0cf" category="admonition">您可以突出显示Keystone订阅服务版本 1 的 *KFS* 选项。Keystone订阅服务与Keystone STaaS 在组成性能服务级别、服务产品和计费原则方面有所不同。要了解更多信息，请参阅<block ref="28860fa9118cfd783678772e54f9b578" category="inline-link-macro-rx"></block>。</block>
@@ -2501,17 +2467,12 @@
   <block id="2727f68982ff25e8b3c57e026120561d" category="section-title">2025年12月8日</block>
   <block id="ee53a2d144b153a8ad44855abe0429a8" category="list-text">Python 3（3.9.14 至 3.11.8）</block>
   <block id="642f94d714f235631bdda58a0641ee29" category="doc">Keystone的高级数据保护插件</block>
-  <block id="40dc71902dbb22353822b7c6f15c3256" category="doc">了解Keystone 的计费时间表</block>
-  <block id="ffd6b4f303043d2028c208b958f00d68" category="doc">了解Keystone突发流量计费方式</block>
   <block id="e1ae7a5642f41154cb522f32ff888693" category="doc">Keystone性能服务级别的容量要求</block>
-  <block id="43a8976cc8e9860d073f99a10c9863d6" category="doc">了解Keystone承诺容量计费方式</block>
   <block id="a2cec0e19e9a9e466d5734a20002287a" category="doc">Keystone服务所需的组件</block>
   <block id="e6031ccc926a297ed489fed2eb5fc832" category="paragraph">要启用NetApp Keystone STaaS 服务，您需要多个组件。开始之前，请先查看这些组成部分。</block>
-  <block id="58e037d24f45a1e3501979b1777d7d37" category="doc">了解Keystone消耗容量计量</block>
   <block id="7b2a0cab269bf73e47e958a9123402e1" category="doc">Keystone的Data Infrastructure Insights插件</block>
   <block id="f4661181da0130d61f3128498582908f" category="doc">Keystone的数据分层附加服务</block>
   <block id="ac6db46674728d3a4cb59b937dd96ead" category="doc">了解Keystone基础设施</block>
-  <block id="1bd0df1c0529e8e6ca90f1e4081e2d82" category="doc">了解Keystone针对特定容量配置的计费方式</block>
   <block id="62fb7818da74bdf8e586f11aa4b2f85f" category="doc">Keystone的不可退货、非易失性组件以及SnapLock合规性附加服务</block>
   <block id="43b82c4e7e58013ebe91d40fcb3f7718" category="doc">Keystone的可用性 SLO</block>
   <block id="259bdb910694b04b20beea4776938bc1" category="doc">Keystone的性能 SLO</block>
@@ -2533,8 +2494,6 @@
   <block id="bb9f69edc6b159c2172c134f7b8ec8d9" category="doc">使用Digital Advisor REST API 获取Keystone客户订阅</block>
   <block id="ec3c5dc2acc96dd435267e93ff378ceb" category="sidebar">了解附加服务</block>
   <block id="1c0706b323b25df07171d935dadca63d" category="sidebar">了解Keystone STaaS SLO</block>
-  <block id="4996475aff4a957b37439e45da70e7da" category="sidebar">了解计费方式</block>
-  <block id="d7343c0d20dd2babfa5f38e0b87a6939" category="sidebar">针对特定容量配置的计费</block>
   <block id="0fa78e8d7c7b076da1f9e1d3fa517845" category="doc">订阅修改功能不可用</block>
   <block id="252561ea020b2dfb8598526a78a88036" category="inline-link-macro">NetApp Console中的Keystone访问角色</block>
   <block id="99a171058669ac189901e0c53c44ed13" category="admonition">您必须被分配到 * Keystone管理员 * 角色才能创建和管理警报监控器。欲了解更多信息，请参阅 <block ref="c1ba7ab85116b0653b4bddd0a4c0ce29" category="inline-link-macro-rx"></block>。</block>
@@ -2750,4 +2709,48 @@
   <block id="f649abbfb1fbdf6d16ef1e522e9f0b3f" category="paragraph">预测消费数据中的下降趋势不准确</block>
   <block id="af9ef0b1942bfef1a3c549bcd43ad2d0" category="paragraph">在 *Consumption trend* 选项卡中，当在 *Historical consumption* 视图中启用 *Forecast* 切换时，预计容量使用情况显示显著且不准确的下降趋势。</block>
   <block id="9e011831a807911dc5fe5c1f934f6d23" category="section-title">2026 年 4 月 27 日</block>
+  <block id="6c46cb6cf0652f0fe88be3a6955c9f48" category="doc">针对特定卷类型的 Keystone 计费</block>
+  <block id="8ebbc3a6a44524610a169b7e4db2ddbc" category="doc">了解 Keystone 账单功能</block>
+  <block id="59004cd7be09956fe7f4f26569c6f470" category="paragraph">sidebar: sidebar permalink: concepts/pricing.html keywords: pricing, Keystone billing, committed capacity, consumed capacity, burst consumption, billing schedules summary: 使用 NetApp Keystone STaaS，您只需为承诺的内容付费，超出部分仅为实际使用量付费。此页面解释了按增长付费模式的工作原理——从存储承诺的定价方式，到容量的计量和计费方式，再到生成发票的时间。---</block>
+  <block id="218297c180a0d90e1e1e369654e41b5e" category="paragraph">使用 NetApp Keystone STaaS，您只需为承诺的容量付费，超出部分按实际使用量额外付费。此页面介绍了现收现付模式的工作原理，包括存储承诺的定价方式、容量的计量和计费方式以及生成发票的时间。</block>
+  <block id="d49c791831a337b675eb6b844e7d0282" category="section-title">Keystone 定价模型</block>
+  <block id="f413046b2aeb1ac90c58e030bc21f7e0" category="paragraph">通过 Keystone 订阅，您可以灵活地在工作负载需要时进行扩展，从而获得可预测的成本。Keystone 费用基于您选择的性能服务级别和您承诺的容量。</block>
+  <block id="c3d65a3c50cdc5589b31f6ea38479a67" category="list-text">您可以根据 IOPS 和延迟承诺容量进行支付，以满足各种工作负载需求。不同的性能服务层 - Extreme、Premium、Standard、Value、Object 和 Cloud Volumes ONTAP 使您能够根据购买的性能服务级别管理存储。</block>
+  <block id="50e0459d44500ff84b442895fa1a64f1" category="list-text">您可以为硬件、核心 OS 和支持选择捆绑价格，价格为一个 $/TiB。您拥有每种存储类型的单个发票，包括统一、块、优化、对象或云存储服务。</block>
+  <block id="6770f961b4c4aaa762fb284da8cafd6f" category="list-text">您可以为服务和付款选项选择灵活的期限，例如每月、每季度、每半年或每年。</block>
+  <block id="1ed342711f67dbf9a9ec0d44d0a87997" category="inline-link-macro">Keystone 中的存储容量类型</block>
+  <block id="de0a1ffd5945a7c03b043b1b02676ff7" category="paragraph">有关 Keystone 中支持的不同容量的信息，请参见 <block ref="0ea2e5735a73cb1292027bc1604190c4" category="inline-link-macro-rx"></block>。</block>
+  <block id="97cadce787615ab45e7a2cbe71a8b2e6" category="section-title">Keystone 如何衡量容量</block>
+  <block id="02c860922ee056a44129d3a15634ef44" category="paragraph">Keystone 使用三个容量概念来计算您的账单。了解每个概念有助于您避免意外收费。</block>
+  <block id="85ee30eb58111804ef1da0955e8714a2" category="paragraph">承诺容量是指您在签署 Keystone 订阅时同意为特定性能服务级别购买的容量。此金额固定在 Keystone 订单上，无论您的工作负载实际使用多少容量，每个计费周期都会全额计费。</block>
+  <block id="f542c7ccfc94126a640cc19da250b095" category="paragraph">例如，如果您在 Premium 服务级别承诺 100 TiB，则即使当月的实际使用量为 80 TiB，也会收取 100 TiB 的费用。</block>
+  <block id="bb829dd0a90e99ba1c33e4d10b5b9cf3" category="paragraph">根据您和 NetApp 或您的合作伙伴达成的协议，承诺的容量可以跨越单个订阅中的多个性能服务级别。</block>
+  <block id="9326c4fa24781f1e85127f9ee25dc313" category="paragraph">要查看您的承诺容量并跟踪其实际使用情况，请参见 <block ref="fdad9ab5c825af5756df523fe50d05f9" category="inline-link-macro-rx"></block>。</block>
+  <block id="356f8759818edc449aaf3d53447c3ec0" category="paragraph">消耗的容量是您的工作负载在任何时间点实际使用的容量。Keystone 持续监控和衡量您在整个计费周期内的消费情况。至少每五分钟生成一个消费记录，该记录捕获您的订阅的当前消费容量。这些记录在计费周期内汇总，以生成发票和使用情况报告。</block>
+  <block id="42a774fc8ea2c76c7b2098da4a7dd880" category="paragraph">五分钟的监控间隔确保了精确的跟踪，因此可以检测到突发使用情况并准确计费——而不是在周期结束时进行估计。</block>
+  <block id="df517e2cdd66029dcf6e03987dde956e" category="paragraph">当消耗的容量保持在或低于您的承诺容量时，仅适用承诺容量率。当消耗的容量超过您的承诺容量时，将应用突发计费。</block>
+  <block id="5d4997142b44a4ea2d29af472804405b" category="section-title">突发消费</block>
+  <block id="8d0d0f064fcf54a10e2ba9ad6d637644" category="paragraph">突发消耗是指您使用的容量超过您的承诺容量。您的突发限制在您的 Keystone 协议中确定和规定。设定为比承诺容量高出 20%。</block>
+  <block id="abfc6033092f587889f7cd3d56c79dfd" category="paragraph">例如，如果您的承诺容量为 100 TiB，而您使用了 115 TiB，则额外的 15 TiB 将按突发速率收费。</block>
+  <block id="e685db8b1e3b70f793d57437410741a8" category="paragraph">当消耗的容量大于性能服务级别的承诺容量时，将记录突发消耗并相应收费。超出突发容量限制的使用被标记为"超出突发限制"。</block>
+  <block id="4fef50059abaef46c09267986c9f7b05" category="paragraph">突发消耗是针对整个计费期间生成的每个消耗记录进行计算的。它反映了您在承诺容量之上过度消耗容量的数量和持续时间。要查看订阅的突发消费趋势，请参见 <block ref="d40818e721dbdfb8ef017a3c524d1def" category="inline-link-macro-rx"></block>。</block>
+  <block id="6ccc68c5f6ca138e6a78ab2897504207" category="paragraph">您的账单频率在 Keystone 协议中设置。下表显示了每个选项下的承诺产能和突发使用情况的预计发票时间。</block>
+  <block id="e012b96d751c9b601ee6357fc4fc2f75" category="cell">计费频率</block>
+  <block id="f666f601bec424b7452350a97f2b779e" category="cell">已承诺产能的发票</block>
+  <block id="beaf4024231dad57720731d0d6e3426e" category="cell">突发使用发票</block>
+  <block id="9030e39f00132d583da4122532e509e9" category="cell">每月</block>
+  <block id="96cffdcf52ce27b2182f8b08d8bf218b" category="cell">下个月发送</block>
+  <block id="a16345c21c84c29193e0bdd5e794920b" category="cell">包含在同一张发票中</block>
+  <block id="10b34207c4ef4df0cf0d0cf792e61bf9" category="cell">每年</block>
+  <block id="8cdcc6a939774d249ba9e7fc1a474221" category="cell">在每个订阅年度开始时发送</block>
+  <block id="129b210c38d479a495655af87cce998d" category="cell">在每个季度末发送</block>
+  <block id="8e6edf584171ff3e6c3f1f4df54f0210" category="admonition">对于包年账单，如果您的承诺容量在订阅期间发生变化，则会在同一天发送该订阅年度剩余时间按比例分配的最低付款发票。计费从承诺容量变更生效之日起计算。</block>
+  <block id="30f60d67f457bb040dffde52197a54da" category="section-title">相关信息</block>
+  <block id="0ea2e5735a73cb1292027bc1604190c4" category="list-text"><block ref="0ea2e5735a73cb1292027bc1604190c4" category="inline-link-macro-rx"></block></block>
+  <block id="091e308f3acc3715bded09fcb636bf53" category="summary">可用性 SLO 的目标是在计费期间为所有部署用于交付 Keystone 订单的 NetApp ONTAP 闪存存储阵列提供 99.999% 的正常运行时间。</block>
+  <block id="09e174918a2a6089d8327dd34ceafbb1" category="sidebar">Keystone 如何衡量容量？</block>
+  <block id="3679634ac4d56686ec17bf3b53f67247" category="sidebar">什么是承诺容量？</block>
+  <block id="e6ff8f3b83ecc7de79998d1038e44b10" category="sidebar">当我超出我的承诺产能时会发生什么？</block>
+  <block id="8c4d76fa92f09a8376865002414752f9" category="sidebar">何时生成发票？</block>
+  <block id="58738d2f8ee7ea1370382ef241eb44f2" category="sidebar">了解 Keystone 账单</block>
 </blocks>
