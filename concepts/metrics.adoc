@@ -27,6 +27,7 @@ Keystone STaaS 服务中使用以下术语和定义来衡量指标：
 
 
 
+[[metrics-measurement]]
 == 指标测量
 
 * *以 GiB、TiB 和 PiB 为单位的容量测量*：使用 1024 为基数测量数据存储容量（1 GiB = 1024^3^ 字节、1 TiB = 1024^4^ 字节和 1 PiB = 1024^5^ 字节）。
@@ -38,6 +39,7 @@ Keystone STaaS 服务中使用以下术语和定义来衡量指标：
 
 
 
+[[throughput-performance-metrics]]
 === 吞吐量性能指标
 
 吞吐量性能指标仅适用于基于以下内容的文件和块服务：
@@ -48,6 +50,7 @@ Keystone STaaS 服务中使用以下术语和定义来衡量指标：
 
 
 
+[[variations-in-io-density]]
 === IO密度的变化
 
 以 IOPS/TiB 和/或 MBps/TiB 计算的 IO 密度取决于以下因素：
@@ -75,6 +78,7 @@ Keystone STaaS 服务中使用以下术语和定义来衡量指标：
 
 
 
+[[volume-aqos]]
 === 卷 AQoS
 
 每个ONTAP卷都应应用适用的自适应服务质量 (AQoS) 策略。否则，每个未应用 AQoS 策略的卷内的容量将按照最高服务级别的费率计费。

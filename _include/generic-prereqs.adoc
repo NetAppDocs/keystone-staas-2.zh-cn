@@ -4,12 +4,14 @@
 
 
 
+[[other-requirements]]
 == 其他要求
 
 确保满足以下通用要求：
 
 
 
+[[networking-requirements]]
 === 组网需求
 
 Keystone Collector 的组网要求如下表所示。
@@ -177,6 +179,7 @@ NOTE: 在全新安装 Unified Manager 期间，MySQL 的默认端口 3306 仅限
 
 
 
+[[url-access]]
 === URL 访问
 
 Keystone Collector 需要访问以下互联网主机：

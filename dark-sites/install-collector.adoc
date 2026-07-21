@@ -20,6 +20,7 @@ summary: 完成几个步骤即可在没有互联网访问的环境中安装Keyst
 
 
 
+[[deploy-on-vmware-vsphere]]
 == 在 VMware vSphere 上部署
 
 按照下面的步骤进行操作：
@@ -30,6 +31,7 @@ summary: 完成几个步骤即可在没有互联网访问的环境中安装Keyst
 
 
 
+[[install-on-linux]]
 == 在 Linux 上安装
 
 根据 Linux 发行版， Keystone Collector 软件使用提供的 .deb 或 .rpm 文件安装在 Linux 服务器上。

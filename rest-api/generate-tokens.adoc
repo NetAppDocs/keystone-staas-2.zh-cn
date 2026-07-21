@@ -38,6 +38,7 @@ image:rest-api-token-types.png["代币类型"]
 
 
 
+[[generate-access-token-using-the-digital-advisor-rest-api]]
 == 使用Digital Advisor REST API 生成访问令牌
 
 访问令牌用于验证Digital Advisor API 请求。它可以直接通过控制台与刷新令牌一起生成，或者使用以下 API 调用：
@@ -89,6 +90,7 @@ curl -X 'POST' \ 'https://api.activeiq.netapp.com/v1/tokens/accessToken' \ -H 'a
 ----
 
 
+[[execute-the-api-call]]
 == 执行 API 调用
 
 成功生成访问令牌后，可以执行授权的Digital AdvisorAPI 调用以获取所需信息。

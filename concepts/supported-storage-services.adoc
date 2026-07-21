@@ -26,6 +26,7 @@ Keystone STaaS服务可以同时使用。例如，云存储订阅可以具有与
 
 
 
+[[services-for-file-block-and-object-storage]]
 == 文件、块和对象存储服务
 
 适用于ONTAP文件和块存储以及StorageGRID对象存储的Keystone STaaS 服务支持多种功能和协议，如下表所述：
@@ -96,6 +97,7 @@ NOTE: ^1^ 有关ONTAP中的勒索软件防护的信息，请参阅 https://docs.
 
 
 
+[[services-for-cloud-storage]]
 == 云存储服务
 
 Keystone STaaS 提供云存储服务。  Keystone STaaS 支持 Amazon Web Services (AWS)、Microsoft Azure 和 Google Cloud Platform 上的Cloud Volumes ONTAP数据管理功能。

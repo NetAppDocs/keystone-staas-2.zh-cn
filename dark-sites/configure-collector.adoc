@@ -66,6 +66,7 @@ image:dark-site-overall-healthy-2.png["服务状态"]
 
 
 
+[[export-usage-report]]
 == 导出使用情况报告
 
 您应该在每个月末向NetApp发送每月使用情况摘要报告。您可以手动生成此报告。
@@ -84,6 +85,7 @@ image:dark-site-clear-file-report-1.png["清除文件报告"]
 
 
 
+[[upgrade-ontap]]
 == 升级ONTAP
 
 Keystone Collector 支持通过 TUI 进行ONTAP升级。
@@ -100,6 +102,7 @@ image:dark-site-start-webserver-1.png["启动 Web 服务器选项"]
 
 
 
+[[restart-keystone-collector]]
 == 重启Keystone收集器
 
 您可以通过 TUI 重新启动Keystone Collector 服务。在 TUI 中转到 *维护 > 重新启动收集器* 服务。这将重新启动所有收集器服务，并且可以从 TUI 主屏幕监控它们的状态。

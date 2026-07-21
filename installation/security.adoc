@@ -25,6 +25,7 @@ Keystone Collector 的运行基于以下安全原则：
 
 
 
+[[security-hardening]]
 == 安全强化
 
 默认情况下， Keystone Collector 配置为使用安全强化的配置。以下是推荐的安全配置：
