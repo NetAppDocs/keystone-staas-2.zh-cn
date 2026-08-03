@@ -2791,4 +2791,7 @@
   <block id="9a43c87c7a255c40ac13d4fd963633ae" category="paragraph">对于自动续订的订阅，将显示一个自动续订图标，表明订阅将在当前期限结束时自动续订。</block>
   <block id="ac750267020c9b3c0e32de825d9b57fc" category="section-title">2026年7月20日</block>
   <block id="d0178ba7ef0d480555c11a8e0e008358" category="paragraph">这是在应用存储阵列提供的任何数据效率之前存储用户数据所需的存储容量。</block>
+  <block id="a24681f321af8a6f649af88394d08b33" category="paragraph">Keystone 会自动为您的所有订阅创建系统生成的监视器。这些监视器无法删除。编辑仅限于修改容量使用监视器的订阅编号和性能服务级别，以及修改订阅到期监视器的订阅编号。</block>
+  <block id="93c8e847adc98c4e55b9db4e1ae1da42" category="list-text">*订阅到期监视器*：在订阅到期日期前五个阈值（180、90、60、30 和 7 天）触发警报。随着到期日期的临近，严重程度从信息升级为关键。</block>
+  <block id="2699cef281fc3da983c3d28aec2a40f0" category="list-text">*容量使用率监视器*：警报基于您的订阅的承诺突发百分比，而不是固定值。例如，如果您的承诺突发为 40%，则当容量利用率达到承诺容量的 140% 时，会触发关键警报。</block>
 </blocks>
