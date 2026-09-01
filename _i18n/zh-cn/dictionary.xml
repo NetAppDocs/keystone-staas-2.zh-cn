@@ -276,7 +276,6 @@
   <block id="c072efe8294d1003e257c7dd4fe0687d" category="inline-image-macro">收集器数据流</block>
   <block id="92c812556434526899af3c97a106a849" category="paragraph"><block ref="92c812556434526899af3c97a106a849" category="inline-image-macro-rx" type="image"></block></block>
   <block id="661dc0732c9608cbd4ce15e65f4cc30c" category="summary">NetApp Keystone STaaS 服务使用多个术语来衡量指标。在使用Keystone服务第 2 版时，您可能希望了解有关这些术语的更多信息。</block>
-  <block id="e38b5058398d45181914283e348c4f38" category="doc">Keystone中使用的指标和定义</block>
   <block id="96528977c8366dbda111370e25501602" category="paragraph">NetApp Keystone STaaS 服务使用多个术语来衡量指标。在使用Keystone时，您可能想要了解有关这些术语的更多信息。</block>
   <block id="3a79a2a5d18c98a3e6880bfa3a826f9f" category="paragraph">Keystone STaaS 服务中使用以下术语和定义来衡量指标：</block>
   <block id="c7c1919c4fd61189792daac01aa326b5" category="list-text">IO 密度：IOPS/TiB：基于工作负载消耗的总空间，每秒处理的输入/输出操作数，以太字节为单位。</block>
@@ -385,8 +384,6 @@
   <block id="550340cfbad3ac61a634336458de3119" category="list-text">硬件故障修复</block>
   <block id="9f65492afee4fdfba75618fed6d0f9dd" category="list-text">软件支持</block>
   <block id="e59aa159238c2e5f491468dabdfd0b62" category="list-text">升级和补丁</block>
-  <block id="3c0d9137e7a6bf6e7b1cbaad394ac5ec" category="inline-link-macro">部署组件</block>
-  <block id="542e65f5a286fa6467f7b1c33bc0dab8" category="paragraph">有关部署的更多信息，请参阅<block ref="d7e5ccf918d68bf60a6b52690444d5ea" category="inline-link-macro-rx"></block>和<block ref="141d19b4a500cb7c8f293062f31c9e48" category="inline-link-macro-rx"></block>。</block>
   <block id="31486f17bb0da292e6faff47c42e27a2" category="summary">Keystone是一种按需付费、基于订阅的服务模式，适合那些喜欢 OpEx 消费模式而非前期资本支出或租赁的企业。</block>
   <block id="8ae3d79d3f1b6cb3022dbfb96c477b67" category="doc">了解NetApp Keystone</block>
   <block id="6d7eb772ffa1657b401639ad7643de00" category="paragraph">NetApp Keystone是一种按使用量付费的基于订阅的服务模式，为那些倾向于采用运营费用消费模式而非前期资本支出或租赁来满足其数据存储和保护需求的企业提供无缝的混合云体验。</block>
@@ -407,7 +404,6 @@
   <block id="9e38decf152b1fba3ebe0ddbb861a5a3" category="inline-link-macro">Keystone STaaS 中的附加服务</block>
   <block id="91ad65d98336ef29959957165ed0c9ea" category="list-text"><block ref="91ad65d98336ef29959957165ed0c9ea" category="inline-link-macro-rx"></block></block>
   <block id="d534e2cd061f06b6e0ad742d6dda7fee" category="list-text"><block ref="d534e2cd061f06b6e0ad742d6dda7fee" category="inline-link-macro-rx"></block></block>
-  <block id="d7e5ccf918d68bf60a6b52690444d5ea" category="list-text"><block ref="d7e5ccf918d68bf60a6b52690444d5ea" category="inline-link-macro-rx"></block></block>
   <block id="df7d31258a77cf6838aec404025cc8f0" category="list-text"><block ref="df7d31258a77cf6838aec404025cc8f0" category="inline-link-macro-rx"></block></block>
   <block id="f29d51ebfc7a851025b60dc1bcc5560e" category="summary">Keystone提供按需付费模式，满足您灵活且可扩展的消费需求。</block>
   <block id="ef379c37057d9a196c5c79f68a141fe6" category="paragraph">Keystone为您提供以下计费功能：</block>
@@ -850,7 +846,6 @@
   <block id="7605fc3bbddce380c28f25b5327f5fab" category="paragraph"><block ref="7605fc3bbddce380c28f25b5327f5fab" category="inline-image-macro-rx" type="image"></block></block>
   <block id="572eb7b481dd9edd4e8e79e98f5702e7" category="paragraph">这个过程创造了<block ref="db5570bf61464b46e2bde31ed61a7dc6" prefix=" " category="inline-code"></block>位于上述位置的软件包可以与NetApp共享，以便解决问题。</block>
   <block id="df607436cb358c9158c17df17c648c95" category="summary">Keystone提供一种_私有_部署模式（也称为_暗站_），以满足您的业务和安全需求。</block>
-  <block id="89776fa991dc9a854be133c1980588a2" category="doc">了解Keystone （私人模式）</block>
   <block id="5580118283395cf4a34aae1cbd8449f9" category="paragraph">Keystone提供一种_私有_部署模式（也称为_暗站_），以满足您的业务和安全需求。此模式适用于连接受限的组织。</block>
   <block id="992dbd3c9033c22e0a3a71601032b203" category="paragraph">NetApp提供专门的Keystone STaaS 部署，适用于互联网连接有限或没有互联网连接的环境（也称为暗站）。这些是安全或隔离的环境，其中外部通信由于安全、合规性或操作要求而受到限制。</block>
   <block id="875907ebe59351ce3319b9b573d3a1a4" category="paragraph">对于NetApp Keystone来说，为暗站提供服务意味着以尊重这些环境约束的方式提供Keystone灵活存储订阅服务。这涉及：</block>
@@ -1376,7 +1371,6 @@
   <block id="9ce62eb0f672e21ccd91e690812cac59" category="list-title">Keystone Collector 服务器虚拟机：</block>
   <block id="3cd8ee624224889231554d68f6c0f471" category="list-text">核心：2 个 CPU</block>
   <block id="729c0bdf36ec5a81531eff6e6786c89d" category="list-text">内存：4 GB</block>
-  <block id="6154780a7a0c05ce30f1c45aee04101c" category="doc">监控Keystone Collector 的健康状况</block>
   <block id="527a4a001d7f838ad6b3f5b6dd352957" category="paragraph">您可以使用任何支持 HTTP 请求的监控系统来监控Keystone Collector 的健康状况。监测健康状况有助于确保Keystone仪表板上的数据可用。</block>
   <block id="4cb7202e970020325d85bd7795afbf5c" category="list-text">*403*：表示查询健康状态的 HTTP 客户端不在_允许_列表中，该列表是允许的网络 CIDR 列表。对于此状态，不会返回任何健康信息。 _allow_ 列表使用网络 CIDR 方法来控制哪些网络设备被允许查询Keystone健康系统。如果您收到此错误，请从 * Keystone Collector 管理 TUI &gt; 配置 &gt; 健康监控* 将您的监控系统添加到_允许_列表中。</block>
   <block id="e30da5eac07974449eb112c2a4b1bbdc" category="admonition-title">Linux 用户请注意此已知问题：</block>
@@ -1936,7 +1930,6 @@
   <block id="da50043d1f7c61447ab36e5a81e7ab67" category="section-title">执行 API 调用</block>
   <block id="ffc141c1c95ba83a77683a29e2e3c158" category="paragraph">成功生成访问令牌后，可以执行授权的Digital AdvisorAPI 调用以获取所需信息。</block>
   <block id="b5db1df1ea6118ca7ac1ab438161410f" category="summary">Digital Advisor REST API 检索与给定 customerID 关联的所有订阅的当前消费详情。</block>
-  <block id="8bc9e7b2eb702a14a34a24bcc32c172d" category="doc">使用Digital Advisor REST API 获取客户消费详情</block>
   <block id="60da99bd88f7966b796873420df2f1c3" category="paragraph">此 API 检索与给定 customerID 关联的所有订阅的当前消费详情。</block>
   <block id="7528035a93ee69cedb1dbddb2f0bfcc8" category="cell">GET</block>
   <block id="41d2da547ce3e763f6eead2948c7bce6" category="cell">*终点*</block>
@@ -1953,15 +1946,12 @@
   <block id="d4232bc3d79f7c2651bc3b089aa822c1" category="list-text">to_date_utc: &lt;结束日期（RFC3339 格式）&gt;</block>
   <block id="eb53e4bff92730b260ff2452a158fac7" category="paragraph">API 将以 JSON 对象进行响应，其中包含选定时间范围内给定客户的所有订阅以及历史服务使用情况指标的列表。以下是一个示例响应：</block>
   <block id="f9758d05812567489fe8755ed9e896cf" category="summary">Digital Advisor REST API 检索与用户关联的所有 customerID 的列表。</block>
-  <block id="2a2abaabc17b5a91d82e82303642b09c" category="doc">使用Digital Advisor REST API 获取所有客户列表</block>
   <block id="20fa5f9b2d4cd9672cce24531c8f1666" category="paragraph">此 API 检索与用户关联的所有 customerID 的列表。</block>
   <block id="beadb7936ab29d8bd492fb93114101f3" category="cell"><block ref="b6c5a11b232c98606fb9ada3ec62627d" prefix="" category="inline-code"></block></block>
   <block id="5b7e7d763cd7702a1e75085674fe6768" category="paragraph">API 将以包含客户姓名和相应 ID 列表的 JSON 对象进行响应。以下是一个示例响应：</block>
   <block id="b964b33b06c664e35c5f043238992fba" category="summary">Digital Advisor REST API 检索与给定 customerID 相关的所有订阅和服务级别的列表。</block>
-  <block id="9b6c21a9e3f04a27506fa4a5eb0cd41f" category="doc">使用Digital Advisor REST API 获取客户订阅</block>
   <block id="2c74d7df1fc4058a6a46b83d4b38bb2a" category="cell"><block ref="bb50b1b9a7f23ddec00f27c428c363f2" prefix="" category="inline-code"></block></block>
   <block id="67b63898a05fe3ab08e6c0690cc73ca3" category="summary">Digital Advisor API 提供了一个用于获取Keystone服务详细信息和指标的编程接口。</block>
-  <block id="0a076b1454da01faf38e4805c15570ee" category="doc">开始使用Digital Advisor REST API 检索Keystone数据</block>
   <block id="e29debe73c0e9065a4267dfae6adefe9" category="paragraph">Digital Advisor REST API 提供了一个用于检索Keystone订阅和消费详细信息的编程接口。</block>
   <block id="c3091c7f241015a003ff982080a072b0" category="paragraph">从高层次来看，与Digital Advisor REST API 交互的工作流程包括以下步骤：</block>
   <block id="6c0397360aa8b37bbbe1fa3a38744674" category="inline-link">登录Digital Advisor。</block>
@@ -2155,7 +2145,6 @@
   <block id="fbb165d9f99339f62e1190730a20d297" category="sidebar">美国保护支持 (USPS)</block>
   <block id="faeaec9eda6bc4c8cb6e1a9156a858be" category="sidebar">可用性</block>
   <block id="19bea5bec76c66ef8bd189aa23a4c860" category="sidebar">可持续性</block>
-  <block id="fad1e832526fa7449bfff5b810826110" category="sidebar">通过Digital Advisor REST API 访问Keystone</block>
   <block id="087e52621b1299752b891e4115749950" category="sidebar">Keystone订阅服务版本 1</block>
   <block id="738272188927126099f39cbe7024dbf9" category="section-title">了解定价</block>
   <block id="a9defa509a6012981ff7f002dd53d0e6" category="paragraph">高级数据保护附加服务的定价基于每个站点的承诺容量。这有助于确定高级数据保护服务的实际成本（以 $/TiB 为单位）。附加费用适用于您的订阅中的所有容量，包括源数据、镜像副本和非镜像数据。</block>
@@ -2414,7 +2403,6 @@
   <block id="77750efa6f5ff153acdc42067058017f" category="section-title">2025年11月10日</block>
   <block id="0c359189f8e07afc4bf0a432b108a2f7" category="list-text">客户需提供一台运行以下操作系统之一的 Linux 服务器：Debian 12、Red Hat Enterprise Linux 8.6 或更高版本的 8.x 版本、Red Hat Enterprise Linux 9.0 或更高版本，或 CentOS 7（仅限现有环境）。Keystone软件使用以下方式安装：<block ref="27b0f8226ae1a7f1b973155b13221df6" prefix=" " category="inline-code"></block> 或者<block ref="a0d068ed6db680cb6ae54d799e889954" prefix=" " category="inline-code"></block> 软件包取决于 Linux 发行版。</block>
   <block id="188a74af3438876c97ac7877f4af6cc9" category="list-text">客户提供运行 Debian 12、Ubuntu 20.04 LTS、Red Hat Enterprise Linux (RHEL) 8.x、Red Hat Enterprise Linux 9.0、Amazon Linux 2023 或更高版本的 Linux 服务器。</block>
-  <block id="079d46d4e807d9ca797d92cd97e9c5ea" category="list-text">服务信用额度可用于未来的发票。服务积分不适用于已过期的Keystone订阅。欲了解更多信息，请参阅 <block ref="4e739353290fa4a9ebb5e0d958a5945c" category="inline-link-macro-rx"></block>。</block>
   <block id="8e3e0d66dd46c331ec4b3a698a38a9e7" category="list-text">您可以通过控制台或向您的Keystone Success Manager (KSM) 请求更改已承诺的容量。有关申请更改的信息，请参阅 <block ref="4e739353290fa4a9ebb5e0d958a5945c" category="inline-link-macro-rx"></block>。</block>
   <block id="17766f6125f71fd7cf26ceef70d4e504" category="list-text">下载文件后，您可以将其附加到Keystone ServiceNow 支持票证。有关提高票数的信息，请参阅 <block ref="fa4c1fe482109028db7ac27dab34833d" category="inline-link-macro-rx"></block>。</block>
   <block id="fd9138bbd3a6e55b24c6c044d67e4bc1" category="list-text">操作系统（选择一项）：</block>
@@ -2459,14 +2447,11 @@
   <block id="e6031ccc926a297ed489fed2eb5fc832" category="paragraph">要启用NetApp Keystone STaaS 服务，您需要多个组件。开始之前，请先查看这些组成部分。</block>
   <block id="7b2a0cab269bf73e47e958a9123402e1" category="doc">Keystone的Data Infrastructure Insights插件</block>
   <block id="f4661181da0130d61f3128498582908f" category="doc">Keystone的数据分层附加服务</block>
-  <block id="ac6db46674728d3a4cb59b937dd96ead" category="doc">了解Keystone基础设施</block>
-  <block id="62fb7818da74bdf8e586f11aa4b2f85f" category="doc">Keystone的不可退货、非易失性组件以及SnapLock合规性附加服务</block>
   <block id="43b82c4e7e58013ebe91d40fcb3f7718" category="doc">Keystone的可用性 SLO</block>
   <block id="259bdb910694b04b20beea4776938bc1" category="doc">Keystone的性能 SLO</block>
   <block id="55f8301e147b74d377ba17c059419cab" category="doc">Keystone勒索软件恢复保证</block>
   <block id="34a4bf3e6647e3dbdeb2e4f10c663eab" category="doc">Keystone的可持续性 SLO</block>
   <block id="27aa1272743b7f2386d3189a53b56acd" category="doc">Keystone的 USPS 附加组件</block>
-  <block id="640eca2728ec0e817f889513c2454e02" category="doc">准备以私有模式安装Keystone Collector</block>
   <block id="52f54d887aa41d09a6436a07a2e0764c" category="doc">Keystone对ONTAP和StorageGRID 的要求</block>
   <block id="116f188b55b3963186369fe6e76fae16" category="doc">在 Linux 系统上安装Keystone ITOM Collector</block>
   <block id="d647eab7452f325c298991f79290af31" category="doc">在 Windows 系统上安装Keystone ITOM Collector</block>
@@ -2477,7 +2462,6 @@
   <block id="1dd0253353633fba5037901ed7ca93a1" category="doc">查看Keystone订阅的ONTAP卷和对象存储详细信息</block>
   <block id="8beb28d57ca1bb568fef4619e190f809" category="doc">为Keystone生成刷新令牌和访问令牌</block>
   <block id="bac9b6c348c931a976006431b4b392d7" category="doc">使用Digital Advisor REST API 获取Keystone客户的消费详情</block>
-  <block id="70233a54c59d50201e00e568353b8e42" category="doc">使用Digital Advisor REST API 获取所有Keystone客户的列表</block>
   <block id="bb9f69edc6b159c2172c134f7b8ec8d9" category="doc">使用Digital Advisor REST API 获取Keystone客户订阅</block>
   <block id="ec3c5dc2acc96dd435267e93ff378ceb" category="sidebar">了解附加服务</block>
   <block id="1c0706b323b25df07171d935dadca63d" category="sidebar">了解Keystone STaaS SLO</block>
@@ -2542,7 +2526,6 @@
   <block id="c7ce58326ff0d43313f58438432618e4" category="inline-image-macro">显示主站点（群集 A）、镜像站点（群集 B）、连接状态指示器、同步状态和 ONTAP Mediator 的 ADP 拓扑图像</block>
   <block id="485a60e9684d6db386d471e94d4f8e6e" category="paragraph"><block ref="485a60e9684d6db386d471e94d4f8e6e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f7cf2a22df63f7c801c01cfb4ed82fab" category="admonition">您可以从 ADP 拓扑中选择 Cluster B 订阅（镜像），将其视为主站点。</block>
-  <block id="ea463c160b93aefec442f24e23176210" category="admonition">如果同步状态显示不同步或连接状态显示降级，请参阅 <block ref="da15ada5eca0cf6d8fba09a6cd49576b" category="inline-link-macro-rx"></block> 以解决此问题。</block>
   <block id="8f2ab845f0c2b21de9dce9bacddaabcb" category="list-text">查看主站点或镜像站点的历史消费趋势。</block>
   <block id="3427110bee6003dd0893bac8f65d3026" category="paragraph">在 *容量利用率* 下，选择 Cluster A（主要）或 Cluster B（镜像）旁边的 *查看*。</block>
   <block id="d9e6be64cc5e0800433f8124d52098c6" category="inline-link-macro">查看您的 Keystone 订阅的消费趋势</block>
@@ -2796,4 +2779,24 @@
   <block id="2699cef281fc3da983c3d28aec2a40f0" category="list-text">*容量使用率监视器*：警报基于您的订阅的承诺突发百分比，而不是固定值。例如，如果您的承诺突发为 40%，则当容量利用率达到承诺容量的 140% 时，会触发关键警报。</block>
   <block id="68590e28745629d3e9c45d233ec874f4" category="paragraph">在 Digital Advisor 的*消费趋势*选项卡中，消费趋势图表不显示当天的消费数据，仅显示截至前一天的数据。</block>
   <block id="c11ff4c4af6e617e0c27f005526215c1" category="paragraph">2026-08-10</block>
+  <block id="92f0ca3d130ab33a16d28b57af2ef1fa" category="doc">了解 Keystone 基础设施</block>
+  <block id="ce554340b5d358edd16adc582cbd1e9f" category="doc">Keystone STaaS 存储指标和定义</block>
+  <block id="efc51c397e61250c642c86d68b092174" category="doc">NRNVC 和 SnapLock Keystone 合规附加服务</block>
+  <block id="7e09a61a4369064a74afa38f6e7a8c9a" category="paragraph">有关部署的详细信息，请参见 <block ref="d03ef5b6e8b6191ac72b7ae5462d2546" category="inline-link-macro-rx"></block> 和 <block ref="79f76dbd81e71f36d15d1dac3766b8c8" category="inline-link-macro-rx"></block>。</block>
+  <block id="d03ef5b6e8b6191ac72b7ae5462d2546" category="list-text"><block ref="d03ef5b6e8b6191ac72b7ae5462d2546" category="inline-link-macro-rx"></block></block>
+  <block id="b3e473fe04a8ccacad32fa6cbce9ed33" category="inline-link-macro">Keystone 的支持服务</block>
+  <block id="7f0b447c374e3209d4e9d60f6086fb1e" category="list-text">服务消费金可能会应用于未来的发票。服务积分不适用于过期的 Keystone 订阅。要了解更多信息，请参阅 <block ref="1ed065cbb5ab0431ea9f338f6c76a9cb" category="inline-link-macro-rx"></block>。</block>
+  <block id="041ae70f8ef408ca128653efabef68e1" category="doc">在私密模式下了解 Keystone</block>
+  <block id="caa17ce055116ffaa788d2f0023a3fb8" category="doc">私有模式下 Keystone Collector 的安装要求</block>
+  <block id="4c9bf1be0907afa10a65b5bd2b4f0538" category="doc">Keystone Collector 的运行状况监控</block>
+  <block id="e20b97662a63cdd3b7aeb4920b33801f" category="admonition">如果同步状态显示不同步或连接状态显示降级，请参阅 <block ref="1ed065cbb5ab0431ea9f338f6c76a9cb" category="inline-link-macro-rx"></block> 以解决此问题。</block>
+  <block id="9af3a80255b1f2badb4f52464dc42a1a" category="paragraph">在 Digital Advisor 的 *Consumption Trend* 选项卡中，当选择不同的日期范围时，已开票应计突发图表会显示同一计费周期的不同值。</block>
+  <block id="46c131fa48958e881a135770d82d1ed2" category="paragraph">2026-08-31</block>
+  <block id="b08f54c4c682a7fbc5eae73108b111da" category="doc">使用 Digital Advisor REST API 获取 Keystone 客户列表</block>
+  <block id="f6dd1ff13cc1aa67dc8eba5d6efe56ab" category="doc">使用 Digital Advisor REST API 检索 Keystone 数据</block>
+  <block id="5cf41fde5a4334e75c952ba76173f057" category="sidebar">适用于 Keystone 的 Digital Advisor REST API</block>
+  <block id="10348511187b7d51a49e8d1ed75f42fe" category="sidebar">开始使用 Digital Advisor REST API</block>
+  <block id="d23d8e4208389cdbfa05c473cb8410ad" category="sidebar">获取 Keystone 客户列表</block>
+  <block id="7544c020cb246587d47ad73d1598a7e4" category="sidebar">获取 Keystone 客户订阅</block>
+  <block id="0fb6871a30d0a0891c81661a4c790079" category="sidebar">获取 Keystone 客户消费详情</block>
 </blocks>
