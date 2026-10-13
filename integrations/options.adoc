@@ -36,6 +36,15 @@ summary: 作为NetApp Keystone STaaS 订阅者，您可以搜索和过滤数据�
 
 
 
+[[generate-health-reports-from-netapp-console]]
+== 从 NetApp Console 生成运行状况报告
+
+使用 NetApp Console 为一个或多个订阅生成或安排运行状况报告。这些 PowerPoint 报告整合了订阅使用情况、运营状况、风险和漏洞。Digital Advisor 不支持生成或安排健康评估报告。
+
+要了解更多信息，请参阅 link:../integrations/health-assessment-reports.html["为 Keystone 订阅生成和计划运行状况报告"]。
+
+
+
 [[generate-consolidated-report-from-digital-advisor]]
 == 从Digital Advisor生成综合报告
 

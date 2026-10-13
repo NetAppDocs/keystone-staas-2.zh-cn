@@ -117,6 +117,7 @@ image:icon-grey.png["灰点图标"]*无消耗*：没有记录性能服务级别�
 * link:../integrations/dashboard-overview.html["了解Keystone仪表板"]
 * link:../integrations/current-usage-tab.html["查看您当前的消费详情"]
 * link:../integrations/consumption-tab.html["查看消费趋势"]
+* link:../integrations/health-assessment-reports.html["生成和计划运行状况报告"]
 * link:../integrations/subscription-timeline.html["查看您的订阅时间表"]
 * link:../integrations/assets-tab.html["查看您的Keystone订阅资产"]
 * link:../integrations/assets.html["查看Keystone订阅中的资产"]

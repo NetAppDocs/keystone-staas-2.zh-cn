@@ -131,6 +131,8 @@ sidebar:
         url: "/integrations/monitoring-alerts.html"
       - title: 查看和创建警报监视器
         url: "/integrations/monitoring-alert-monitors.html"
+    - title: 生成和计划运行状况报告
+      url: "/integrations/health-assessment-reports.html"
     - title: 查看您的服务请求
       url: "/integrations/administration-tab.html"
     - title: 查看卷和对象存储详细信息

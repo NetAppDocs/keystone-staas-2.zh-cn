@@ -18,6 +18,7 @@ Keystone仪表板是您高效监控、分析和管理Keystone订阅的首选解�
 
 * *监控订阅详细信息*：查看有关 Keystone 订阅的详细信息，包括性能服务级别（基本和附加服务，如高级数据保护和 Data Infrastructure Insights）、容量使用情况、资产和警报。
 * *跟踪容量使用情况并生成报告*：跟踪当前和历史容量使用情况，并生成报告以分析订阅数据并做出明智的决策。
+* *生成健康报告*：创建按需或预定的健康评估报告，以审查订阅使用情况、运营健康状况、风险和漏洞。
 * *查看订阅时间表*：通过监控订阅时间表，随时了解关键日期和事件。
 * *管理订阅*：根据您的需求变化提交修改性能服务级别或其他订阅参数的请求。
 * *分析卷和对象*：深入了解订阅的卷和对象，包括其卷和对象级别的容量。
@@ -100,6 +101,11 @@ link:../integrations/options.html#generate-reports-from-netapp-console-or-digita
 
 
  a| 
+link:../integrations/health-assessment-reports.html["生成和计划运行状况报告"]
+| 是 | 否 
+
+
+ a| 
 link:../integrations/volumes-objects-tab.html["查看卷和对象的详细信息"]
 | 是 | 是 
 
@@ -116,6 +122,7 @@ link:../integrations/performance-tab.html["查看绩效指标"]
 *相关信息*
 
 * link:../integrations/dashboard-access.html["开始使用Keystone仪表板"]
+* link:../integrations/health-assessment-reports.html["生成和计划运行状况报告"]
 * link:../integrations/keystone-console.html["NetApp控制台中的Keystone仪表板"]
 * link:..//integrations/keystone-aiq.html["Digital Advisor中的Keystone仪表板"]
 

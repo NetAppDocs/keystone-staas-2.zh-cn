@@ -1,0 +1,12 @@
+= 为 Keystone 订阅生成健康见解
+:allow-uri-read: 
+
+
+此 Keystone STaaS 版本在 NetApp Console 的 Keystone 仪表板中包含以下更新。
+
+
+
+[[generate-health-insights-for-keystone-subscriptions]]
+=== 为 Keystone 订阅生成健康见解
+
+您可以从 NetApp Console 的 *Storage > Keystone > Monitoring > Health reports* 下载按需 PowerPoint 报告，或安排一次性、每周、每月或每季度的定期交付。每份报告综合了所选订阅的订阅使用情况、运营健康状况、风险和漏洞，帮助您识别问题并与收件人共享可操作的见解。如需了解更多信息，请参阅 https://docs.netapp.com/us-en/keystone-staas/integrations/health-assessment-reports.html["为 Keystone 订阅生成和计划运行状况报告"]。

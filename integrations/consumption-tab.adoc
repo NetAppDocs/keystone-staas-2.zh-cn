@@ -226,6 +226,7 @@ image:invoiced-daily-accr-burst-date.png["以折线图形式显示突发使用�
 * link:../integrations/dashboard-overview.html["了解Keystone仪表板"]
 * link:../integrations/subscriptions-tab.html["查看您的Keystone订阅的详细信息"]
 * link:../integrations/current-usage-tab.html["查看Keystone订阅的当前消耗情况"]
+* link:../integrations/health-assessment-reports.html["生成和计划运行状况报告"]
 * link:../integrations/subscription-timeline.html["查看Keystone订阅的时间线"]
 * link:../integrations/assets-tab.html["查看与Keystone订阅相关的资产"]
 * link:../integrations/monitoring-alerts.html["查看和管理警报和监视器"]

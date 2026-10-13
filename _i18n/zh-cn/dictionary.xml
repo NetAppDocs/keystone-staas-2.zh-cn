@@ -2799,4 +2799,56 @@
   <block id="d23d8e4208389cdbfa05c473cb8410ad" category="sidebar">获取 Keystone 客户列表</block>
   <block id="7544c020cb246587d47ad73d1598a7e4" category="sidebar">获取 Keystone 客户订阅</block>
   <block id="0fb6871a30d0a0891c81661a4c790079" category="sidebar">获取 Keystone 客户消费详情</block>
+  <block id="73c20ad627e7f815932cb8837d70e1e8" category="doc">为 Keystone 订阅生成健康见解</block>
+  <block id="ae638b3203053916360a0f228b8b54d7" category="paragraph">此 Keystone STaaS 版本在 NetApp Console 的 Keystone 仪表板中包含以下更新。</block>
+  <block id="a0c062a66e58943547f514904ae51daa" category="inline-link">为 Keystone 订阅生成和计划运行状况报告</block>
+  <block id="6da38bfefa907461e0fc0e4cbf32c236" category="paragraph">您可以从 NetApp Console 的 *Storage &gt; Keystone &gt; Monitoring &gt; Health reports* 下载按需 PowerPoint 报告，或安排一次性、每周、每月或每季度的定期交付。每份报告综合了所选订阅的订阅使用情况、运营健康状况、风险和漏洞，帮助您识别问题并与收件人共享可操作的见解。如需了解更多信息，请参阅<block ref="d2f756b41ddff582298cd4e997cfe66a" category="inline-link-rx"></block>。</block>
+  <block id="d9488e4902ac8163ee538f8e5bfe01c8" category="inline-link-macro">生成和计划运行状况报告</block>
+  <block id="ea034e7c3ada4fd5285144ae8a2f1ec3" category="list-text"><block ref="ea034e7c3ada4fd5285144ae8a2f1ec3" category="inline-link-macro-rx"></block></block>
+  <block id="6cceac6cd41854fc33cca3191e462847" category="list-text">*生成健康报告*：创建按需或预定的健康评估报告，以审查订阅使用情况、运营健康状况、风险和漏洞。</block>
+  <block id="bcd6194438a86161f86a66b169dcae08" category="summary">使用 NetApp Console 中的 Keystone 运行状况评估报告来查看订阅详细信息、评估运行状况、分析使用趋势，并识别一个或多个订阅的风险和漏洞。您可以按需生成报告或安排报告，以便与利益相关者共享准确的运营和合规信息。</block>
+  <block id="43c438a5f171a0070565c9a3ce412632" category="paragraph">从 NetApp Console 中的 Keystone 仪表板生成或计划一个或多个 Keystone 订阅的运行状况报告。这些报告提供了订阅使用情况、运行状况、风险和漏洞的综合视图，您可以将其与目标收件人共享。此功能在 Digital Advisor 中不可用。</block>
+  <block id="ed90fab979b1c2338f266823f485f606" category="paragraph">运行状况报告可让您查看所选订阅的订阅使用情况、运营状况和已识别的风险。在*新报告*页面上，使用*报告配置*面板定义报告的范围和选项。在生成或安排报告之前，使用预览区域查看幻灯片顺序和布局。预览仅显示报告结构，不显示实际订阅数据。</block>
+  <block id="805e040836078c98207014459ce00fe4" category="paragraph">按照以下步骤生成报告以立即下载，或安排一次性或定期报告以便稍后发送：</block>
+  <block id="8b033bd96006a357396469d2d12002ff" category="list-text">在控制台左侧导航菜单中，选择*存储 &gt; Keystone &gt; 监控 &gt; 报告*。</block>
+  <block id="bc32ee3dafd98cfab55839d1a1ad173d" category="list-text">选择*新报告*。</block>
+  <block id="db73c44d8bba03212ad21e123d47d5dd" category="list-text">在*报告配置面板*中，在*报告名称*字段中输入名称。</block>
+  <block id="d99d4ce092a8b9f4aff4e17d7603bfe2" category="list-text">从*时间范围*下拉列表中选择时间范围。</block>
+  <block id="6a03b07232e58a0d22244bd78e9ee309" category="paragraph">选择一个预设范围，例如*过去 60 天*，或选择*自定义*以输入您自己的日期。所选范围决定了*消费趋势*部分和其他基于时间的部分中显示的历史数据。如果您选择*自定义*，则无法计划报告。</block>
+  <block id="b9b414179e1f9c10b9cf39dc76d45554" category="inline-image-macro">运行状况报告配置显示在选择自定义日期范围时已禁用计划</block>
+  <block id="e84931d18314142b08f9bd586d2d273d" category="paragraph"><block ref="e84931d18314142b08f9bd586d2d273d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="55c22e502f5cfc9d2f8d74e22b0c8e98" category="list-text">从*订阅*下拉列表中选择一个或多个订阅。</block>
+  <block id="de710d1f96079b8408fcc93a084d21ca" category="admonition">NetApp 合作伙伴可以在其一个或多个托管 Keystone 客户帐户中选择订阅。</block>
+  <block id="2494369c3bace34f8d03d3b0f6b35714" category="list-text">在*报告部分*下，选择要包含的部分。</block>
+  <block id="a23a396c1ad877d36ea36ff279bab746" category="paragraph">您选择的每个部分都会显示在预览区域中，并包含在生成的报告中。例如，您可以包含有关订阅、当前容量使用情况、消耗趋势、物理容量、系统运行状况以及风险和漏洞的摘要。对于*消耗趋势*，您可以包含历史消耗图表，也可以选择包含对未来消耗的预测。</block>
+  <block id="73edafd21beaaf25a3c4b463e7301486" category="list-text">选择演示文稿主题。</block>
+  <block id="e79541eac81a9b39cbfa8f8f8515ac14" category="list-text">查看预览区域中显示的部分，以确认它们与您的选择相匹配。</block>
+  <block id="c33cd459680d55a97ffee84381838d90" category="list-text">请选择要创建报告的方式。</block>
+  <block id="7fb99d2c520fc85b9123d1d2daf9e796" category="list-text">*生成报告*</block>
+  <block id="d3cd467451f595793563586a695d9c1c" category="paragraph">选择*生成报告*以立即下载报告。</block>
+  <block id="8ab8d739fddb8825d819131cf0c36e7a" category="paragraph">报告已提交生成，您将返回到*报告*选项卡。此时将显示状态为*正在运行*的报告。</block>
+  <block id="9dabac9e7f2d642811e0cf62d3e18002" category="paragraph">状态更改为*已生成*后，选择报告行末尾的省略号图标，然后选择*下载*。</block>
+  <block id="00555bd07173f7d9c242e377dc1e4afe" category="list-text">*计划报告*</block>
+  <block id="6cebac50d1a7bff739e4a52a8cedaa57" category="paragraph">选择*安排*以创建一次性或定期报告，并完成以下步骤：</block>
+  <block id="8b7ea71302f67c6f0966ac6f0f8efc8f" category="list-text">选择频率： *一次*、*每周*、*每月*或*每季度*。</block>
+  <block id="83fb650baf1f2bfaabf37d0b01f8b198" category="list-text">选择*开始日期*。</block>
+  <block id="86b7782bce140b306301378eb75d320f" category="inline-image-macro">显示所选每周频率、空白开始日期和结束日期字段、收件人字段以及所选 PPT 格式的计划报告对话框</block>
+  <block id="65de2e1080fef3c60cec4997218e5994" category="paragraph"><block ref="65de2e1080fef3c60cec4997218e5994" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1a65d24447c848fed1b1282d04274bcc" category="paragraph">开始日期决定报告首次运行的时间。对于重复频率，报告根据选定的每周、每月或每季度时间表再次运行。</block>
+  <block id="a4f1fd8e2247116044a0a9ef4e9401ae" category="list-text">（可选）选择*结束日期*。</block>
+  <block id="a0e32eed5feb418713b52f7739a1f7de" category="paragraph">如果未选择结束日期，则计划将继续进行，直到您更改为止。</block>
+  <block id="45fdcaf864d7e16c4c277f710fe9214c" category="list-text">选择*安排报告*。</block>
+  <block id="dda29f572e1f01fb24ef9fbb9567dcae" category="paragraph">计划已创建，报告将显示在*报告*选项卡上，执行类型为*计划运行*。使用*上次运行*、*下一次运行*和*状态*列来跟踪每次运行。</block>
+  <block id="04091b33f99194409a3e638fb720ccd7" category="paragraph">要编辑每周、每月或每季度计划，请选择报告行末尾的省略号图标，然后选择*编辑计划*。无论状态是*已计划*还是*已生成*，您都可以执行此操作。生成报告后，您无法编辑*一次性*计划。</block>
+  <block id="3d8502ba652cf0b8dda71ea1d23775d9" category="paragraph">状态更改为*已生成*后，选择报告旁边的省略号图标，然后选择*下载*。</block>
+  <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">结果</block>
+  <block id="cf3e1ddb292882536f57277035f7ccdf" category="paragraph">生成的报告以 PowerPoint 演示文稿形式下载。您可以从省略号菜单中选择*再次生成*以创建具有相同配置的新报告。</block>
+  <block id="74a2518355991b0460124194339aa262" category="inline-link-macro">查看当前使用情况</block>
+  <block id="05a9cc32ea53864df9d04304930c39b2" category="list-text"><block ref="05a9cc32ea53864df9d04304930c39b2" category="inline-link-macro-rx"></block></block>
+  <block id="ff0355703598e77f5d53ad567098e540" category="inline-link-macro">查看与订阅关联的资产</block>
+  <block id="122bb916bdbca193871c1c238a8ad494" category="list-text"><block ref="122bb916bdbca193871c1c238a8ad494" category="inline-link-macro-rx"></block></block>
+  <block id="e9585bf2660bfde75b6f0a2b54b179ac" category="section-title">从 NetApp Console 生成运行状况报告</block>
+  <block id="d2fc234fa58b5424fb66e69d6f37ea37" category="paragraph">使用 NetApp Console 为一个或多个订阅生成或安排运行状况报告。这些 PowerPoint 报告整合了订阅使用情况、运营状况、风险和漏洞。Digital Advisor 不支持生成或安排健康评估报告。</block>
+  <block id="0557e64d44b59ed5a4145771c544da91" category="paragraph">要了解更多信息，请参阅 <block ref="1f95c525270767ec0581ce04383996f5" category="inline-link-macro-rx"></block>。</block>
+  <block id="e019cb225a4644922cdd06575b099710" category="section-title">2026年10月12日</block>
 </blocks>
