@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: release-notes/known-limitations.html 
 keywords: limitations, known limitations in Keystone STaaS 
-summary: 已知限制标识了该产品的此版本不支持或不能与其正确互操作的平台、设备或功能。仔细审查这些限制。 
+summary: 已知限制可识别 Keystone STaaS 服务或组件不支持或无法正确互操作的平台、设备或功能。 
 ---
 = Keystone STaaS 的已知限制
 :hardbreaks:

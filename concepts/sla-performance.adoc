@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: concepts/sla-performance.html 
 keywords: sustainability, sla, service level agreement, slo, service level objectives 
-summary: Keystone为每个性能服务级别提供基于延迟的 SLO，如Keystone订单中所述，用于达到突发限制的消耗容量。 
+summary: Keystone STaaS 为每个性能服务级别提供基于延迟的 SLO，如 Keystone 订单中所述，适用于不超过突发限制的已消耗容量。 
 ---
-= Keystone的性能 SLO
+= Keystone STaaS 的性能 SLO
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

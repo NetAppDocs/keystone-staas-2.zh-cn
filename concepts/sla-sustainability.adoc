@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: concepts/sla-sustainability.html 
 keywords: sustainability, sla, service level agreement, slo, service level objectives 
-summary: 'Keystone为基于具有可持续性 SLO 的ONTAP闪存存储阵列的存储服务提供每太字节 (W/TiB) 最大实际瓦数的保证测量。' 
+summary: 了解 Keystone STaaS 的可持续性 SLO 如何为您的部署定义功耗目标，以及如果未达到这些目标，如何申请服务积分。 
 ---
-= Keystone的可持续性 SLO
+= Keystone STaaS 的可持续发展 SLO
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

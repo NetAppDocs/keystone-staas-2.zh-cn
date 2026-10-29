@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: dark-sites/configure-collector.html 
 keywords: configure, keystone, collector, private mode, darksite mode, tui utility 
-summary: 完成一些配置任务，以使Keystone Collector 能够在没有互联网访问的环境中收集使用数据，也称为_暗站_或_私人模式_。 
+summary: 配置 Keystone Collector 以在没有互联网访问权限的 _dark site_ 环境中以私有模式收集使用数据。 
 ---
 = 以私有模式配置Keystone Collector
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 完成一些配置任务，以使Keystone Collector 能够在没有互�
 
 
 [role="lead"]
-完成一些配置任务，以使Keystone Collector 能够在没有互联网访问的环境中收集使用数据，也称为_暗站_或_私人模式_。这是一次性活动，用于激活所需组件并将其与您的存储环境关联起来。配置完成后， Keystone Collector 将监控由Active IQ Unified Manager管理的所有ONTAP集群。
+配置 Keystone Collector 以在没有互联网访问权限的 _dark site_ 环境中以私有模式收集使用数据。此一次性设置将激活所需组件并将其与您的存储环境关联。配置完成后，Keystone Collector 将监控由 Active IQ Unified Manager 管理的所有 ONTAP 集群。
 
 
 NOTE: Keystone Collector 为您提供了Keystone Collector 管理终端用户界面 (TUI) 实用程序来执行配置和监控活动。您可以使用各种键盘控制（例如 Enter 和箭头键）来选择选项并浏览此 TUI。

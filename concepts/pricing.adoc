@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: concepts/pricing.html 
 keywords: pricing, billing introduction, Keystone billing 
-summary: Keystone提供按需付费模式，满足您灵活且可扩展的消费需求。 
+summary: 借助 NetApp Keystone STaaS，您只需为承诺的容量付费，超出部分才需额外付费。本页面介绍了按需付费模式的工作原理——从存储承诺的定价方式、容量的计量和计费方式，到发票的生成时间。 
 ---
-= 了解 Keystone 账单功能
+= 了解 Keystone STaaS 计费
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

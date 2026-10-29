@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: integrations/monitoring-alert-monitors.html 
 keywords: keystone-aiq, digital advisor keystone, keystone reports, alerts, keystone dashboard, monitoring, bluexp, netapp console 
-summary: 使用“监控”选项卡查看并创建Keystone订阅的警报监控器。 
+summary: 使用监控选项卡可查看和创建 Keystone 订阅的警报监控器。 
 ---
 = 查看并创建Keystone订阅的警报监视器
 :hardbreaks:

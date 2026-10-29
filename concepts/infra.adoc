@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: concepts/infra.html 
 keywords: keystone infrastructure, infra 
-summary: Keystone基础设施、设计、技术选择和组件产品均完全由NetApp负责。 
+summary: Keystone STaaS 基础设施、设计、技术选择和组件产品仅归 NetApp 所有。 
 ---
-= 了解 Keystone 基础设施
+= 了解 Keystone STaaS 基础设施
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: Keystone基础设施、设计、技术选择和组件产品均完全由
 
 
 [role="lead"]
-NetApp全权负责Keystone的基础设施、设计、技术选择和组件，适用于NetApp和客户运营的环境。
+NetApp 全权负责 Keystone STaaS 的基础架构、设计、技术选择和组件，这适用于 NetApp 和客户操作的环境。
 
 NetApp保留采取以下措施的权利：
 

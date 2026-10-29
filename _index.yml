@@ -1,10 +1,10 @@
 ---
 indexpage:
   title: Keystone文档
-  summary: NetApp Keystone是一种按需付费的存储即服务产品，只需一次订阅即可提供本地和云数据存储服务，并能够在云之间重新分配存储支出。
-  keywords: Keystone STaaS
-  lead: NetApp Keystone是一种灵活的按使用量付费的订阅式服务，可为那些更倾向于运营支出而非资本支出或租赁的客户提供无缝的混合云体验。它使您能够消除管理资源的
-    IT 负担并避免冗长的采购周期，从而加快价值实现时间。浏览此库中的文档以了解有关NetApp Keystone存储即服务 (STaaS) 产品的更多信息。
+  summary: Keystone STaaS 是 NetApp Keystone 平台下的订阅产品，通过即用即付模式提供文件、块和对象存储服务。
+  keywords: NetApp Keystone, Keystone STaaS, storage as a service, subscription
+  lead: NetApp Keystone 是 NetApp 的存储即服务平台。Keystone Storage-as-a-Service （STaaS） 是
+    Keystone 旗下的一项订阅产品，通过现收现付模式提供文件、块和对象存储服务。Keystone STaaS 使组织能够将存储用作运营费用，而不是进行前期资本投资。
   tiles:
   - title: 开始使用
     links:
@@ -28,7 +28,7 @@ indexpage:
       url: "/integrations/assets-tab.html"
     - title: 搜索数据并生成报告
       url: "/integrations/options.html"
-  - title: Keystone支持的服务
+  - title: Keystone STaaS 支持的服务
     links:
     - title: Keystone绩效服务水平
       url: "/concepts/service-levels.html"
@@ -40,9 +40,9 @@ indexpage:
       url: "/concepts/supported-storage-services.html"
     - title: 我可以将我的支出从本地重新分配到云端吗？
       url: "/concepts/capacity-requirements.html#capacity-adjustments"
-  - title: Keystone定价和计费
+  - title: Keystone STaaS 定价和计费
     links:
-    - title: 了解Keystone定价
+    - title: 了解 Keystone STaaS 计费
       url: "/concepts/pricing.html"
     - title: Keystone 如何衡量容量？
       url: "/concepts/pricing.html#how-keystone-measures-capacity"
@@ -52,7 +52,7 @@ indexpage:
       url: "/concepts/pricing.html#burst-consumption"
     - title: 何时生成发票？
       url: "/concepts/pricing.html#billing-schedules"
-  - title: 使用Keystone服务做更多事情
+  - title: Keystone STaaS 的附加服务
     links:
     - title: 了解您的支持团队
       url: "/concepts/support-services.html"
@@ -62,9 +62,9 @@ indexpage:
       url: "/concepts/adp.html"
     - title: 监控、排除故障和增强存储
       url: "/concepts/data-infra-insights.html"
-    - title: 美国公民支持
+    - title: 美国保护支持 (USPS)
       url: "/concepts/usps.html"
-  - title: 了解更多
+  - title: 更多资源
     links:
     - title: Active IQ Digital Advisor
       url: https://docs.netapp.com/us-en/active-iq/index.html

@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: concepts/misc-volume-billing.html 
 keywords: Billing and miscellaneous scenarios 
-summary: 了解特定配置的Keystone计费，包括克隆卷、高级数据保护等。 
+summary: 对于某些卷配置，Keystone STaaS 计费规则有所不同。此页面说明克隆的卷、SnapMirror 目标、LUN、临时卷和系统卷的计费方式。 
 ---
-= 针对特定卷类型的 Keystone 计费
+= 特定卷类型的 Keystone STaaS 计费
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 了解特定配置的Keystone计费，包括克隆卷、高级数据保
 
 
 [role="lead"]
-了解特定配置的Keystone计费可以帮助您优化服务使用并管理成本。配置包括克隆卷、高级数据保护、临时卷、QoS 策略、 SnapMirror目标、LUN 和系统/根卷。
+对于某些卷配置，Keystone STaaS 计费规则有所不同。了解这些例外情况有助于在处理克隆的卷、SnapMirror 目标、LUN 或临时存储时避免意外费用。
 
 
 
@@ -29,22 +29,6 @@ summary: 了解特定配置的Keystone计费，包括克隆卷、高级数据保
 * 克隆卷没有 24 小时的宽限期。仅考虑克隆的大小。
 * 一旦克隆卷超过父卷物理大小的 10%，克隆卷就会被视为标准卷（逻辑使用容量）。
 
-
-
-
-[[billing-for-advanced-data-protection]]
-== 高级数据保护计费
-
-高级数据保护使用NetApp MetroCluster在两个物理上分离的集群之间镜像数据。对于MetroCluster镜像聚合，数据写入两次，每个集群一次。 Keystone服务对双方的消费进行独立计费，从而产生两条相同的消费记录。附加费用适用于订阅中的所有容量，无论数据是在源处，还是镜像或非镜像数据。
-
-每个MetroCluster站点都有自己的订阅和计费。对于MetroCluster配置，使用情况测量考虑了两个站点之间的存储利用情况。如果您的MetroCluster设置中每个站点有 100 TiB，则每个站点上只有 50 TiB 被主动使用，而每个站点上剩余的 50 TiB 则用作镜像备份。高级数据保护附加费用是根据这 100 TiB 的总活动使用量计算的，并通过各自的订阅在两个站点之间分摊，每个站点 50 TiB。
-
-如果您通过ONTAP系统管理器（系统管理器）或Active IQ Unified Manager（统一管理器）监控集群，您可能会发现这些工具报告的消耗量与Keystone之间存在差异。系统管理器和统一管理器不报告镜像（远程）集群上的卷，因此，报告的消耗指标仅为Keystone服务报告的消耗指标的一半。
-
-.示例：
-站点 A 和站点 B 采用MetroCluster配置进行设置。当用户在站点 A 创建 10 TB 的卷时，站点 B 中也会创建相同的 10 TB 卷。KeystoneKeystone每个站点的消耗量为 10 TB，总共增加 20 TB。系统管理器和统一管理器报告在站点 A 中创建的 10 TB 卷，但没有报告在站点 B 中创建的 10 TB 卷。
-
-此外，在具有高级数据保护的Keystone系统上创建的所有卷都将计入高级数据保护的消耗，无论这些卷是否镜像。
 
 
 

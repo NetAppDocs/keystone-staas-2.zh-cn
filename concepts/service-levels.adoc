@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: concepts/service-levels.html 
 keywords: service levels, service level, rate plan or service level 
-summary: Keystone STaaS 提供预定义服务级别的存储容量。  Keystone管理的每个卷都与一个服务级别相关联。 
+summary: Keystone STaaS for version 3 提供预定义服务级别的存储容量。由 Keystone STaaS 管理的每个卷都与一个服务级别相关联。 
 ---
-= Keystone中的性能服务级别
+= Keystone STaaS 中的性能服务级别
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

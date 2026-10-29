@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: concepts/operational-models.html 
-keywords: Operational models, partner operations, customer operations, roles and responsibilities, r and r 
-summary: NetApp Keystone STaaS 提供两种服务交付运营模式。在开始使用Keystone之前，您应该了解这些选项。 
+keywords: operational models, Keystone STaaS, Keystone XaaS, partner operations, customer operations, roles and responsibilities, partner support 
+summary: 了解合作伙伴运营和客户运营的 Keystone STaaS 模型之间的运营责任有何不同，以及 Keystone XaaS 客户可以在哪里获得支持。 
 ---
-= Keystone中的运营模型
+= Keystone 的运营模式
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,25 +14,34 @@ summary: NetApp Keystone STaaS 提供两种服务交付运营模式。在开始�
 
 
 [role="lead"]
-NetApp Keystone STaaS 提供两种服务交付运营模式：合作伙伴运营模式和客户运营模式。在开始使用Keystone之前，您应该了解这些选项。
-
-* *合作伙伴运营模式*：此模式提供两种选择：
-+
-** *服务提供商*：服务提供商为其最终客户提供服务。作为与NetApp签约的一方，服务提供商管理着一个多租户环境，其中每个租户（服务提供商的客户）都有自己的订阅，并由服务提供商收费。服务提供商管理员负责为租户执行所有管理任务。
-** *经销商*：作为经销商，合作伙伴充当NetApp和客户之间的桥梁。合作伙伴向最终客户销售Keystone服务并管理发票。合作伙伴负责计费，而NetApp则为客户提供直接支持。  Keystone支持与客户互动并为租户处理所有管理任务。
-
-
-* *客户运营模式*：作为客户，您可以根据所选的性能服务级别和存储订阅Keystone服务。 NetApp定义架构和产品，并在您的场所部署Keystone 。您需要通过存储和 IT 资源来管理基础设施。根据您的合同，您可以提出服务请求，由NetApp或您的服务提供商处理。您组织的管理员可以在您的站点（环境）执行管理任务。这些任务与您环境中的用户相关。
+NetApp Keystone 可通过 Keystone Storage-as-a-Service（STaaS）和 Keystone XaaS 订阅产品提供。Keystone STaaS 支持合作伙伴运营和客户运营的运营模式，而 Keystone XaaS 则由 NetApp 合作伙伴独家提供。您的产品和运营模式决定了谁来管理您的存储环境、处理日常运营并提供支持。
 
 
 
+[[keystone-staas-operational-models]]
+== Keystone STaaS 运营模型
 
-[[roles-and-responsibilities-across-the-service-lifecycle]]
-== 服务生命周期中的角色和职责
+Keystone STaaS 运营模型定义了 NetApp、合作伙伴和客户在整个服务生命周期中的责任。以下各节介绍了合作伙伴运营和客户运营的模式。
 
-* *合作伙伴运营模式*：角色和职责的分配取决于您与服务提供商或合作伙伴之间的协议。请与您的服务提供商联系以获取信息。
-* *客户运营模式*：下表总结了整体服务生命周期模型以及客户运营环境中与之相关的角色和职责。
 
+
+[[partner-operated-model]]
+=== 合作伙伴经营模式
+
+合作伙伴可以作为服务提供商或经销商提供 Keystone STaaS。责任取决于您与合作伙伴的协议。请联系您的服务提供商或合作伙伴，了解他们为您处理哪些任务。
+
+*服务提供商*：服务提供商为其最终客户运营服务。作为与 NetApp 签约的一方，服务提供商负责管理多租户环境。每个租户都是服务提供商的客户，并且拥有单独的订阅，由服务提供商直接计费。服务提供商管理员负责执行租户的所有管理任务。*经销商*：作为经销商，合作伙伴充当 NetApp 与客户之间的桥梁。合作伙伴向最终客户销售 Keystone 服务并管理发票。虽然由合作伙伴负责计费，但 NetApp 会为客户提供直接支持。Keystone 支持团队与客户互动，并处理租户的所有管理任务。
+
+
+
+[[customer-operated-model]]
+=== 客户运营模式
+
+在客户运营模式中，您根据您的存储需求和选定的性能服务级别订阅 Keystone STaaS。NetApp 定义架构和产品，并在您的本地部署存储。
+
+您的存储和 IT 团队负责管理基础架构。您组织中的管理员为环境中的用户执行管理任务。根据您的合同，您可以向 NetApp 或您的服务提供商提交服务请求。
+
+下表总结了客户操作的 Keystone STaaS 环境中 NetApp 和客户的责任。
 
 |===
 | 任务 | NetApp | 客户 
@@ -80,4 +89,21 @@ NetApp Keystone STaaS 提供两种服务交付运营模式：合作伙伴运营�
 
 | image:check.png["复选标记"] | 无 
 |===
-有关部署的详细信息，请参见 link:../concepts/infra.html["了解 Keystone 基础设施"] 和 link:..//concepts/components.html["Keystone服务所需的组件"]。
+
+
+[[keystone-xaas-partner-delivery-and-support]]
+== Keystone XaaS 合作伙伴交付和支持
+
+Keystone XaaS 是 NetApp Keystone 下的一项独立订阅服务，由 NetApp 合作伙伴独家提供。合作伙伴为最终客户提供服务，并管理支持和日常运营。
+
+如果您使用 Keystone XaaS，请联系您的直接合作伙伴以获取服务和支持。上面的 Keystone STaaS 运营模型和客户操作责任表未描述 Keystone XaaS 的责任。
+
+
+
+[[related-information]]
+== 相关信息
+
+* link:../concepts/overview.html["了解NetApp Keystone"]
+* link:../concepts/infra.html["了解 Keystone 基础设施"]
+* link:../concepts/components.html["Keystone服务所需的组件"]
+

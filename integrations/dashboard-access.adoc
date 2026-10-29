@@ -14,7 +14,7 @@ summary: 作为NetApp Keystone STaaS 订阅者，您可以通过NetApp Console �
 
 
 [role="lead"]
-订阅NetApp Keystone服务后，您可以通过NetApp Console 或Digital Advisor访问Keystone仪表板。
+您可以通过 NetApp Console 或 Digital Advisor 访问您的 Keystone STaaS 订阅的 Keystone 仪表板。
 
 [role="tabbed-block"]
 ====

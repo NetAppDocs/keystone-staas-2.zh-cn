@@ -14,7 +14,7 @@ summary: 在基于 Linux 的系统上安装 ITOM Collector 软件。
 
 
 [role="lead"]
-完成几个步骤来安装 ITOM Collector，它会收集您的存储环境中的指标数据。根据您的要求，您可以在 Windows 或 Linux 系统上安装它。
+在 Linux 系统上安装 ITOM Collector，以收集用于监控 Keystone STaaS 环境的基础设施指标。
 
 
 NOTE: Keystone支持团队提供了一个动态链接来下载 ITOM Collector 安装文件，该文件将在两小时后过期。
